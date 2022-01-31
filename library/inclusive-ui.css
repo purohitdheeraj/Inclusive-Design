@@ -1,3 +1,8 @@
-/* reset.css file */
-/* this file containes all files from the components */
-/* utils.css general styling like elements, wrapper classes, etc */
+@import url("../utils/color.css");
+@import url("../utils/reset.css");
+/* general styles for components */
+
+:root{
+    /* colors for components */
+    --PRIMARY: var(--BASE)
+}
