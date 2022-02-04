@@ -1,0 +1,44 @@
+.avatar{
+    border-radius: 50%;
+}
+
+.avatar__letters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--LIGHT-BASE);
+    outline: 2px solid var(--DARK-BASE);
+}
+
+.avatar-sm{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.avatar-md{
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.avatar-lg{
+    width: 6.4rem;
+    height: 6.4rem;
+    
+}
+
+.avatar-xlg{
+    width: 8rem;
+    height: 8rem;
+}
+
+.avatar-xxlg{
+    width: 9.6rem;
+    height: 9.6rem;
+}
+
+.avatar__image{
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    outline: thin solid var(--DARK-BASE);
+}

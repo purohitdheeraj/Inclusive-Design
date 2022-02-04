@@ -1,8 +1,17 @@
-@import url("../utils/color.css");
-@import url("../utils/reset.css");
-/* general styles for components */
+@import url("./components/avatar/avatar.css");
 
-:root{
-    /* colors for components */
-    --PRIMARY: var(--BASE)
+
+/* general styles for components */
+:root {
+  --PRIMARY: var(--BASE);
+  --black: #171321;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+

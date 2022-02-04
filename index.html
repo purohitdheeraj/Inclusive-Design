@@ -1,31 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inclusive UI</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home| Inclusive UI</title>
 
     <!-- font-family-->
     <!--Poppins-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Montserrat -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- cdn link of Inclusive UI library-->
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
 
-    <!-- <link rel="stylesheet" href="./library/inclusive-ui.css"> -->
-    <!-- documentation css file for layout stuff -->
-    <link rel="stylesheet" href="./main.css"> 
-</head>
-<body>
-    <p>Hello i am connected with library</p>
-    <em><h1>Hare Krishna Hare Ram Hare Krishna</h1></em>
+    <!-- prism -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.min.css"
+    />
 
-   
-    <!-- js file for documentation page -->
-   
-</body>
+    <link rel="stylesheet" href="./docs/main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header id="header" class="header flex-row pad-one">
+        <div class="logo border--thin">Inclusive UI</div>
+
+        <ul class="navitems__container flex-row">
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="./docs/documentation.html">Documentation</a></li>
+          <li>
+            <a href="#" target="_blank">
+              <span class="fa-brands fa-github" aria-hidden="true"></span>
+              <span class="sr-only">Github</span></a
+            >
+          </li>
+        </ul>
+      </header>
+
+      <main>
+        <div class="main__content">
+          <h1 class="title">Inclusive UI</h1>
+          <span class="slogan">A Design Library that benefits everyone</span>
+          <div class="info">
+            <p class="about">
+              Design with accessibilty and inclusion give more people a chance
+              to interact with your product and get a positive experience
+            </p>
+            <p class="author-name">
+              By
+              <a href="https://peerlist.io/purohitdheeraj">Dheeraj Purohit</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="cta_buttons">
+          <a
+            href="#installation"
+            class="btn-secondary btn-cta"
+            title="go-to installation"
+            >Installation</a
+          >
+          <a href="./docs/documentation.html" class="btn-primary btn-cta"
+            >Documentation</a
+          >
+        </div>
+      </main>
+
+      <div class="gradient"></div>
+
+      <div id="installation" class="installation flex-row">
+        <div class="installation__text flex-column">
+          <h2>
+            Installation Guidelines for using Inclusive UI in your Project
+          </h2>
+
+          <ul>
+            <li>
+              Put this <code> link tag</code> in the head tag of your webpage
+            </li>
+
+            <li>For Icons Font Awesome has been used</li>
+            <li>
+              Also Include the link of font-awesome in head tag of your webpage
+            </li>
+          </ul>
+
+          <h2>Feature of Inclusive UI</h2>
+          <ul>
+            <li>Based on Inclusive Design Principles</li>
+            <li>Semantic Elements</li>
+            <li>Accessibility</li>
+            <li>
+              Follows
+              <a href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+                >WCAG</a
+              >
+              guidelines
+            </li>
+          </ul>
+          
+          
+          <a title="goto documentation page :->" href="./docs/documentation.html" class="btn-primary btn-cta"
+            >Documentation</a>
+        
+          </div>
+
+        <div class="installation__code">
+          <pre
+            class="code__snippet"
+          ><code class="language-html">&lt;!-- Exclusive Link for using Inclusive UI --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://inclusive-ui.app/components/inclusive-ui.css&quot;&gt;
+&lt;!-- Font Awesome Link used in Design Library --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css&quot; /&gt;</code>
+</pre>
+        </div>
+      </div>
+
+      <div class="gradient"></div>
+
+      <footer class="flex-column">
+        <nav>
+          <h2 class="font-24">Dheeraj Purohit &middot; Web Engineer</h2>
+
+          <ul class="flex-row gap-two">
+            <li>
+              <a href="#" target="_blank">
+                <span
+                  class="fa-brands fa-linkedin fa-2x"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Github</span></a
+              >
+            </li>
+
+            <li>
+              <a href="#" target="_blank">
+                <span
+                  class="fa-brands fa-twitter fa-2x"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Twitter</span></a
+              >
+            </li>
+
+            <li>
+              <a href="#" target="_blank">
+                <span class="fa-brands fa-css3 fa-2x" aria-hidden="true"></span>
+                <span class="sr-only">My CSS ArtWork</span></a
+              >
+            </li>
+          </ul>
+
+          <p class="font-24">
+            <small>
+              &copy; Inclusive UI <span class="fa fa-heart"></span>
+            </small>
+          </p>
+        </nav>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+      integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+  </body>
 </html>

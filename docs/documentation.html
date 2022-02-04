@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentation| Inclusive UI</title>
+
+  <!-- font-family-->
+  <!--Poppins-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+  <!-- prism -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/themes/prism.min.css" />
+
+  <link rel="stylesheet" href="./main.css" />
+  <link rel="stylesheet" href="./docs.css">
+  <link rel="stylesheet" href="../library/inclusive-ui.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+    <header id="header" class="header flex-row pad-one">
+      <div class="logo border--thin">Inclusive UI</div>
+
+      <ul class="navitems__container flex-row">
+        <li><a href="../index.html">Home Page</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li>
+          <a href="#" target="_blank">
+            <span class="fa-brands fa-github" aria-hidden="true"></span>
+            <span class="sr-only">Github</span></a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="container__main">
+
+      <!-- left sidebar -->
+      <aside class="container__left">
+        <nav class="flex-column">
+          <h3>Components</h3>
+          <div class="gradient"></div>
+          <ul class="list-items flex-column">
+            <li><a href="#Avatar">Avatar</a></li>
+            <li><a href="#Alerts">Alerts</a></li>
+            <li><a href="#Badge">Badge</a></li>
+            <li><a href="#Button">Button</a></li>
+            <li><a href="#Card">Card</a></li>
+            <li><a href="#Image">Image</a></li>
+            <li><a href="#Input">Input</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main content -->
+      <article class="container__middle">
+
+        <div id="Avatar">
+        </div>
+
+        <!-- avatar -->
+        <section class="component">
+          <div class="component__info">
+
+            <div class="component__heading">
+              <h2>Avatars</h2>
+            </div>
+
+            <p>
+              Avatar is a component which is used to represent user's identity on
+              various platforms
+            </p>
+
+            <p>
+              We can see in places like profile pictures, comment threads,
+              header of webpage different avatars with different sizes are used.
+            </p>
+
+          </div>
+
+          <h3>Examples of the Image Avatars</h3>
+
+          <div class="component__display--container">
+            <div class="avatar avatar-sm">
+              <img class="avatar__image" src="../docs/assets/avatars/user-48x48.png" alt="user-avatar" />
+            </div>
+
+            <div class="avatar avatar-md">
+              <img class="avatar__image" src="../docs/assets/avatars/user-female-48x48.png" alt="female-user-avatar" />
+            </div>
+
+            <div class="avatar avatar-lg">
+              <img class="avatar__image" src="../docs/assets/avatars/identicon.png" alt="identicon" />
+            </div>
+
+            <div class="avatar avatar-xlg">
+              <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar" />
+            </div>
+
+            <div class="avatar avatar-xxlg">
+              <img class="avatar__image" src="../docs/assets/avatars/profile_pic.svg" alt="profile-picture" />
+            </div>
+          </div>
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html">&lt;div class=&quot;avatar avatar-sm&quot;&gt;
+  &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/user-48x48.png&quot; alt=&quot;user-avatar&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar avatar-md&quot;&gt;
+  &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/user-female-48x48.png&quot; alt=&quot;female-user-avatar&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar avatar-lg&quot;&gt;
+  &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/identicon.png&quot; alt=&quot;identicon&quot; /&gt;
+&lt;/div&gt;
+</code>
+</pre>
+          </div>
+
+          <h3>Examples of the Initial Avatars</h3>
+          <p>
+            Initials are a good way to provide identifying information when no profile image is present. Pairing
+            initials with a unique color can help visually organize comment threads at a glance and provide extra
+            context as to who is commenting.
+          </p>
+          <div class="component__display--container">
+            <div class="avatar">
+              <div class="avatar__letters avatar-sm" role="img">
+                SR
+              </div>
+            </div>
+
+            <div class="avatar">
+              <div class="avatar__letters avatar-md" role="img">
+                G
+              </div>
+            </div>
+
+            <div class="avatar">
+              <div class="avatar__letters avatar-lg" role="img">
+                LJ
+              </div>
+            </div>
+
+            <div class="avatar">
+              <div class="avatar__letters avatar-xlg" role="img">
+                KSB
+              </div>
+            </div>
+
+            <div class="avatar">
+              <div class="avatar__letters avatar-xxlg" role="img">
+                KS
+              </div>
+            </div>
+          </div>
+
+          <!-- initial avatars code -->
+
+          <div class="component__display--code">
+<pre class="code__snippet"><code class="language-html"> &lt;div class=&quot;avatar&quot;&gt;
+  &lt;div class=&quot;avatar__letters avatar-sm&quot; role=&quot;img&quot;&gt;
+      SR
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar&quot;&gt;
+  &lt;div class=&quot;avatar__letters avatar-md&quot; role=&quot;img&quot;&gt;
+      G
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;avatar&quot;&gt;
+  &lt;div class=&quot;avatar__letters avatar-lg&quot; role=&quot;img&quot;&gt;
+      LJ
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code>
+            </pre>
+          </div>
+
+
+          <!-- usecase/ description -->
+          <div class="component__usecase">
+
+            <h3>Usecase</h3>
+
+            <p> In most of the cases you will only need
+              <strong>small (sm-32px) </strong> and
+              <strong>medium (md-48px) </strong> size avatars
+            </p>
+
+            <p>
+            <h4>Different Sizes available for avatars:
+            </h4>
+            <span>sm - 32px </span>
+            <span>md - 48px</span>
+            <span>lg - 64px</span>
+            <span>xlg - 80px</span>
+            <span>xxlg - 96px</span>
+            </p>
+
+            <p>
+              To use this components <code>class="avatar"</code> is required for parent container
+              and sm,md, lg denotes to different avatar sizes
+            </p>
+
+            <p>While using Initial Avatars use <code>class="avatar__letters"</code> on child element</p>
+          </div>
+
+        </section>
+
+        <!-- <section class="component">
+          
+          <div class="component__heading">component Heading</div>
+
+          <div class="component__description">Component Description🎍</div>
+
+          <div class="component__display--container">
+            
+          </div>
+
+          <div class="component__display--code-snippet">
+          </div>
+        </section> -->
+
+
+      </article>
+
+    </div>
+
+    <div class="gradient"></div>
+    <footer class="flex-column">
+      <nav>
+        <h2 class="font-24">Dheeraj Purohit &middot; Web Engineer</h2>
+
+        <ul class="flex-row gap-two">
+          <li>
+            <a href="#" target="_blank">
+              <span class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></span>
+              <span class="sr-only">Github</span></a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">
+              <span class="fa-brands fa-twitter fa-2x" aria-hidden="true"></span>
+              <span class="sr-only">Twitter</span></a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">
+              <span class="fa-brands fa-css3 fa-2x" aria-hidden="true"></span>
+              <span class="sr-only">My CSS ArtWork</span></a>
+          </li>
+        </ul>
+
+        <p class="font-24">
+          <small>
+            &copy; Inclusive UI <span class="fa fa-heart"></span>
+          </small>
+        </p>
+      </nav>
+    </footer>
+  </div>
+
+  <!-- Prism Js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"
+    integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

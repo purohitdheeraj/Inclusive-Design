@@ -1,0 +1,120 @@
+
+/* width */
+
+.w-100{
+    width: 100%;
+}
+
+/* boder */
+.border-radius-ten{
+    border-radius: 10px;
+}
+
+.border-radius-five-ten-tltr{
+    border-radius: 5px 10px 0 0;
+}
+
+.border--thin{
+    border: thin solid;
+}
+
+
+
+/* components */
+.card{
+    border-radius: 10px;
+    /* border: thin solid; */
+}
+
+
+/* grid & flex*/
+.d-grid{
+    display: grid;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+    padding: .5rem 1rem;
+}
+
+.justify-around{
+    justify-content: space-around;
+    padding: .5rem 1rem;
+}
+
+.gap-one{
+    gap: 1rem
+}
+
+.gap-two{
+    gap:2rem;
+}
+
+
+/*typography*/
+
+/* font */
+.font-24{
+    font-size: 2.4rem;
+}
+.font-48{
+    font-size: 4.8rem;
+}
+
+
+
+.overflow-wrap{
+    overflow-wrap: break-word;
+}
+
+
+/* margin */
+
+.margin-left-auto{
+    margin-left: auto;
+}
+
+.margin-right-auto{
+    margin-right: auto;
+}
+
+
+
+.content-display-none{
+    display: none;
+}
+
+
+
+
+/* use this in utility */
+/* recognize pattern */
+.flex-column{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .flex-row{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+  }
+  
