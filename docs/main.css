@@ -1,6 +1,7 @@
 @import url("../utils/reset.css");
 @import url("../utils/color.css");
 @import url("../utils/utility.css");
+
 /* genral styles for documentation page */
 :root {
   --font-poppins: "Poppins", sans-serif;
@@ -18,16 +19,13 @@ html {
   font-family: var(--font-montserrat);
 }
 
-
 body {
-  background: var(--azure);
   font-size: 1.6rem;
 }
 
 /* Layout */
-
 .container {
-  max-width: 1440px;
+  max-width: 144rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -41,8 +39,19 @@ body {
   position: sticky;
   top: 0;
   z-index: 1;
+  justify-content: space-between;
   font-family: var(--font-poppins);
   box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+}
+
+
+
+.hamburger, .close{
+  display: none;
+}
+
+.header a{
+  text-decoration: none;
 }
 
 .logo {
@@ -55,7 +64,6 @@ body {
 }
 
 /* ul === .navitems__container */
-
 .header .navitems__container {
   margin-inline-start: auto;
   padding: 0 1rem;
@@ -68,9 +76,6 @@ body {
   font-weight: 600;
 }
 
-.navitems__container li:nth-of-type(3) a span {
-  font-size: 3.2rem;
-}
 
 .navitems__container a::after {
   content: "";
@@ -87,12 +92,10 @@ body {
   transition: 0.5s;
 }
 
-.navitems__container li:nth-of-type(3) a span {
-  border-radius: 50%;
-}
+
 
 .navitems__container li:nth-of-type(3) span:hover {
-  background: var(--LIGHT-ACCENT);
+  background: var(--LIGHT-GRAY);
 }
 
 .navitems__container li:nth-of-type(3) a:hover::after {
@@ -159,6 +162,11 @@ main .author-name {
   font-size: 2.4rem;
 }
 
+.author-name a:active{
+  color: var(--DARK-BASE);
+}
+
+
 main {
   display: flex;
   flex-direction: column;
@@ -195,7 +203,6 @@ main {
   text-decoration: none;
   text-align: center;
   padding: 1.2rem;
-  word-wrap: break-word;
 }
 
 /* installation */
@@ -215,9 +222,6 @@ main {
   padding: 1rem;
 }
 
-.installation__text > * {
-  margin-block-start: 1.6rem;
-}
 
 .installation__text h2 {
   font-size: 2.4rem;
@@ -230,14 +234,15 @@ main {
 .installation__code {
   flex: 1 1 50rem;
   font-size: 2rem;
-  border-radius: 2rem;
   overflow: auto;
-  background: var(--azure);
-  box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  background: none;
+  background: transparent;
 }
 
-pre.code__snippet.language-html {
-  background-color: var(--azure);
+pre.code__snippet{
+  background: var(--NEUTRAL);
+  border: thin solid;
+  overflow: auto;
 }
 
 /* footer */
@@ -251,8 +256,9 @@ footer > *,
 footer ul li a {
   margin-block: 0.8rem;
   margin-inline: 0;
-  color: black;
+  color: var(--DARK-BASE);
 }
+
 footer ul li a:active {
   color: var(--BASE);
 }
@@ -268,8 +274,9 @@ footer ul li a:active {
   height: 4px;
 }
 
-/* imp for responsive fonts will be using it later!!! */
-/* desktop first media here*/
+
+
+/* tablet */
 @media only screen and (max-width: 768px) {
   html {
     font-size: 50%;
@@ -290,7 +297,48 @@ footer ul li a:active {
   .header .navitems__container {
     margin-inline-start: 0;
   }
+
+/* .header because we have used nav at multiple places
+ */
+
+ .header nav {
+  background-color: var(--LIGHT-GRAY); 
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 50v;  
+  height: 100vh;
+  overflow: hidden;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: flex-start;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease-in-out; 
 }
+
+.header nav:target{
+  transform: translateX(0);
+}
+
+.header nav ul{
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 8px;
+}
+
+
+
+.hamburger, .close {
+  display: block;
+  font-size: 2rem;
+  color: var(--DARK-BASE);
+  padding: 1rem;
+}
+
+}
+
 
 @media only screen and (max-width: 425px) {
   html {
@@ -298,20 +346,22 @@ footer ul li a:active {
   }
 }
 
+
+
 @media only screen and (min-width: 1440px) {
   html {
-    font-size: 70%;
+    font-size: 80%;
   }
   .container {
     box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
   }
 
   main {
-    min-block-size: 45vh;
+    min-block-size: 50vh;
   }
 
   .installation {
-    min-block-size: 40vh;
+    min-block-size: 50vh;
   }
 
   .main__content {
@@ -319,7 +369,7 @@ footer ul li a:active {
   }
 
   body {
-    background: url("./assets/cover.jpg");
+    background: url("./assets/cover-image.jpg");
     background-size: cover;
     background-repeat: none;
   }

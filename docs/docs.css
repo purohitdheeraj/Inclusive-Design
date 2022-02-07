@@ -1,8 +1,3 @@
-
-:root{
-  --beige: beige;
-}
-
 .container__main{
     min-block-size: 100vh;
     display: grid;
@@ -16,6 +11,8 @@ aside{
     position: sticky;
     top: 6rem;
     grid-area: sidebar;
+    overflow: auto;
+    border-right: thin solid;
     background: var(--NEUTRAL);
 }
 .container__left nav{
@@ -42,7 +39,7 @@ nav .list-items li:hover{
 
 article{
     grid-area: main;
-    background: var(--beige);
+    background: var(--NEUTRAL);
 }
 
 
@@ -74,9 +71,15 @@ article{
     gap: 2rem;
   }
 
+
   pre{
     border-radius: 1rem;
     border: thin solid;
+}
+
+
+pre.code__snippet.language-html {
+  background-color: var(--LIGHT-GRAY);
 }
  
 .container__left{
@@ -92,6 +95,11 @@ article{
   width: 100%;
 }
 
+.caret-symbol{
+  display: none;
+}
+
+
 
 @media only screen and (max-width: 960px){
     
@@ -99,13 +107,35 @@ article{
         grid-template:"sidebar"
                        "main";
         grid-template-columns: minmax(100%,1fr);
-        grid-template-rows: 4rem 1fr; 
+        grid-template-rows: minmax(min-content, 4rem) 1fr; 
         gap: 2rem;
+        
     }
 
-    aside{
-      display: none;
-        position: sticky;
-        top: 12rem;
+    aside{  
+      position: sticky;
+      max-width: 100%;
+      top: 6rem;
+      border: 0;
+      background-color: var(--aliceblue);
     }
+
+    .dropdown__content{
+      display: none;
+      border-bottom: thick solid var(--BASE);
+      
+    }
+    
+    .caret-symbol{
+      display: inline;
+    }
+
+    .show{
+      display: block;
+    }
+
+    .dropdown__btn{
+      cursor: pointer;
+    }
+   
 }

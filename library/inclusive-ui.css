@@ -1,17 +1,3 @@
 @import url("./components/avatar/avatar.css");
 
 
-/* general styles for components */
-:root {
-  --PRIMARY: var(--BASE);
-  --black: #171321;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-}
-
