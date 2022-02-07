@@ -1,13 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./inclusive-ui.css">
+    <link rel="stylesheet" href="./inclusive-ui.css" />
 </head>
+
 <body>
-    <p>Hare Krishna 🙏 from library page say hi to me i will be hosted on netlify and will be used as cdn :0)</p>
+    <section id="Avatar" class="component">
+      
+        <div class="component__info">
+
+            <div class="component__heading">
+                <h2>Avatars</h2>
+            </div>
+
+            <p>
+                Avatar is a component which is used to represent user's identity on
+                various platforms  
+            </p>
+            
+            <p>
+                We can see in places like profile pictures, comment threads,
+                header of webpage different avatars with different sizes are used.
+            </p>
+        
+        </div>
+
+        <h3>Examples of the Image Avatars</h3>
+
+        <div class="component__display--container">
+            <div class="avatar avatar-sm">
+                <img class="avatar__image" src="../docs/assets/avatars/user-48x48.png" alt="user-avatar" />
+            </div>
+
+            <div class="avatar avatar-md">
+                <img class="avatar__image" src="../docs/assets/avatars/user-female-48x48.png" alt="female-user-avatar" />
+            </div>
+
+            <div class="avatar avatar-lg">
+                <img class="avatar__image" src="../docs/assets/avatars/identicon.png" alt="identicon" />
+            </div>
+
+            <div class="avatar avatar-xlg">
+                <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar" />
+            </div>
+
+            <div class="avatar avatar-xxlg">
+                <img class="avatar__image" src="../docs/assets/avatars/profile_pic.svg" alt="profile-picture" />
+            </div>
+        </div>
+
+        <div class="component__display--code ">
+            <div class="iframe-wrapper">
+                <iframe src="https://carbon.now.sh/embed/9uKBlRRx2RaNJikzsPud"
+                    style="width: 800px; height: 420px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </div>
+
+        <h3>Examples of the Initial Avatars</h3>
+        <p>
+            Initials are a good way to provide identifying information when no profile image is present. Pairing initials with a unique color can help visually organize comment threads at a glance and provide extra context as to who is commenting.
+        </p>
+        <div class="component__display--container">
+            <div class="avatar">
+                <div class="avatar__letters avatar-sm" role="img">
+                    SR
+                </div>
+            </div>
+
+            <div class="avatar">
+                <div class="avatar__letters avatar-md" role="img">
+                    G
+                </div>
+            </div>
+
+            <div class="avatar">
+                <div class="avatar__letters avatar-lg" role="img">
+                    LJ
+                </div>
+            </div>
+
+            <div class="avatar">
+                <div class="avatar__letters avatar-xlg" role="img">
+                    KSB
+                </div>
+            </div>
+
+            <div class="avatar">
+                <div class="avatar__letters avatar-xxlg" role="img">
+                    KS
+                </div>
+            </div>
+        </div>
+
+        <div class="component__display--code ">
+            <div class="iframe-wrapper">
+                <iframe src="https://carbon.now.sh/embed/9uKBlRRx2RaNJikzsPud"
+                    style="width: 1021px; height: 420px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- usecase/ description -->
+            <div class="component__usecase">
+                
+                <h3>Usecase</h3>
+                
+                <p> In most of the cases you will only need
+                    <strong>small (sm-32px) </strong> and
+                    <strong>medium (md-48px) </strong> size avatars
+                </p>
+
+                <p>
+                    <h4>Different Sizes available for avatars:
+                    </h4>
+                    <span>sm - 32px </span>
+                    <span>md - 48px</span>
+                    <span>lg - 64px</span>
+                    <span>xlg - 80px</span>
+                    <span>xxlg - 96px</span>
+                </p>
+
+                <p>
+                    To use this components <code>class="avatar"</code> is required for parent container
+                    and sm,md, lg denotes to different avatar sizes
+                </p>
+
+                <p>While using Initial Avatars use <code>class="avatar__letters"</code> on child element</p>
+        </div>
+
+    </section>
 </body>
+
 </html>

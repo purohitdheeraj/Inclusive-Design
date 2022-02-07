@@ -1,0 +1,376 @@
+@import url("../utils/reset.css");
+@import url("../utils/color.css");
+@import url("../utils/utility.css");
+
+/* genral styles for documentation page */
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --cta-bgcolor: var(--DARK-BASE);
+  --cta-fcolor: var(--NEUTRAL);
+  --heading--color: var(--DARK-BASE);
+  --author-name-color: var(--DARK-BASE);
+  --azure: azure;
+}
+
+/*setting default font-size to 16px*/
+html {
+  font-size: 62.5%;
+  font-family: var(--font-montserrat);
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* Layout */
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+.header {
+  font-size: 1.6rem;
+  background: var(--NEUTRAL);
+  opacity: 0.9;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  justify-content: space-between;
+  font-family: var(--font-poppins);
+  box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+}
+
+
+
+.hamburger, .close{
+  display: none;
+}
+
+.header a{
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--DARK-BASE);
+  font-weight: 600;
+  padding: 0 1rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin-inline-start: 1rem;
+}
+
+/* ul === .navitems__container */
+.header .navitems__container {
+  margin-inline-start: auto;
+  padding: 0 1rem;
+  gap: 4rem;
+}
+
+.navitems__container a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+
+.navitems__container a::after {
+  content: "";
+  width: 0%;
+  display: block;
+  margin: auto;
+  height: 2px;
+  background: var(--LIGHT-ACCENT);
+}
+
+.navitems__container a:hover::after {
+  display: block;
+  width: 100%;
+  transition: 0.5s;
+}
+
+
+
+.navitems__container li:nth-of-type(3) span:hover {
+  background: var(--LIGHT-GRAY);
+}
+
+.navitems__container li:nth-of-type(3) a:hover::after {
+  width: 0;
+}
+
+/* main */
+main {
+  background: url("./assets/cover.jpg");
+  background-size: cover;
+  padding: 2rem;
+  min-block-size: 100vh;
+  line-height: 1.1;
+  background: azure;
+}
+
+.container > * {
+  margin-block: 0;
+}
+
+.container > main {
+  margin-block: auto;
+}
+
+.container > :first-child:not(main) {
+  margin-block-start: 0;
+}
+
+.container > :last-child:not(main) {
+  margin-block-end: 0;
+}
+
+/* cover content */
+.main__content {
+  margin-inline-start: 0.8rem;
+  margin-block-start: 8rem;
+}
+
+main .title {
+  font-size: 12rem;
+  word-wrap: break-word;
+  color: var(--heading--color);
+  font-weight: 600;
+}
+
+main .slogan {
+  font-size: 3.2rem;
+  word-wrap: break-word;
+}
+
+.info {
+  margin-block-start: 2rem;
+}
+
+main .about {
+  font-size: 2rem;
+  max-width: 70rem;
+  word-wrap: break-word;
+}
+
+main .author-name {
+  margin-block-start: 2rem;
+  color: var(--author-name-color);
+  font-size: 2.4rem;
+}
+
+.author-name a:active{
+  color: var(--DARK-BASE);
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.cta_buttons {
+  margin-inline-start: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.btn-primary {
+  background: var(--cta-bgcolor);
+  color: var(--cta-fcolor);
+}
+
+.btn-secondary {
+  background: var(--cta-fcolor);
+  color: var(--cta-bgcolor);
+  outline: 2px solid var(--DARK-BASE);
+}
+
+.btn-cta {
+  max-width: 24rem;
+  min-width: 24rem;
+  border-radius: 4rem;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+/* installation */
+.installation {
+  background: var(--LIGHT-GRAY);
+  min-block-size: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.installation__text {
+  flex: 1 1 50rem;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+
+.installation__text h2 {
+  font-size: 2.4rem;
+}
+
+.installation__text li {
+  font-size: 1.8rem;
+}
+
+.installation__code {
+  flex: 1 1 50rem;
+  font-size: 2rem;
+  overflow: auto;
+  background: none;
+  background: transparent;
+}
+
+pre.code__snippet{
+  background: var(--NEUTRAL);
+  border: thin solid;
+  overflow: auto;
+}
+
+/* footer */
+footer {
+  background: var(--azure);
+  text-align: center;
+  font-family: var(--font-poppins);
+}
+
+footer > *,
+footer ul li a {
+  margin-block: 0.8rem;
+  margin-inline: 0;
+  color: var(--DARK-BASE);
+}
+
+footer ul li a:active {
+  color: var(--BASE);
+}
+
+/* gradient */
+.gradient {
+  background: rgb(9, 117, 121);
+  background: linear-gradient(
+    90deg,
+    hsl(206, 100%, 60%) 23%,
+    hsl(26, 100%, 60%) 100%
+  );
+  height: 4px;
+}
+
+
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  main .title {
+    font-size: 6rem;
+  }
+
+  main {
+    min-block-size: 70vh;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .header .navitems__container {
+    margin-inline-start: 0;
+  }
+
+/* .header because we have used nav at multiple places
+ */
+
+ .header nav {
+  background-color: var(--LIGHT-GRAY); 
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 50v;  
+  height: 100vh;
+  overflow: hidden;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: flex-start;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease-in-out; 
+}
+
+.header nav:target{
+  transform: translateX(0);
+}
+
+.header nav ul{
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 8px;
+}
+
+
+
+.hamburger, .close {
+  display: block;
+  font-size: 2rem;
+  color: var(--DARK-BASE);
+  padding: 1rem;
+}
+
+}
+
+
+@media only screen and (max-width: 425px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+
+
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 80%;
+  }
+  .container {
+    box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  }
+
+  main {
+    min-block-size: 50vh;
+  }
+
+  .installation {
+    min-block-size: 50vh;
+  }
+
+  .main__content {
+    margin-block-start: 5rem;
+  }
+
+  body {
+    background: url("./assets/cover-image.jpg");
+    background-size: cover;
+    background-repeat: none;
+  }
+}

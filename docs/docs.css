@@ -1,0 +1,141 @@
+.container__main{
+    min-block-size: 100vh;
+    display: grid;
+    grid-template: "sidebar main main main"
+    ". main main main";
+    grid-template-columns: 25rem 1fr;
+    grid-template-rows: 100vh 2fr;
+}
+
+aside{
+    position: sticky;
+    top: 6rem;
+    grid-area: sidebar;
+    overflow: auto;
+    border-right: thin solid;
+    background: var(--NEUTRAL);
+}
+.container__left nav{
+  margin-block-start: 2rem;
+}
+
+nav .list-items li{
+  padding: 1rem;
+  cursor: pointer;
+}
+
+nav .list-items li a{
+  text-decoration: none;
+  color: var(--BLACK);
+}
+
+nav .list-items li a:active{
+  color: var(--BASE);
+}
+
+nav .list-items li:hover{
+  background: var(--LIGHT-GRAY);
+}
+
+article{
+    grid-area: main;
+    background: var(--NEUTRAL);
+}
+
+
+.component {
+    margin-block-start: 4rem;  
+  padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    word-wrap: break-word;
+  }
+  
+  .component__heading h2 {
+    font-size: 4rem;
+  }
+  
+  .component__info p{
+    text-align: justify;
+  }
+  
+  
+  .component__display--container {
+    padding: 4rem;
+    border: thin solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+
+  pre{
+    border-radius: 1rem;
+    border: thin solid;
+}
+
+
+pre.code__snippet.language-html {
+  background-color: var(--LIGHT-GRAY);
+}
+ 
+.container__left{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.container__left ul{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.caret-symbol{
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 960px){
+    
+    .container__main{
+        grid-template:"sidebar"
+                       "main";
+        grid-template-columns: minmax(100%,1fr);
+        grid-template-rows: minmax(min-content, 4rem) 1fr; 
+        gap: 2rem;
+        
+    }
+
+    aside{  
+      position: sticky;
+      max-width: 100%;
+      top: 6rem;
+      border: 0;
+      background-color: var(--aliceblue);
+    }
+
+    .dropdown__content{
+      display: none;
+      border-bottom: thick solid var(--BASE);
+      
+    }
+    
+    .caret-symbol{
+      display: inline;
+    }
+
+    .show{
+      display: block;
+    }
+
+    .dropdown__btn{
+      cursor: pointer;
+    }
+   
+}

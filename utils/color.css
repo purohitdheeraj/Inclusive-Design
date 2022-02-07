@@ -6,6 +6,8 @@
     --BASE: hsl(206,100%,60%);
     --ACCENT: hsl(26, 100%, 60%);
     --NEUTRAL: hsl(100,100%,100%);
+    --BLACK: hsl(0,0%,0%);
+    --aliceblue: aliceblue;
 
     --LIGHT-BASE: hsl(205,100%,75%);
     --LIGHT-ACCENT: hsl(26, 100%, 75%);
@@ -13,7 +15,7 @@
     --DARK-BASE: hsl(206,100%,40%);
     --DARK-ACCENT: hsl(26, 100%, 40%);
     
-    --LIGHT-GRAY: hsl(0, 0%, 75%);
+    --LIGHT-GRAY: hsl(0, 0%, 95%);
     --MEDIUM-GRAY: hsl(0,0%, 60%);
     --DARK-GRAY: hsl(0,0%,40%);
 }

@@ -1,8 +1,3 @@
-@import url("../utils/color.css");
-@import url("../utils/reset.css");
-/* general styles for components */
+@import url("./components/avatar/avatar.css");
 
-:root{
-    /* colors for components */
-    --PRIMARY: var(--BASE)
-}
+
