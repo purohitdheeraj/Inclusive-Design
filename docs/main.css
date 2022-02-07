@@ -174,7 +174,7 @@ main {
 }
 
 .cta_buttons {
-  margin-inline-start: 0.4rem;
+  margin-inline-start: 4px;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
