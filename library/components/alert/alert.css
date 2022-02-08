@@ -1,0 +1,32 @@
+.alert{
+        padding: 2rem;
+        width: 100%;
+        font-size: 1.6rem;
+        border: thin solid;
+        border-radius: 1rem;
+        display: inline-block;
+}
+
+.alert-error{
+    background: var(--RED);
+}
+
+.alert-warning{
+    background: var(--YELLOW);
+}
+
+.alert-info{
+    background: var(--CYAN);
+}
+
+.alert-success{
+    background: var(--GREEN);
+}
+
+.alert-closing{
+    background: var(--LIGHT-GRAY);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

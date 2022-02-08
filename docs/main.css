@@ -11,6 +11,10 @@
   --heading--color: var(--DARK-BASE);
   --author-name-color: var(--DARK-BASE);
   --azure: azure;
+  --ACCENT-GRADIENT: linear-gradient(to bottom right, #ffffff 42%, var(--ACCENT) 170%);
+  --BASE-GRADIENT: linear-gradient(to bottom right, #ffffff 32%, var(--LIGHT-BASE) 80%);
+  --DARK-GRADIENT: linear-gradient(to top left, #ffffff 30%, var(--LIGHT-BASE) 150%);
+  
 }
 
 /*setting default font-size to 16px*/
@@ -38,7 +42,7 @@ body {
   opacity: 0.9;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   justify-content: space-between;
   font-family: var(--font-poppins);
   box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
@@ -104,12 +108,12 @@ body {
 
 /* main */
 main {
-  background: url("./assets/cover.jpg");
+  /* background: url("./assets/cover.jpg"); */
   background-size: cover;
   padding: 2rem;
-  min-block-size: 100vh;
+  min-block-size: 60vh;
   line-height: 1.1;
-  background: azure;
+  background: var(--BASE-GRADIENT);
 }
 
 .container > * {
@@ -131,7 +135,9 @@ main {
 /* cover content */
 .main__content {
   margin-inline-start: 0.8rem;
-  margin-block-start: 8rem;
+  margin-block-start: 4rem;
+  margin-block-end: 2rem;
+  padding: 1rem;
 }
 
 main .title {
@@ -207,8 +213,8 @@ main {
 
 /* installation */
 .installation {
-  background: var(--LIGHT-GRAY);
-  min-block-size: 90vh;
+  background: var(--ACCENT-GRADIENT);
+  min-block-size: 40vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -247,7 +253,7 @@ pre.code__snippet{
 
 /* footer */
 footer {
-  background: var(--azure);
+  background: var(--DARK-GRADIENT);
   text-align: center;
   font-family: var(--font-poppins);
 }
@@ -286,9 +292,7 @@ footer ul li a:active {
     font-size: 6rem;
   }
 
-  main {
-    min-block-size: 70vh;
-  }
+  
 
   header {
     justify-content: space-between;
@@ -320,6 +324,8 @@ footer ul li a:active {
 .header nav:target{
   transform: translateX(0);
 }
+
+
 
 .header nav ul{
   font-size: 1.6rem;
@@ -357,7 +363,7 @@ footer ul li a:active {
   }
 
   main {
-    min-block-size: 50vh;
+    min-block-size: 40vh;
   }
 
   .installation {

@@ -88,9 +88,10 @@
             <div class="gradient"></div>
 
             <ul class="list-items flex-column dropdown__content" id="dropdown__content">
-              <li><a href="#Avatar">Avatar</a></li>
-              <li><a href="#Alerts">Alerts</a></li>
-              <li><a href="#Badges">Badge</a></li>
+              <li><a href="#Alert">Alerts</a></li>
+              <li><a href="#Avatar">
+                Avatar</a></li>
+              <li><a href="#Badge">Badge</a></li>
               <li><a href="#Button">Button</a></li>
               <li><a href="#Card">Card</a></li>
               <li><a href="#Image">Image</a></li>
@@ -106,6 +107,135 @@
 
       <!-- Main content -->
       <article class="container__middle">
+
+       
+
+        
+        <div id="Alert">
+        </div>
+        
+        <!-- alerts -->
+        <section class="component">
+            <div class="component__info">
+    
+                <div class="component__heading">
+                    <h2>Alerts</h2>
+                </div>
+    
+                <p>
+                    Alert is a notification component which is used to notify user and give a feedback on various events
+                    like success, failure, info etc
+                    Basically it tells user what is going on , the state of events that has already taken place.
+                </p>
+    
+    
+                <p>
+    
+                </p>
+    
+            </div>
+    
+    
+            <h3>Examples of the Alerts</h3>
+    
+            <div class="component__display--container flex-column">
+    
+                <div class="alert alert-success">
+                    <i class="fa fa-check-circle"></i>
+                    <strong>Success Alert!</strong>
+                    This alert box indicates successful or positive action
+                </div>
+    
+                <div class="alert alert-error">
+                    <i class="fa fa-times-circle"></i>
+                    <strong>Error Alert!</strong>
+                    This alert box indicates a dangerous or potentially negative action.
+                </div>
+    
+                <div class="alert alert-info">
+                    <i class="fa fa-info-circle"></i>
+                    <strong>Info Alert!</strong>
+                    This alert box indicates a neutral informative change or action.
+                </div>
+    
+                <div class="alert alert-warning">
+                    <i class="fa fa-warning"></i>
+                    <strong>Warning Alert!</strong>
+                    This alert box indicates a warning that might need attention.
+                </div>
+    
+                <div class="alert alert-closing">
+                    <span>
+                        <strong>Closing Alert!</strong>
+                        Alert Bar with a close Button
+                    </span>
+                    <button class="fa fa-times" id="alert__close-btn">
+                        <span class="sr-only">Button</span>
+                    </button>
+                </div>
+    
+    
+            </div>
+    
+            <div class="component__display--code">
+                <pre class="code__snippet"><code class="language-html">
+  &lt;div class=&quot;alert alert-success&quot;&gt;
+      &lt;i class=&quot;fa fa-check-circle&quot;&gt;&lt;/i&gt;
+      &lt;strong&gt;Success Alert!&lt;/strong&gt;
+      This alert box indicates successful or positive action
+  &lt;/div&gt;
+    
+  &lt;div class=&quot;alert alert-error&quot;&gt;
+      &lt;i class=&quot;fa fa-times-circle&quot;&gt;&lt;/i&gt;
+      &lt;strong&gt;Error Alert!&lt;/strong&gt;
+      This alert box indicates a dangerous or potentially negative action.
+  &lt;/div&gt;
+    
+  &lt;div class=&quot;alert alert-closing&quot;&gt;
+      &lt;span&gt;
+          &lt;strong&gt;Closing Alert!&lt;/strong&gt;
+          Alert Bar with a close Button
+      &lt;/span&gt;
+    
+      &lt;button class=&quot;fa fa-times&quot; id=&quot;alert__close-btn&quot;&gt;
+      &lt;span class=&quot;sr-only&quot;&gt;Button&lt;/span&gt;
+      &lt;/button&gt;
+  &lt;/div&gt;
+    
+    </code></pre>
+            </div>
+    
+            <!-- usecase/ description -->
+            <div class="component__usecase">
+    
+                <h3>Usecase</h3>
+    
+                <p> Alerts are used for Drawing attention
+                    Its a message that lets user know about states as a feedback
+                </p>
+    
+                <p>
+                <h4>Different types of alerts available are:
+                </h4>
+                <div class="alert-span">
+                    <span>Success Alert </span>
+                    <span>Error Alert</span>
+                    <span>Info Alert </span>
+                    <span>Warning Alert </span>
+                    <span>Closing Alert </span>
+                </div>
+    
+                </p>
+    
+                <p>
+                    To use this components add <code>class="alert"</code> and the type of the alert to be displayed.
+                </p>
+    
+    
+            </div>
+    
+        </section>
+
 
         <div id="Avatar">
         </div>
@@ -259,6 +389,141 @@
           </div>
 
         </section>
+
+        <!-- Badges -->
+        <div class="gradient">
+        </div>
+
+        <div id="Badge">
+        </div>
+    
+        <!-- Badge -->
+        <section class="component">
+            <div class="component__info">
+    
+                <div class="component__heading">
+                    <h2>Badges</h2>
+                </div>
+    
+                <p>
+                    Badge (aka Tag) — small overlapped UI item which indicates a status, notification, or event that appears in relativity with the underlying object.
+                </p>
+    
+    
+                <p>
+                    Badge with a Numeric value is used to represent the number of events related to the parent UI item:
+                </p>
+    
+            </div>
+    
+    
+            <h3>Badges On Avatars</h3>
+    
+            <div class="component__display--container">
+    
+                <div class="badge__container">
+                    <div class="avatar avatar-xxlg">
+                        <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar">
+                    </div>
+                    <span class="badge badge-status-active"></span>
+                </div>
+    
+                <div class="badge__container">
+                    <div class="avatar avatar-xxlg">
+                        <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar">
+                    </div>
+                    <span class="badge badge-status-inactive"></span>
+                </div>
+    
+    
+                <div class="badge__container">
+                    <div class="avatar avatar-xxlg">
+                        <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar">
+                    </div>
+                    <span class="badge badge-status-away"></span>
+                </div>
+    
+                <div class="badge__container">
+                    <div class="avatar avatar-xlg">
+                        <img class="avatar__image" src="../docs/assets/avatars/user-48x48.png" alt="user-avatar">
+                    </div>
+                    <span class="badge badge-status-active"></span>
+                </div>
+    
+                <div class="badge__container">
+                    <div class="avatar avatar-lg">
+                        <img class="avatar__image" src="../docs/assets/avatars/user-48x48.png" alt="user-avatar">
+                    </div>
+                    <span class="badge badge-status-inactive">
+            
+                    </span>
+                </div>
+    
+                <div class="badge__container">
+                    <div class="avatar avatar-xxlg">
+                        <img class="avatar__image" src="../docs/assets/avatars/profile_pic.svg" alt="user-avatar">
+                    </div>
+                    <span class="badge badge-status-away"></span>
+                </div>
+    
+            </div>
+    
+            <div class="component__display--code">
+                <pre class="code__snippet"><code class="language-html"> &lt;div class=&quot;badge__container&quot;&gt;
+        &lt;div class=&quot;avatar avatar-xxlg&quot;&gt;
+            &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/male_avatar.svg&quot; alt=&quot;male-avatar&quot;&gt;
+        &lt;/div&gt;
+            &lt;span class=&quot;badge badge-status-active&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;component__display--container&quot;&gt;  
+          &lt;div class=&quot;badge__container&quot;&gt;
+           &lt;i class=&quot;fas fa-shopping-cart fa-4x&quot;&gt;&lt;/i&gt;
+           &lt;span class=&quot;badge badge-icon badge-status-number&quot;&gt;5&lt;/span&gt;
+    &lt;/div&gt;</code></pre>
+            </div>
+    
+            <h3>Badges on Icons</h3>
+    
+            <div class="component__display--container">  
+                <div class="badge__container">
+                    <i class="fas fa-shopping-cart fa-4x"></i>
+                    <span class="badge badge-icon badge-status-number">5</span>
+                </div>
+    
+    
+                <div class="badge__container">
+                    <i class="far fa-heart fa-4x"></i>
+                    <span class="badge badge-icon badge-status-number">+5</span>
+                </div>
+    
+                
+                <div class="badge__container">
+                    <i class="far fa-message fa-4x"></i>
+                    <span class="badge badge-icon badge-status-number">+5</span>
+                </div>
+    
+    
+            </div>
+    
+    
+            <!-- usecase/ description -->
+            <div class="component__usecase">
+    
+                <h3>Usecase</h3>
+    
+                <li>In conversational patterns (Chat, Messages, Inbox) Badge used to inform about new incoming messages. Dot distinctly divides fresh emails and recent
+                </li>
+    
+                <li>
+                In most shopping apps Badges are used to display the number of products added to a cart
+                </li>
+    
+            </div>
+    
+        </section>
+    
+
 
 
       </article>

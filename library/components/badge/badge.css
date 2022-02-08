@@ -1,0 +1,37 @@
+.badge__container{
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.badge{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    height: 1.6em;
+    min-width: 1.6em;
+    border: thin solid var(--NEUTRAL);
+}
+
+.badge-icon{
+    top: -1rem;
+    right: -1rem;
+}
+
+.badge-status-active{
+    background: var(--GREEN);
+}
+
+.badge-status-inactive{
+    background: var(--RED);
+}
+
+.badge-status-away{
+    background: var(--LIGHT-ACCENT);
+}
+
+.badge-status-number{
+    background: var(--ACCENT);
+}
