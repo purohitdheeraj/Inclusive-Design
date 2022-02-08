@@ -13,7 +13,7 @@ aside{
     grid-area: sidebar;
     overflow: auto;
     border-right: thin solid;
-    background: var(--NEUTRAL);
+    background: var(--DARK-GRADIENT);
 }
 .container__left nav{
   margin-block-start: 2rem;
@@ -21,7 +21,6 @@ aside{
 
 nav .list-items li{
   padding: 1rem;
-  /* cursor: pointer; */
 }
 
 nav .list-items li a{
@@ -30,7 +29,6 @@ nav .list-items li a{
   display: block;
   width: 100%;
   height: 100%;  
-  /* padding: 1rem; */
 }
 
 
@@ -114,20 +112,20 @@ pre.code__snippet.language-html {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  /* justify-content: space-between; */
 }
 
 .alert-span span{
   padding: 1rem;
   border-radius: 1rem;
+  border: thin solid;
 }
 
 .alert-span span:nth-child(even){
-  background: var(--YELLOW);
+  background: var(--DARK-GRADIENT);
 }
 
 .alert-span span:nth-child(odd){
-  background: var(--ACCENT);
+  background: var(--ACCENT-GRADIENT);
 }
 
 
