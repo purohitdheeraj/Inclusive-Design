@@ -1,3 +1,13 @@
 @import url("./components/avatar/avatar.css");
 
+@import url("./components/alert/alert.css");
 
+@import url("./components/badge/badge.css");
+:root{
+    --RED :  #FF715B;
+    --BLUE: #3F88C5;
+    --YELLOW: #FFEAAE;
+    --GREEN: #6BAB90;
+    --DKBLUE: #032B43;
+    --CYAN: #6DD3CE;
+}

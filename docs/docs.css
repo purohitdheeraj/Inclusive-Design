@@ -21,13 +21,18 @@ aside{
 
 nav .list-items li{
   padding: 1rem;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 nav .list-items li a{
   text-decoration: none;
   color: var(--BLACK);
+  display: block;
+  width: 100%;
+  height: 100%;  
+  /* padding: 1rem; */
 }
+
 
 nav .list-items li a:active{
   color: var(--BASE);
@@ -36,6 +41,8 @@ nav .list-items li a:active{
 nav .list-items li:hover{
   background: var(--LIGHT-GRAY);
 }
+
+
 
 article{
     grid-area: main;
@@ -100,6 +107,30 @@ pre.code__snippet.language-html {
 }
 
 
+/* alerts */
+
+.alert-span{
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* justify-content: space-between; */
+}
+
+.alert-span span{
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.alert-span span:nth-child(even){
+  background: var(--YELLOW);
+}
+
+.alert-span span:nth-child(odd){
+  background: var(--ACCENT);
+}
+
+
 
 @media only screen and (max-width: 960px){
     
@@ -113,13 +144,15 @@ pre.code__snippet.language-html {
     }
 
     aside{  
-      position: sticky;
-      max-width: 100%;
-      top: 6rem;
+      position: fixed;
+      width: 100%;
+      top: 5rem;
       border: 0;
+      z-index: 1;
       background-color: var(--aliceblue);
     }
 
+    
     .dropdown__content{
       display: none;
       border-bottom: thick solid var(--BASE);
@@ -132,6 +165,7 @@ pre.code__snippet.language-html {
 
     .show{
       display: block;
+      z-index: 2;
     }
 
     .dropdown__btn{
