@@ -18,4 +18,16 @@
     --LIGHT-GRAY: hsl(0, 0%, 95%);
     --MEDIUM-GRAY: hsl(0,0%, 60%);
     --DARK-GRAY: hsl(0,0%,40%);
+
+    --font-poppins: "Poppins", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+    --cta-bgcolor: var(--DARK-BASE);
+    --cta-fcolor: var(--NEUTRAL);
+    --heading--color: var(--DARK-BASE);
+    --author-name-color: var(--DARK-BASE);
+    --ACCENT-GRADIENT: linear-gradient(to bottom right, #ffffff 42%, var(--ACCENT) 170%);
+    --BASE-GRADIENT: linear-gradient(to bottom right, #ffffff 32%, var(--LIGHT-BASE) 80%);
+    --DARK-GRADIENT: linear-gradient(to top left, #ffffff 30%, var(--LIGHT-BASE) 150%);
+    --BOX-SHADOW: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+
 }

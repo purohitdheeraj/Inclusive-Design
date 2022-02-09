@@ -171,3 +171,11 @@ pre.code__snippet.language-html {
     }
    
 }
+
+@media only screen and (min-width:1440px){
+  body{
+    background: url("./assets/cover-image.jpg");
+    background-size: contain;
+    aspect-ratio: 1/1;
+  }
+}
