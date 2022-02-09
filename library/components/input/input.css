@@ -1,0 +1,47 @@
+.form-field{
+    flex: 0 1 45rem;
+    background: var(--NEUTRAL);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--BOX-SHADOW);
+}
+
+
+.label-required:after{
+    content: " *";
+    color: var(--RED);
+}
+
+.input-field,.textbox-field{
+    width: 100%;
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.form-submit{
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    background: var(--ACCENT);
+    border-radius: 4px;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+/* input wrapper */
+.input-wrapper .input-field:focus{
+    outline: none;
+}
+
+.input-wrapper .input-field:valid{
+    border-color: var(--GREEN);
+}
+
+
+.input-wrapper .input-field:invalid{
+    border-color: var(--RED);
+}
+

@@ -2,20 +2,6 @@
 @import url("../utils/color.css");
 @import url("../utils/utility.css");
 
-/* genral styles for documentation page */
-:root {
-  --font-poppins: "Poppins", sans-serif;
-  --font-montserrat: "Montserrat", sans-serif;
-  --cta-bgcolor: var(--DARK-BASE);
-  --cta-fcolor: var(--NEUTRAL);
-  --heading--color: var(--DARK-BASE);
-  --author-name-color: var(--DARK-BASE);
-  --azure: azure;
-  --ACCENT-GRADIENT: linear-gradient(to bottom right, #ffffff 42%, var(--ACCENT) 170%);
-  --BASE-GRADIENT: linear-gradient(to bottom right, #ffffff 32%, var(--LIGHT-BASE) 80%);
-  --DARK-GRADIENT: linear-gradient(to top left, #ffffff 30%, var(--LIGHT-BASE) 150%);
-  
-}
 
 /*setting default font-size to 16px*/
 html {
@@ -45,7 +31,7 @@ body {
   z-index: 2;
   justify-content: space-between;
   font-family: var(--font-poppins);
-  box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  box-shadow: var(--BOX-SHADOW);
 }
 
 
@@ -359,7 +345,7 @@ footer ul li a:active {
     font-size: 80%;
   }
   .container {
-    box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+    box-shadow: var(--BOX-SHADOW);
   }
 
   main {
@@ -377,6 +363,6 @@ footer ul li a:active {
   body {
     background: url("./assets/cover-image.jpg");
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
   }
 }

@@ -3,6 +3,10 @@
 @import url("./components/alert/alert.css");
 
 @import url("./components/badge/badge.css");
+
+@import url("./components/images/image.css");
+
+@import url("./components/input/input.css");
 :root{
     --RED :  #FF715B;
     --BLUE: #3F88C5;
