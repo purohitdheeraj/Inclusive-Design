@@ -1,0 +1,14 @@
+.responsive-image{
+    width: 100%;
+    height: auto;
+}
+
+.round-image{
+    border-radius: 100%;
+}
+
+
+.image-container-400x400{
+    width: 40rem;
+    height: 40rem;
+}
