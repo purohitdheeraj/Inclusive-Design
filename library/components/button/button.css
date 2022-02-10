@@ -1,0 +1,130 @@
+.btn{
+    all: unset;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;   
+    font-size: 2.4rem;
+}
+
+
+/* Primary hover */
+.btn-primary:hover,
+.btn-primary-icon:hover{
+    background: var(--DARKEST-BASE);
+}
+
+.btn-primary-outline:hover{
+    background: var(--DARKEST-BASE);
+    color: var(--NEUTRAL);
+}
+
+.btn-primary-link:hover{
+    color: var(--DARK-BASE);
+    text-decoration-color: var(--DARK-BASE);
+}
+
+/* Secondary Hover */
+
+.btn-secondary:hover,
+.btn-secondary-icon:hover{
+    background: var(--DARKEST-GRAY);
+}
+
+.btn-secondary-outline:hover{
+    background: var(--DARKEST-GRAY);
+    color: var(--NEUTRAL);
+}
+
+.btn-secondary-link:hover{
+    color: var(--DARK-GRAY);
+    text-decoration-color: var(--DARK-GRAY);
+}
+
+
+
+
+/* Common styles for buttons */
+.btn-disabled{
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.btn-primary-icon,.btn-secondary-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+
+/* primary */
+.btn-primary,.btn-primary-icon {
+    background: var(--DARK-BASE);
+    color: var(--cta-fcolor);
+}
+
+.btn-primary-icon .btn-icon{
+    flex-basis: 2rem;
+    margin-inline-end: 4px;
+}
+
+.btn-primary-link{
+    text-decoration: underline;
+    text-decoration-color: var(--BASE);
+}
+
+
+.btn-primary-outline {
+    background: var(--cta-fcolor);
+    color: var(--cta-bgcolor);
+    outline: 2px solid var(--DARK-BASE);
+  }
+  
+
+
+
+
+  /* Secondary */
+
+.btn-secondary,.btn-secondary-icon{
+    background: var(--DARK-GRAY);
+    color: var(--cta-fcolor);
+}
+
+.btn-secondary-link{
+    text-decoration: underline;
+    text-decoration-color: var(--DARK-GRAY);
+}
+
+.btn-secondary-outline{
+    border: 2px solid var(--DARK-GRAY);
+    color: var(--DARK-GRAY);
+}
+
+
+ 
+
+/* floating action button */
+
+.float-action-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem; 
+    font-size: 2rem;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 2;
+    box-shadow: var(--BOX-SHADOW);
+}
+
+.component__display--container .float-action-btn{
+    position: static;
+    z-index: 0
+}
