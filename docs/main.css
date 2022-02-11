@@ -1,7 +1,6 @@
-
 /* we need reset only for documentation website and not for library */
-@import url("../utils/reset.css");
 
+@import url("../utils/reset.css");
 @import url("../utils/color.css");
 @import url("../utils/utility.css");
 
@@ -20,7 +19,7 @@ body {
 /* top to bottom */
 
 #float-btn{
-  /* display: none; */
+  display: none;
   z-index: 1;
 }
 
@@ -109,7 +108,6 @@ body {
 
 /* main */
 main {
-  /* background: url("./assets/cover.jpg"); */
   background-size: cover;
   padding: 2rem;
   min-block-size: 60vh;
