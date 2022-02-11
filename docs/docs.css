@@ -23,6 +23,7 @@ nav .list-items li{
   padding: 1rem;
 }
 
+
 nav .list-items li a{
   text-decoration: none;
   color: var(--BLACK);
@@ -34,10 +35,12 @@ nav .list-items li a{
 
 nav .list-items li a:active{
   color: var(--BASE);
+  font-weight: 600;
 }
 
 nav .list-items li:hover{
   background: var(--LIGHT-GRAY);
+  border-radius: 1rem;
 }
 
 

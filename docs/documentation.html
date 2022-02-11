@@ -21,17 +21,18 @@
   <!-- prism -->
   <link rel="stylesheet" href="./prism/prism.min.css">
 
-  <!-- prism cdn -->
+  <link rel="stylesheet" href="../library/inclusive-ui.css">
   <link rel="stylesheet" href="./main.css" />
   <link rel="stylesheet" href="./docs.css">
-
-  <link rel="stylesheet" href="../library/inclusive-ui.css">
   <!-- cdn link -->
   <!-- <link rel="stylesheet" href="https://stupefied-jones-e0243c.netlify.app/library/inclusive-ui.css"> -->
 </head>
 
 <body>
 
+  <button class="btn btn-secondary-outline float-action-btn" id="float-btn" title="Go to Top">
+    <span> TOP </span>
+  </button>
 
   <div class="container">
     <header class="header flex-row">
@@ -96,6 +97,13 @@
               <li><a href="#Card">Card</a></li>
               <li><a href="#Image">Image</a></li>
               <li><a href="#Input">Input</a></li>
+              <li><a href="#Text">Text Utilities</a></li>
+              <li><a href="#List">Lists</a></li>
+              <li><a href="#Navigation">Navigation</a></li>
+              <!-- <li><a href="#Modal">Modal</a></li> -->
+              <li><a href="#Rating">Rating</a></li>
+              <!-- <li><a href="#Toast">Toast</a></li>
+              <li><a href="Grids">Simplified Grids</a></li> -->
             </ul>
 
           </div>
@@ -525,6 +533,187 @@
 
         </section>
 
+        <!-- Buttons -->
+
+        <div class="gradient"></div>
+
+        <div id="Button"></div>
+
+        <!-- Buttons -->
+        <section class="component">
+          <div class="component__info">
+            <div class="component__heading">
+              <h2>Buttons</h2>
+            </div>
+
+            <p>
+              Buttons are very important element on web , Buttons are generally used for actions like submit form data,
+              search data and many more.
+            </p>
+
+            <p>
+              Buttons are known as CTA element(call to action).
+              It is designed in such a way that button takes user attention.
+            </p>
+          </div>
+
+          <h3>Examples of Primary Button Styles</h3>
+          <div class="component__display--container flex-row">
+
+            <button class="btn btn-primary" type="button">.btn-primary</button>
+
+            <button class="btn btn-primary-outline" type="button">.btn-primary-outline</button>
+
+            <a class="btn btn-primary-link" role="button" tabindex="0">.btn-primary-link</a>
+
+
+            <input class="btn btn-primary-outline" type="image" role="button"
+              src="../docs/assets/avatars/user-48x48.png" alt="user-img-button">
+
+            <a class="btn btn-primary-icon" role="button">
+
+              <span class="btn-icon">
+                <i class="fas fa-rupee"></i>
+              </span>
+              SELL
+            </a>
+          </div>
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html">
+        &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;.btn-primary&lt;/button&gt;
+    
+        &lt;button class=&quot;btn btn-primary-outline&quot; type=&quot;button&quot;&gt;.btn-primary-outline&lt;/button&gt;
+    
+        &lt;a class=&quot;btn btn-primary-link&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;.btn-primary-link&lt;/a&gt;
+    
+          
+        &lt;input class=&quot;btn btn-primary-outline&quot; type=&quot;image&quot; role=&quot;button&quot; src=&quot;../docs/assets/avatars/user-48x48.png&quot; alt=&quot;user-img-button&quot;&gt;
+    
+        &lt;a class=&quot;btn btn-primary-icon&quot; role=&quot;button&quot;&gt;
+    
+            &lt;span class=&quot;btn-icon&quot;&gt;
+                &lt;i class=&quot;fas fa-rupee&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            SELL
+        &lt;/a&gt;
+                    </code></pre>
+          </div>
+
+
+          <h3>Examples of Secondary Button Styles</h3>
+          <div class="component__display--container flex-row">
+
+            <button class="btn btn-secondary" type="button">.btn-secondary</button>
+
+            <button class="btn btn-secondary-outline" type="button">.btn-secondary-outline</button>
+
+            <a class="btn btn-secondary-link" role="button" tabindex="0">.btn-secondary-link</a>
+
+            <input class="btn btn-secondary-outline" type="image" role="button"
+              src="../docs/assets/avatars/user-48x48.png" alt="user-img-button">
+
+            <a class="btn btn-secondary-icon" role="button">
+              <span class="btn-icon">
+                <i class="fas fa-shopping-bag fa-2x"></i>
+              </span>
+              BUY
+            </a>
+
+          </div>
+
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html">&lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot;&gt;.btn-secondary&lt;/button&gt;
+    &lt;button class=&quot;btn btn-secondary-outline&quot; type=&quot;button&quot;&gt;.btn-secondary-outline
+    &lt;/button&gt;
+    
+    &lt;a class=&quot;btn btn-secondary-link&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;.btn-secondary-link&lt;/a&gt;
+    
+    &lt;input class=&quot;btn btn-secondary-outline&quot; type=&quot;image&quot; role=&quot;button&quot; src=&quot;../docs/assets/avatars/user-48x48.png&quot; alt=&quot;user-img-button&quot;&gt;
+    
+    &lt;a class=&quot;btn btn-secondary-icon&quot; role=&quot;button&quot;&gt;
+        &lt;span class=&quot;btn-icon&quot;&gt;
+        &lt;i class=&quot;fas fa-shopping-bag fa-2x&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+        BUY
+    &lt;/a&gt;</code></pre>
+          </div>
+
+          <h3>Examples Of Disabled Buttons Styles</h3>
+          <div class="component__display--container">
+
+            <button type="button" class="btn btn-primary btn-disabled" type="button">.btn-primary btn-disabled</button>
+
+            <a class="btn btn-disabled" role="button" tabindex="-1">.btn-disabled</a>
+
+
+            <button type="button" class="btn btn-secondary btn-disabled" type="button">.btn-secondary
+              btn-disabled</button>
+
+            <a class="btn btn-disabled" role="button" tabindex="-1">.btn-disabled</a>
+
+
+
+          </div>
+
+
+
+          <div class="component__display--code">
+            <pre
+              class="code__snippet"><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-disabled&quot; type=&quot;button&quot;&gt;.btn-primary btn-disabled&lt;/button&gt;
+    
+    &lt;a class=&quot;btn btn-disabled&quot; role=&quot;button&quot; tabindex=&quot;-1&quot;&gt;.btn-disabled&lt;/a&gt;
+    
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-disabled&quot; type=&quot;button&quot;&gt;.btn-secondary btn-disabled&lt;/button&gt;
+    
+    &lt;a class=&quot;btn btn-disabled&quot; role=&quot;button&quot; tabindex=&quot;-1&quot;&gt;.btn-disabled&lt;/a&gt;</code></pre>
+          </div>
+
+          <h3>Examples of Floating Buttons Styles</h3>
+          <div class="component__display--container">
+
+            <div class="btn btn-primary float-action-btn">
+              <span>+</span>
+            </div>
+
+            <div class="btn btn-secondary float-action-btn">
+              <span>+</span>
+            </div>
+          </div>
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html">&lt;div class=&quot;btn btn-primary float-action-btn&quot;&gt;
+        &lt;span&gt;+&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;btn btn-secondary float-action-btn&quot;&gt;
+        &lt;span&gt;+&lt;/span&gt;
+    &lt;/div&gt;</code></pre>
+          </div>
+
+          <!-- usecase/ description -->
+          <div class="component__usecase">
+            <h3>Usecase</h3>
+
+            <li>
+              There a 2 types of buttons over here one is with anchor(a) tag and other is made using button tag
+            </li>
+
+            <li>
+              So Normal use anchor tag is preferred over button element.
+            </li>
+
+            <li>
+              Button tag can be used for functinal tasks like submit data, change theme etc.
+            </li>
+
+            <li>
+              All the classes for button component are displayed on components.
+            </li>
+          </div>
+        </section>
+
+
 
         <!-- Images -->
         <div class="gradient"></div>
@@ -862,7 +1051,391 @@
           </div>
         </section>
 
+        <div class="gradient"></div>
 
+
+        <div id="Text"></div>
+
+        <!-- Text Utilities -->
+        <section class="component">
+          <div class="component__info">
+            <div class="component__heading">
+              <h2>Text Utilities</h2>
+            </div>
+
+            <p>
+              Text is the most used content on web
+              It Becomes very important to use heading appropriately on your webpage.
+            </p>
+
+            <p>
+
+            </p>
+          </div>
+
+          <h3>Examples of Differen Text Heading</h3>
+          <div class="component__display--container flex-column">
+
+            <h1 class="h1">H1 Heading Example</h1>
+            <h2 class="h2">H2 Heading Example</h2>
+            <h3 class="h3">H3 Heading Example</h3>
+            <h4 class="h4">H4 Heading Example</h4>
+            <h5 class="h5">H5 Heading Example</h5>
+            <h6 class="h6">H6 Heading Example</h6>
+          </div>
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html">
+    &lt;h1 class=&quot;h1&quot;&gt;H1 Heading Example&lt;/h1&gt;
+    &lt;h2 class=&quot;h2&quot;&gt;H2 Heading Example&lt;/h2&gt; 
+    &lt;h3 class=&quot;h3&quot;&gt;H3 Heading Example&lt;/h3&gt;
+    &lt;h4 class=&quot;h4&quot;&gt;H4 Heading Example&lt;/h4&gt;
+    &lt;h5 class=&quot;h5&quot;&gt;H5 Heading Example&lt;/h5&gt;
+    &lt;h6 class=&quot;h6&quot;&gt;H6 Heading Example&lt;/h6&gt;
+                </code></pre>
+          </div>
+
+
+          <h3>Examples of Small Text</h3>
+          <div class="component__display--container flex-column">
+
+            <p class="p-lg">Paragraph with Large Text</p>
+            <p class="p-md">Paragraph with medium Text</p>
+            <p class="p-sm">Paragraph with small Text</p>
+          </div>
+
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html">&lt;p class=&quot;p-large&quot;&gt;Paragraph with Large Text&lt;/p&gt;
+&lt;p class=&quot;p-medium&quot;&gt;Paragraph with medium Text&lt;/p&gt;
+&lt;p class=&quot;p-small&quot;&gt;Paragraph with small Text&lt;/p&gt;</code></pre>
+          </div>
+
+          <h3>Examples Of Gray Text</h3>
+          <div class="component__display--container flex-column">
+
+            <p class="p-md gray-lt">Hello I am TEXT in GRAY</p>
+            <p class="p-md gray-md">I have More Darker shade than you</p>
+            <p class="p-md gray-dk">Oh! Really you haven't seen more darker yet?</p>
+
+            <p class="p-md gray-dkst">Hey Kids what happened who is darker than me?</p>
+
+          </div>
+
+
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html">&lt;p class=&quot;p-medium gray-lt&quot;&gt;Hello I am TEXT in GRAY&lt;/p&gt;
+&lt;p class=&quot;p-medium gray-md&quot;&gt;I have More Darker shade than you&lt;/p&gt;
+&lt;p class=&quot;p-medium gray-dk&quot;&gt;Oh! Really you haven't seen more darker yet?&lt;/p&gt;
+&lt;p class=&quot;p-medium gray-dkst&quot;&gt;Hey Kids what happened who is darker than me?&lt;/p&gt;</code></pre>
+          </div>
+
+          <h3>Examples of Center Text</h3>
+          <div class="component__display--container">
+
+
+            <div>
+
+
+              <h1 class="h1 text-center"> H1 TEXT : AM IN CENTER ?</h1>
+
+              <p class="p-md gray-md text-right">
+                Yes You are in center
+              </p>
+
+              <small class="p-sm text-left">Hey P you are aligned Right</small>
+
+            </div>
+
+          </div>
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html"> &lt;h1 class=&quot;h1 text-center&quot;&gt; H1 TEXT : AM IN CENTER ?&lt;/h1&gt;
+&lt;p class=&quot;p-md gray-md text-right&quot;&gt;Yes You are in center&lt;/p&gt;           
+&lt;small class=&quot;p-sm text-left&quot;&gt;Hey P you are aligned Right&lt;/small&gt;</code></pre>
+          </div>
+
+          <!-- usecase/ description -->
+          <div class="component__usecase">
+            <h3>Usecase</h3>
+
+            <li>
+              Use Heading in a chronological order from large to small.
+            </li>
+
+            <li>
+              As a rule of thumb use one h1 per webpage.
+            </li>
+
+            <li>
+              by just using class you can apply this heading, paragraph style on block level, inline elements.
+            </li>
+
+            <li>
+              The heading components block level margins are 0 so you can use it directly without any modification.
+            </li>
+          </div>
+        </section>
+
+        <div class="gradient"></div>
+
+        <div id="List"></div>
+
+        <!-- Lists -->
+        <section class="component">
+            <div class="component__info">
+                <div class="component__heading">
+                    <h2>Lists</h2>
+                </div>
+    
+                <p>
+                 List is a very useful component in real life as well as on web
+                </p>
+    
+               <p>
+                we can see lists are used in navigation, displaying elements in order, Menus etc              
+                </p>
+            </div>
+    
+            <h3>Examples of Unordered List with bullets</h3>
+            <div class="component__display--container">
+                
+               
+                    <ul class="styled-list">
+                        <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                    </ul>
+    
+                    <ul class="styled-list list-style-circle">
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                    </ul>
+    
+                    <ul class="styled-list list-style-square">
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                        <li>List Item 4</li>
+                        </ul>
+               
+            </div>
+            
+            <div class="component__display--code">
+                <pre
+                    class="code__snippet"><code class="language-html">
+    &lt;ul class=&quot;styled-list&quot;&gt;
+    &lt;li&gt;List Item 1&lt;/li&gt;
+    &lt;li&gt;List Item 2&lt;/li&gt;
+    &lt;li&gt;List Item 3&lt;/li&gt;
+    &lt;li&gt;List Item 4&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;ul class=&quot;styled-list list-style-circle&quot;&gt;
+    &lt;li&gt;List Item 1&lt;/li&gt;
+    &lt;li&gt;List Item 2&lt;/li&gt;
+    &lt;li&gt;List Item 3&lt;/li&gt;
+    &lt;li&gt;List Item 4&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;ul class=&quot;styled-list list-style-square&quot;&gt;
+    &lt;li&gt;List Item 1&lt;/li&gt;
+    &lt;li&gt;List Item 2&lt;/li&gt;
+    &lt;li&gt;List Item 3&lt;/li&gt;
+    &lt;li&gt;List Item 4&lt;/li&gt;
+    &lt;/ul&gt;</code></pre>
+            </div>
+    
+    
+            <h3>Examples of Ordered List</h3>
+            <div class="component__display--container flex-row">
+                
+                <ol class="styled-list">
+                    <li>List Item with numbers</li>
+                    <li>List Item with numbers</li>
+                    <li>List Item with numbers</li>
+                    <li>List Item with numbers</li>
+                </ol>
+    
+                <ol class="styled-list" reversed>
+                    <li>List Item reversed</li>
+                    <li>List Item reversed</li>
+                    <li>List Item reversed</li>
+                    <li>List Item reversed</li>
+                </ol>
+    
+                <ol class="styled-list list-style-alpha-up">
+                    <li>List Item with upper alphabets</li>
+                    <li>List Item with upper alphabets</li>
+                    <li>List Item with upper alphabets</li>
+                    <li>List Item with upper alphabets</li>
+                </ol>
+    
+                
+                <ol class="styled-list list-style-alpha-low">
+                    <li>List Item with lower alphabets</li>
+                    <li>List Item with lower alphabets</li>
+                    <li>List Item with lower alphabets</li>
+                    <li>List Item with lower alphabets</li>
+                </ol>
+    
+                <ol class="styled-list list-style-roman-up">
+                    <li>List Item with upper romans</li>
+                    <li>List Item with upper romans</li>
+                    <li>List Item with upper romans</li>
+                    <li>List Item with upper romans</li>
+                </ol>
+    
+                <ol class="styled-list list-style-roman-low">
+                    <li>List Item with lower romans</li>
+                    <li>List Item with lower romans</li>
+                    <li>List Item with lower romans</li>
+                    <li>List Item with lower romans</li>
+                </ol>
+    
+    
+            </div>       
+    
+            
+            <div class="component__display--code">
+                <pre
+                    class="code__snippet"><code class="language-html">&lt;ol class=&quot;styled-list&quot;&gt;
+       &lt;li&gt;List Item with numbers&lt;/li&gt;
+       &lt;li&gt;List Item with numbers&lt;/li&gt;
+       &lt;li&gt;List Item with numbers&lt;/li&gt;
+       &lt;li&gt;List Item with numbers&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;ol class=&quot;styled-list&quot; reversed&gt;
+       &lt;li&gt;List Item reversed&lt;/li&gt;
+       &lt;li&gt;List Item reversed&lt;/li&gt;
+       &lt;li&gt;List Item reversed&lt;/li&gt;
+       &lt;li&gt;List Item reversed&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;ol class=&quot;styled-list list-style-alpha-up&quot;&gt;
+       &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
+       &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
+       &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
+       &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;ol class=&quot;styled-list list-style-alpha-low&quot;&gt;
+       &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
+       &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
+       &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
+       &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;ol class=&quot;styled-list list-style-roman-up&quot;&gt;
+       &lt;li&gt;List Item with upper romans&lt;/li&gt;
+       &lt;li&gt;List Item with upper romans&lt;/li&gt;
+       &lt;li&gt;List Item with upper romans&lt;/li&gt;
+       &lt;li&gt;List Item with upper romans&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;ol class=&quot;styled-list list-style-roman-low&quot;&gt;
+       &lt;li&gt;List Item with lower romans&lt;/li&gt;
+       &lt;li&gt;List Item with lower romans&lt;/li&gt;
+       &lt;li&gt;List Item with lower romans&lt;/li&gt;
+       &lt;li&gt;List Item with lower romans&lt;/li&gt;
+    &lt;/ol&gt;</code></pre>
+            </div>
+    
+            <h3>Examples Of Inline List and List with no bullets</h3>
+    
+            <div class="component__display--container flex-wrap">
+    
+                <ul class="styled-list list-style-none">
+                    <li>List Items with no bullets</li>
+                    <li>List Items with no bullets</li>
+                    <li>List Items with no bullets</li>
+                    <li>List Items with no bullets</li>
+                </ul>
+                      
+                <ul class="styled-list list-display-inline list-style-none">
+                    <li>Inline Element</li>
+                    <li>Inline Element</li>
+                    <li>Inline Element</li>
+                </ul>
+            </div>
+    
+            
+    
+            <div class="component__display--code">
+                <pre
+                    class="code__snippet"><code class="language-html">&lt;ul class=&quot;styled-list list-style-none&quot;&gt;
+       &lt;li&gt;List Items with no bullets&lt;/li&gt;
+       &lt;li&gt;List Items with no bullets&lt;/li&gt;
+       &lt;li&gt;List Items with no bullets&lt;/li&gt;
+       &lt;li&gt;List Items with no bullets&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class=&quot;styled-list list-display-inline list-style-none&quot;&gt;
+       &lt;li&gt;Inline Element&lt;/li&gt;
+       &lt;li&gt;Inline Element&lt;/li&gt;
+       &lt;li&gt;Inline Element&lt;/li&gt;
+    &lt;/ul&gt;</code></pre>
+            </div>
+                
+    <h3>Examples of Notification Stacked Lists</h3>
+            <div class="component__display--container">
+    
+                <ol class="notification-stack list-style-none flex-column">
+                    <li> <span>Notification One </span>
+                        <i class="fa fa-times fa-2x"></i>
+                    </li>
+                    <li> <span>Notification Two </span>
+                        <i class="fa fa-times fa-2x"></i>
+                    </li>
+                    <li> <span>Notification Three</span> 
+                        <i class="fa fa-times fa-2x"></i>
+                    </li>
+                    <li> <span>Notification Four</span> 
+                        <i class="fa fa-times fa-2x"></i>
+                    </li>
+                </ol>
+    
+    
+            </div>
+    
+            <div class="component__display--code">
+                <pre
+                    class="code__snippet"><code class="language-html"> &lt;ol class=&quot;notification-stack list-style-none flex-column&quot;&gt;
+       &lt;li&gt; &lt;span&gt;Notification One &lt;/span&gt;
+          &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
+       &lt;/li&gt;
+       &lt;li&gt; &lt;span&gt;Notification Two &lt;/span&gt;
+          &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
+       &lt;/li&gt;
+       &lt;li&gt; &lt;span&gt;Notification Three&lt;/span&gt; 
+          &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
+       &lt;/li&gt;
+       &lt;li&gt; &lt;span&gt;Notification Four&lt;/span&gt; 
+          &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
+       &lt;/li&gt;
+    &lt;/ol&gt;</code></pre>
+            </div>
+            
+            <!-- usecase/ description -->
+            <div class="component__usecase">
+                <h3>Usecase</h3>
+    
+                <li>
+                  you can use list with different styles like disc(default), circle, square with list-style-type class in this component.
+                </li>
+    
+                <li>
+                  There are multiple styles for ordered list like alphabets, romans 
+                </li>
+    
+                <li>
+                  with class .list-display-inline and .list-style-none you can use it for nav links.
+                </li>
+    
+                <li>
+                  the width of notification-stacked can customised to fit the with of container.                
+                </li>
+            </div>
+        </section>
 
 
       </article>

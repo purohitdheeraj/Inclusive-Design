@@ -1,0 +1,74 @@
+.h1,.h2,.h3,.h4,.h5,.h6{
+    margin: 0;
+}
+
+.h1{
+    font-size: 6.4rem;
+}
+
+.h2{
+    font-size: 5.6rem;
+}
+
+.h3{
+    font-size: 4.8rem;
+}
+
+.h4{
+    font-size: 4rem;
+}
+
+.h5{
+    font-size: 3.2rem;
+}
+
+.h6{
+    font-size: 2.4rem;
+}
+
+
+/* Paragraph */
+
+.p-lg{
+    font-size: 4.8rem;
+}
+
+.p-md{
+    font-size: 3.2rem;
+}
+
+.p-sm{
+    font-size: 1.6rem;
+}
+
+
+/* Shades of Gray :-) */
+
+.gray-lt{
+    color: var(--LIGHT-GRAY);
+}
+
+.gray-md{
+    color: var(--MEDIUM-GRAY);
+}
+
+.gray-dk{
+    color: var(--DARK-GRAY);
+}
+
+.gray-dkst{
+    color: var(--DARKEST-GRAY);
+}
+
+/* Center Text */
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}

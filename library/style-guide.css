@@ -1,0 +1,18 @@
+/* flex and column utility are used in alignment in library */
+@import url("../utils/utility.css");
+
+:root{
+    --RED :  #FF715B;
+    --BLUE: #3F88C5;
+    --YELLOW: #FFEAAE;
+    --GREEN: #6BAB90;
+    --DKBLUE: #032B43;
+    --CYAN: #6DD3CE;
+
+    --PAD-ONE: 1rem;
+    --PAD-TWO: 2rem;
+
+    --GAP-ONE: 1rem;
+    --GAP-TWO: 2rem;
+}
+

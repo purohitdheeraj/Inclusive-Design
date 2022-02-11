@@ -16,254 +16,259 @@
 
 <body>
     
-    <div id="input"></div>
+    <div id="List"></div>
 
-    <!-- Inputs -->
+    <!-- Lists -->
     <section class="component">
         <div class="component__info">
             <div class="component__heading">
-                <h2>Inputs</h2>
+                <h2>Lists</h2>
             </div>
 
             <p>
-                Forms is the backbone of Web, Form is the reason for which web was made for. There are various types of inputs we can use to take input from user in our applications which we are going to see in this section.
+             List is a very useful component in real life as well as on web
             </p>
 
-            <p>
-                so form is used to collect user input. The user input is most often sent to a server for processing.
+           <p>
+            we can see lists are used in navigation, displaying elements in order, Menus etc              
             </p>
         </div>
 
-        <h3>Accessible Form Controls</h3>
-        <p>Accessible forms are easy to understand, complete, and submit. Instructions, cues, required form fields, and
-            field formatting requirements must be clearly identified to users. Error recovery must be intuitive and
-            descriptive.</p>
-        <h4>Text Inputs</h4>
-
-        <div class="component__display--container flex-row">
-
-            <form class="form-field flex-column">
-
-                <label class="input-label" for="name">Name:
-                </label>
-
-                <input class="input-field" type="text" aria-labelledby="name" autocomplete="name" placeholder="Inclusive UI"/>
-
-                
-                <label class="input-label" for="password">Password:
-                </label>
-
-                <input class="input-field" type="password"
-                aria-labelledby="password" autocomplete="new-password" placeholder="*******">
-            </form>
-
+        <h3>Examples of Unordered List with bullets</h3>
+        <div class="component__display--container">
             
-            
-            <form class="form-field flex-column">
+           
+                <ul class="styled-list">
+                    <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+                </ul>
 
-                 
-                 <label for="email" class="input-label">Email:
-                </label>
-                <input class="input-field" type="email" aria-labelledby="email" autocomplete="email" placeholder="inclusive-ui@gmail.com"/>
+                <ul class="styled-list list-style-circle">
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+                </ul>
 
-
-                <label for="address" class="input-label">Enter Your address:
-                </label>
-
-                <textarea class="textbox-field" aria-labelledby="address" autocomplete="street-address">
-        </textarea>
-            </form>
+                <ul class="styled-list list-style-square">
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                    </ul>
+           
         </div>
-
         
         <div class="component__display--code">
-<pre class="code__snippet"><code class="language-html">
-&lt;form class=&quot;form-field flex-column&quot;&gt;
+            <pre
+                class="code__snippet"><code class="language-html">
+&lt;ul class=&quot;styled-list&quot;&gt;
+&lt;li&gt;List Item 1&lt;/li&gt;
+&lt;li&gt;List Item 2&lt;/li&gt;
+&lt;li&gt;List Item 3&lt;/li&gt;
+&lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ul&gt;
 
-    &lt;label class=&quot;input-label&quot; for=&quot;name&quot;&gt;Name:
-    &lt;/label&gt;
+&lt;ul class=&quot;styled-list list-style-circle&quot;&gt;
+&lt;li&gt;List Item 1&lt;/li&gt;
+&lt;li&gt;List Item 2&lt;/li&gt;
+&lt;li&gt;List Item 3&lt;/li&gt;
+&lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ul&gt;
 
-    &lt;input class=&quot;input-field&quot; type=&quot;text&quot; aria-labelledby=&quot;name&quot; autocomplete=&quot;name&quot; placeholder=&quot;Inclusive UI&quot;/&gt;
-
-    &lt;label class=&quot;input-label&quot; for=&quot;password&quot;&gt;Password:
-    &lt;/label&gt;
-
-    &lt;input class=&quot;input-field&quot; type=&quot;password&quot;
-    aria-labelledby=&quot;password&quot; autocomplete=&quot;new-password&quot; placeholder=&quot;*******&quot;&gt;
-&lt;/form&gt;
-</code></pre>
+&lt;ul class=&quot;styled-list list-style-square&quot;&gt;
+&lt;li&gt;List Item 1&lt;/li&gt;
+&lt;li&gt;List Item 2&lt;/li&gt;
+&lt;li&gt;List Item 3&lt;/li&gt;
+&lt;li&gt;List Item 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
         </div>
 
 
-        <h4>Checkboxes & Radio Buttons</h4>
-
+        <h3>Examples of Ordered List</h3>
         <div class="component__display--container flex-row">
-
-          <fieldset class="flex-row ">
-              <legend>Select Your Category</legend>
-              <input id="electronic" type="checkbox" name="category" value="electronic">
-              <label for="electronic">Electronic</label>
-
-              <input id="medical" type="checkbox" name="category" value="medical">
-              <label for="medical">Medical</label>
-
-              <input id="plastic" type="checkbox" name="category" value="plastic">
-              <label for="plastic">Plastic</label>
-
-              <input id="books" type="checkbox" name="category" value="books">
-              <label for="books">Books</label>
-          
-              <input id="others" type="checkbox" name="category" value="others">
-              <label for="others">Others</label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Choose a shipping method:</legend>
-                <input id="overnight" type="radio" name="shipping" value="overnight">
-                <label for="overnight">Overnight</label><br>
-                <input id="twoday" type="radio" name="shipping" value="twoday">
-                <label for="twoday">Two day</label><br>
-                <input id="ground" type="radio" name="shipping" value="ground">
-                <label for="ground">Ground</label>
-                </fieldset>
             
-         
-        </div>
+            <ol class="styled-list">
+                <li>List Item with numbers</li>
+                <li>List Item with numbers</li>
+                <li>List Item with numbers</li>
+                <li>List Item with numbers</li>
+            </ol>
+
+            <ol class="styled-list" reversed>
+                <li>List Item reversed</li>
+                <li>List Item reversed</li>
+                <li>List Item reversed</li>
+                <li>List Item reversed</li>
+            </ol>
+
+            <ol class="styled-list list-style-alpha-up">
+                <li>List Item with upper alphabets</li>
+                <li>List Item with upper alphabets</li>
+                <li>List Item with upper alphabets</li>
+                <li>List Item with upper alphabets</li>
+            </ol>
+
+            
+            <ol class="styled-list list-style-alpha-low">
+                <li>List Item with lower alphabets</li>
+                <li>List Item with lower alphabets</li>
+                <li>List Item with lower alphabets</li>
+                <li>List Item with lower alphabets</li>
+            </ol>
+
+            <ol class="styled-list list-style-roman-up">
+                <li>List Item with upper romans</li>
+                <li>List Item with upper romans</li>
+                <li>List Item with upper romans</li>
+                <li>List Item with upper romans</li>
+            </ol>
+
+            <ol class="styled-list list-style-roman-low">
+                <li>List Item with lower romans</li>
+                <li>List Item with lower romans</li>
+                <li>List Item with lower romans</li>
+                <li>List Item with lower romans</li>
+            </ol>
+
+
+        </div>       
 
         
         <div class="component__display--code">
             <pre
-                class="code__snippet"><code class="language-html">&lt;fieldset&gt;
-   &lt;legend&gt;Choose a shipping method:&lt;/legend&gt;
-   &lt;input id=&quot;overnight&quot; type=&quot;radio&quot; name=&quot;shipping&quot; value=&quot;overnight&quot;&gt;
-   &lt;label for=&quot;overnight&quot;&gt;Overnight&lt;/label&gt;&lt;br&gt;
-   &lt;input id=&quot;twoday&quot; type=&quot;radio&quot; name=&quot;shipping&quot; value=&quot;twoday&quot;&gt;
-   &lt;label for=&quot;twoday&quot;&gt;Two day&lt;/label&gt;&lt;br&gt;
-   &lt;input id=&quot;ground&quot; type=&quot;radio&quot; name=&quot;shipping&quot; value=&quot;ground&quot;&gt;
-   &lt;label for=&quot;ground&quot;&gt;Ground&lt;/label&gt;
-&lt;/fieldset&gt; 
-</code></pre>
-
-           
+                class="code__snippet"><code class="language-html">&lt;ol class=&quot;styled-list&quot;&gt;
+   &lt;li&gt;List Item with numbers&lt;/li&gt;
+   &lt;li&gt;List Item with numbers&lt;/li&gt;
+   &lt;li&gt;List Item with numbers&lt;/li&gt;
+   &lt;li&gt;List Item with numbers&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class=&quot;styled-list&quot; reversed&gt;
+   &lt;li&gt;List Item reversed&lt;/li&gt;
+   &lt;li&gt;List Item reversed&lt;/li&gt;
+   &lt;li&gt;List Item reversed&lt;/li&gt;
+   &lt;li&gt;List Item reversed&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class=&quot;styled-list list-style-alpha-up&quot;&gt;
+   &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
+   &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
+   &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
+   &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class=&quot;styled-list list-style-alpha-low&quot;&gt;
+   &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
+   &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
+   &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
+   &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class=&quot;styled-list list-style-roman-up&quot;&gt;
+   &lt;li&gt;List Item with upper romans&lt;/li&gt;
+   &lt;li&gt;List Item with upper romans&lt;/li&gt;
+   &lt;li&gt;List Item with upper romans&lt;/li&gt;
+   &lt;li&gt;List Item with upper romans&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ol class=&quot;styled-list list-style-roman-low&quot;&gt;
+   &lt;li&gt;List Item with lower romans&lt;/li&gt;
+   &lt;li&gt;List Item with lower romans&lt;/li&gt;
+   &lt;li&gt;List Item with lower romans&lt;/li&gt;
+   &lt;li&gt;List Item with lower romans&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
         </div>
 
-        <p>
-            The <strong>fieldset</strong>  contains the group of checkboxes, and the <strong> legend</strong> labels the group. Screen readers may repeat the legend for each control in the group, so the legend text should be brief and descriptive.
-        </p>
+        <h3>Examples Of Inline List and List with no bullets</h3>
 
-        <p>
-            Fieldset and legend should only be used when a higher-level label is necessary.
-            Nested fieldsets can cause odd screen reader behavior and should be avoided.
-        </p>
+        <div class="component__display--container flex-wrap">
+
+            <ul class="styled-list list-style-none">
+                <li>List Items with no bullets</li>
+                <li>List Items with no bullets</li>
+                <li>List Items with no bullets</li>
+                <li>List Items with no bullets</li>
+            </ul>
+                  
+            <ul class="styled-list list-display-inline list-style-none">
+                <li>Inline Element</li>
+                <li>Inline Element</li>
+                <li>Inline Element</li>
+            </ul>
+        </div>
+
         
-        <h4>Validation</h4>
+
+        <div class="component__display--code">
+            <pre
+                class="code__snippet"><code class="language-html">&lt;ul class=&quot;styled-list list-style-none&quot;&gt;
+   &lt;li&gt;List Items with no bullets&lt;/li&gt;
+   &lt;li&gt;List Items with no bullets&lt;/li&gt;
+   &lt;li&gt;List Items with no bullets&lt;/li&gt;
+   &lt;li&gt;List Items with no bullets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;styled-list list-display-inline list-style-none&quot;&gt;
+   &lt;li&gt;Inline Element&lt;/li&gt;
+   &lt;li&gt;Inline Element&lt;/li&gt;
+   &lt;li&gt;Inline Element&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </div>
+            
+<h3>Examples of Notification Stacked Lists</h3>
         <div class="component__display--container">
 
-            <form class="form-field flex-column" onsubmit="return false">
-                
-                <h3>VALIDATION</h3>
-
-                <div class="input-wrapper flex-column">
-                  
-                  <label class="input-label label-required" for="email">
-                    Email
-                  </label>
-      
-                  <input
-                    class="input-field"
-                    aria-labelledby="email"
-                    type="email"
-                    placeholder="Enter Your Email"
-                    autocomplete="email"
-                    required
-                  />
-      
-                  <label class="input-label label-required" for="password">Password</label>
-      
-                  <input
-                    class="input-field"
-                    aria-labelledby="password"
-                    type="password"
-                    placeholder="Enter Password"
-                    autocomplete="current-password"
-                    required
-                  />
+            <ol class="notification-stack list-style-none flex-column">
+                <li> <span>Notification One </span>
+                    <i class="fa fa-times fa-2x"></i>
+                </li>
+                <li> <span>Notification Two </span>
+                    <i class="fa fa-times fa-2x"></i>
+                </li>
+                <li> <span>Notification Three</span> 
+                    <i class="fa fa-times fa-2x"></i>
+                </li>
+                <li> <span>Notification Four</span> 
+                    <i class="fa fa-times fa-2x"></i>
+                </li>
+            </ol>
 
 
-            
-                  <div class="redirect flex-row">
-                      
-                      <label class="input-label"><input class="input-filed" type="checkbox">Remember me</label>
-
-                      <a href="#images">
-                          Forgot Your Password ?
-                      </a>
-
-                  </div>
-                </div>
-      
-                <input type="submit" name="login-button" class="form-submit" value="Submit"/>
-
-                    
-            
-            </form>
         </div>
 
         <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">
-&lt;form class=&quot;form-field flex-column&quot; onsubmit=&quot;return false&quot;&gt;
-    &lt;h3&gt;VALIDATION&lt;/h3&gt;
-    
-    &lt;div class=&quot;input-wrapper flex-column&quot;&gt;
-    &lt;label class=&quot;input-label label-required&quot; for=&quot;email&quot;&gt;
-    Email
-    &lt;/label&gt;
-
-    &lt;input class=&quot;input-field&quot;
-    aria-labelledby=&quot;email&quot; type=&quot;email&quot;
-    placeholder=&quot;Enter Your Email&quot;
-    autocomplete=&quot;email&quot;
-    required
-    /&gt;
-
-    &lt;label class=&quot;input-label label-required&quot; for=&quot;password&quot;&gt;Password&lt;/label&gt;
-    &lt;input class=&quot;input-field&quot; aria-labelledby=&quot;password&quot;
-    type=&quot;password&quot;
-    placeholder=&quot;Enter Password&quot;
-    autocomplete=&quot;current-password&quot;
-    required/&gt;
-
-    &lt;div class=&quot;redirect flex-row&quot;&gt;
-    &lt;label class=&quot;input-label&quot;&gt;&lt;input class=&quot;input-filed&quot; type=&quot;checkbox&quot;&gt;Remember me&lt;/label&gt;
-    &lt;a href=&quot;#images&quot;&gt;Forgot Your Password ? &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;input type=&quot;submit&quot; name=&quot;login-button&quot; class=&quot;form-submit&quot; value=&quot;Submit&quot;/&gt;
-&lt;/form&gt;
-            </code></pre>
-                    </div>
-            
-
+            <pre
+                class="code__snippet"><code class="language-html"> &lt;ol class=&quot;notification-stack list-style-none flex-column&quot;&gt;
+   &lt;li&gt; &lt;span&gt;Notification One &lt;/span&gt;
+      &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
+   &lt;/li&gt;
+   &lt;li&gt; &lt;span&gt;Notification Two &lt;/span&gt;
+      &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
+   &lt;/li&gt;
+   &lt;li&gt; &lt;span&gt;Notification Three&lt;/span&gt; 
+      &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
+   &lt;/li&gt;
+   &lt;li&gt; &lt;span&gt;Notification Four&lt;/span&gt; 
+      &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
+   &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </div>
         
         <!-- usecase/ description -->
         <div class="component__usecase">
             <h3>Usecase</h3>
 
             <li>
-                you can use <code>class="input-field"</code> for styling inputs and <code>class="form-field"</code> for forms
+              you can use list with different styles like disc(default), circle, square with list-style-type class in this component.
             </li>
 
             <li>
-                you can add <code>class="label-required"</code> for adding * after the label.
+              There are multiple styles for ordered list like alphabets, romans 
             </li>
 
             <li>
-               For layout parts there are 2 classes <strong>flex-row</strong> and <strong>flex-column</strong>
-               can be used for arranging the form elements.
+              with class .list-display-inline and .list-style-none you can use it for nav links.
             </li>
 
             <li>
-              To make use of Validating styles use <code>.input-wrapper</code> wrap it around your inputs.  
+              the width of notification-stacked can customised to fit the with of container.                
             </li>
         </div>
     </section>

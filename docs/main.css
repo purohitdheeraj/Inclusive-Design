@@ -1,3 +1,5 @@
+/* we need reset only for documentation website and not for library */
+
 @import url("../utils/reset.css");
 @import url("../utils/color.css");
 @import url("../utils/utility.css");
@@ -7,11 +9,20 @@
 html {
   font-size: 62.5%;
   font-family: var(--font-montserrat);
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.6rem;
 }
+
+/* top to bottom */
+
+#float-btn{
+  display: none;
+  z-index: 1;
+}
+
 
 /* Layout */
 .container {
@@ -34,6 +45,9 @@ body {
   box-shadow: var(--BOX-SHADOW);
 }
 
+.header nav{
+  margin-inline-end: 2rem;
+}
 
 
 .hamburger, .close{
@@ -94,7 +108,6 @@ body {
 
 /* main */
 main {
-  /* background: url("./assets/cover.jpg"); */
   background-size: cover;
   padding: 2rem;
   min-block-size: 60vh;
@@ -178,7 +191,7 @@ main {
   color: var(--cta-fcolor);
 }
 
-.btn-secondary {
+.btn-primary-outline {
   background: var(--cta-fcolor);
   color: var(--cta-bgcolor);
   outline: 2px solid var(--DARK-BASE);

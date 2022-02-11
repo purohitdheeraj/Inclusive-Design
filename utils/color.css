@@ -1,33 +1,35 @@
-/* color variables here for components and documentation page */
-/* import them in your css files */
-:root{
-    
+:root{    
     /* colors for website documentation */
     --BASE: hsl(206,100%,60%);
     --ACCENT: hsl(26, 100%, 60%);
     --NEUTRAL: hsl(100,100%,100%);
     --BLACK: hsl(0,0%,0%);
+
     --aliceblue: aliceblue;
 
     --LIGHT-BASE: hsl(205,100%,75%);
     --LIGHT-ACCENT: hsl(26, 100%, 75%);
     
     --DARK-BASE: hsl(206,100%,40%);
+    --DARKEST-BASE:hsl(206, 100%, 20%);
     --DARK-ACCENT: hsl(26, 100%, 40%);
-    
+    --DARKEST-ACCENT: hsl(26, 100%, 20%);
     --LIGHT-GRAY: hsl(0, 0%, 95%);
     --MEDIUM-GRAY: hsl(0,0%, 60%);
     --DARK-GRAY: hsl(0,0%,40%);
+    --DARKEST-GRAY: hsl(0 , 0%, 20%);
 
     --font-poppins: "Poppins", sans-serif;
     --font-montserrat: "Montserrat", sans-serif;
+    
     --cta-bgcolor: var(--DARK-BASE);
     --cta-fcolor: var(--NEUTRAL);
     --heading--color: var(--DARK-BASE);
     --author-name-color: var(--DARK-BASE);
+    
     --ACCENT-GRADIENT: linear-gradient(to bottom right, #ffffff 42%, var(--ACCENT) 170%);
     --BASE-GRADIENT: linear-gradient(to bottom right, #ffffff 32%, var(--LIGHT-BASE) 80%);
     --DARK-GRADIENT: linear-gradient(to top left, #ffffff 30%, var(--LIGHT-BASE) 150%);
-    --BOX-SHADOW: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
 
+    --BOX-SHADOW: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
 }
