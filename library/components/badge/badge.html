@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../inclusive-ui.css" />
+    <link rel="stylesheet" href="../../../docs/main.css" />
+    <link rel="stylesheet" href="../../../docs/docs.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Badges -->
+
+    <div id="Badge"></div>
+
+    <section class="component">
+      <div class="component__info">
+        <div class="component__heading">
+          <h2>Badges</h2>
+        </div>
+
+        <p>
+          Badge (aka Tag) — small overlapped UI item which indicates a status,
+          notification, or event that appears in relativity with the underlying
+          object.
+        </p>
+
+        <p>
+          Badge with a Numeric value is used to represent the number of events
+          related to the parent UI item:
+        </p>
+      </div>
+
+      <h3>Badges On Avatars</h3>
+
+      <div class="component__display--container">
+        <div class="badge__container">
+          <div class="avatar avatar-xxlg">
+            <img
+              class="avatar__image"
+              src="../docs/assets/avatars/male_avatar.svg"
+              alt="male-avatar"
+            />
+          </div>
+          <span class="badge badge-status-active"></span>
+        </div>
+
+        <div class="badge__container">
+          <div class="avatar avatar-xxlg">
+            <img
+              class="avatar__image"
+              src="../docs/assets/avatars/male_avatar.svg"
+              alt="male-avatar"
+            />
+          </div>
+          <span class="badge badge-status-inactive"></span>
+        </div>
+
+        <div class="badge__container">
+          <div class="avatar avatar-xxlg">
+            <img
+              class="avatar__image"
+              src="../docs/assets/avatars/male_avatar.svg"
+              alt="male-avatar"
+            />
+          </div>
+          <span class="badge badge-status-away"></span>
+        </div>
+
+        <div class="badge__container">
+          <div class="avatar avatar-xlg">
+            <img
+              class="avatar__image"
+              src="../docs/assets/avatars/user-48x48.png"
+              alt="user-avatar"
+            />
+          </div>
+          <span class="badge badge-status-active"></span>
+        </div>
+
+        <div class="badge__container">
+          <div class="avatar avatar-lg">
+            <img
+              class="avatar__image"
+              src="../docs/assets/avatars/user-48x48.png"
+              alt="user-avatar"
+            />
+          </div>
+          <span class="badge badge-status-inactive"> </span>
+        </div>
+
+        <div class="badge__container">
+          <div class="avatar avatar-xxlg">
+            <img
+              class="avatar__image"
+              src="../docs/assets/avatars/profile_pic.svg"
+              alt="user-avatar"
+            />
+          </div>
+          <span class="badge badge-status-away"></span>
+        </div>
+      </div>
+
+      <div class="component__display--code">
+        <pre class="code__snippet">
+<code class="language-html"> &lt;div class=&quot;badge__container&quot;&gt;
+        &lt;div class=&quot;avatar avatar-xxlg&quot;&gt;
+            &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/male_avatar.svg&quot; alt=&quot;male-avatar&quot;&gt;
+        &lt;/div&gt;
+            &lt;span class=&quot;badge badge-status-active&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;component__display--container&quot;&gt;  
+          &lt;div class=&quot;badge__container&quot;&gt;
+           &lt;i class=&quot;fas fa-shopping-cart fa-4x&quot;&gt;&lt;/i&gt;
+           &lt;span class=&quot;badge badge-icon badge-status-number&quot;&gt;5&lt;/span&gt;
+    &lt;/div&gt;</code></pre>
+      </div>
+
+      <h3>Badges on Icons</h3>
+
+      <div class="component__display--container">
+        <div class="badge__container">
+          <i class="fas fa-shopping-cart fa-4x"></i>
+          <span class="badge badge-icon badge-status-number">5</span>
+        </div>
+
+        <div class="badge__container">
+          <i class="far fa-heart fa-4x"></i>
+          <span class="badge badge-icon badge-status-number">+5</span>
+        </div>
+
+        <div class="badge__container">
+          <i class="far fa-message fa-4x"></i>
+          <span class="badge badge-icon badge-status-number">+5</span>
+        </div>
+      </div>
+
+      <!-- usecase/ description -->
+      <div class="component__usecase">
+        <h3>Usecase</h3>
+
+        <ul>
+          <li>
+            In conversational patterns (Chat, Messages, Inbox) Badge used to
+            inform about new incoming messages. Dot distinctly divides fresh
+            emails and recent
+          </li>
+
+          <li>
+            In most shopping apps Badges are used to display the number of
+            products added to a cart
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
