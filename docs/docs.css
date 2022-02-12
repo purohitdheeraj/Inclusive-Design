@@ -17,10 +17,11 @@ aside{
 }
 .container__left nav{
   margin-block-start: 2rem;
+  margin-block-end: 8rem;
 }
 
 nav .list-items li{
-  padding: 1rem;
+  padding: 5px;
 }
 
 
@@ -29,7 +30,6 @@ nav .list-items li a{
   color: var(--BLACK);
   display: block;
   width: 100%;
-  height: 100%;  
 }
 
 
@@ -40,7 +40,6 @@ nav .list-items li a:active{
 
 nav .list-items li:hover{
   background: var(--LIGHT-GRAY);
-  border-radius: 1rem;
 }
 
 
@@ -149,11 +148,17 @@ pre.code__snippet.language-html {
       width: 100%;
       top: 5rem;
       border: 0;
+      overflow: auto;
       z-index: 1;
       background-color: var(--aliceblue);
     }
 
+    .container__left nav{
+      margin-block-start: 2rem;
+      margin-block-end: 0;
+    }
     
+
     .dropdown__content{
       display: none;
       border-bottom: thick solid var(--BASE);

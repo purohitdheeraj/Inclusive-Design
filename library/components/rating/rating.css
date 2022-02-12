@@ -1,0 +1,29 @@
+.star-rating{
+    border: thin solid;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 3.2rem;
+    justify-content: space-around;
+    text-align: center;
+    width: 32rem;
+}
+
+.star-rating input{
+    display: none;
+}
+
+.star-rating label{
+    color: var(--MEDIUM-GRAY);
+    cursor: pointer;
+}
+
+/* to check the other stars ~ adjacent sibling */
+.star-rating :checked ~ label{
+    color: var(--BASE);
+
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label{
+    color: var(--DARK-BASE);    
+}

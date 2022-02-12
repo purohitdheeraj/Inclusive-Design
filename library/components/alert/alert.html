@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../inclusive-ui.css" />
+    <link rel="stylesheet" href="../../../docs/main.css" />
+    <link rel="stylesheet" href="../../../docs/docs.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="Alert"></div>
+    <section class="component">
+      <div class="component__info">
+        <div class="component__heading">
+          <h2>Alerts</h2>
+        </div>
+
+        <p>
+          Alert is a notification component which is used to notify user and
+          give a feedback on various events like success, failure, info etc
+          Basically it tells user what is going on , the state of events that
+          has already taken place.
+        </p>
+      </div>
+
+      <h3>Examples of the Alerts</h3>
+
+      <div class="component__display--container flex-column">
+        <div class="alert alert-success">
+          <i class="fa fa-check-circle"></i>
+          <strong>Success Alert!</strong>
+          This alert box indicates successful or positive action
+        </div>
+
+        <div class="alert alert-error">
+          <i class="fa fa-times-circle"></i>
+          <strong>Error Alert!</strong>
+          This alert box indicates a dangerous or potentially negative action.
+        </div>
+
+        <div class="alert alert-info">
+          <i class="fa fa-info-circle"></i>
+          <strong>Info Alert!</strong>
+          This alert box indicates a neutral informative change or action.
+        </div>
+
+        <div class="alert alert-warning">
+          <i class="fa fa-warning"></i>
+          <strong>Warning Alert!</strong>
+          This alert box indicates a warning that might need attention.
+        </div>
+
+        <div class="alert alert-closing">
+          <span>
+            <strong>Closing Alert!</strong>
+            Alert Bar with a close Button
+          </span>
+          <button class="fa fa-times" id="alert__close-btn">
+            <span class="sr-only">Button</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="component__display--code">
+        <pre class="code__snippet">
+<code class="language-html">
+&lt;div class=&quot;alert alert-success&quot;&gt;
+  &lt;i class=&quot;fa fa-check-circle&quot;&gt;&lt;/i&gt;
+  &lt;strong&gt;Success Alert!&lt;/strong&gt;
+  This alert box indicates successful or positive action
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-error&quot;&gt;
+  &lt;i class=&quot;fa fa-times-circle&quot;&gt;&lt;/i&gt;
+  &lt;strong&gt;Error Alert!&lt;/strong&gt;
+  This alert box indicates a dangerous or potentially negative action.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-closing&quot;&gt;
+  &lt;span&gt;
+      &lt;strong&gt;Closing Alert!&lt;/strong&gt;
+      Alert Bar with a close Button
+  &lt;/span&gt;
+
+  &lt;button class=&quot;fa fa-times&quot; id=&quot;alert__close-btn&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Button&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+</code></pre>
+      </div>
+
+      <!-- usecase/ description -->
+      <div class="component__usecase">
+        <h3>Usecase</h3>
+
+        <p>
+          Alerts are used for Drawing attention Its a message that lets user
+          know about states as a feedback
+        </p>
+
+        <h4>Different types of alerts available are:</h4>
+
+        <div class="alert-span">
+          <span>Success Alert </span>
+          <span>Error Alert</span>
+          <span>Info Alert </span>
+          <span>Warning Alert </span>
+          <span>Closing Alert </span>
+        </div>
+
+        <p>
+          To use this components add <code>class="alert"</code> and the type of
+          the alert to be displayed.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

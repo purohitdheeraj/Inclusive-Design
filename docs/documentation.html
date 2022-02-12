@@ -19,39 +19,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 
   <!-- prism -->
-  <link rel="stylesheet" href="./prism/prism.min.css">
+  <link rel="stylesheet" href="./prism/prism.min.css" />
 
-  <link rel="stylesheet" href="../library/inclusive-ui.css">
+  <link rel="stylesheet" href="../library/inclusive-ui.css" />
   <link rel="stylesheet" href="./main.css" />
-  <link rel="stylesheet" href="./docs.css">
+  <link rel="stylesheet" href="./docs.css" />
   <!-- cdn link -->
   <!-- <link rel="stylesheet" href="https://stupefied-jones-e0243c.netlify.app/library/inclusive-ui.css"> -->
 </head>
 
 <body>
-
   <button class="btn btn-secondary-outline float-action-btn" id="float-btn" title="Go to Top">
     <span> TOP </span>
   </button>
 
   <div class="container">
     <header class="header flex-row">
-
-
       <a class="hamburger" href="#navbar" aria-label="Open main menu">
         <span class="sr-only">Open main menu</span>
         <span class="fas fa-bars" aria-hidden="true"></span>
       </a>
 
-
       <a href="../index.html">
         <span class="logo">Inclusive UI</span>
       </a>
 
-
-
       <nav id="navbar" class="flex-row">
-
         <ul class="navitems__container flex-row">
           <li><a href="../index.html">Home Page</a></li>
           <li><a href="#">Documentation</a></li>
@@ -67,18 +60,13 @@
           <span class="fas fa-times" aria-hidden="true"></span>
         </a>
       </nav>
-
-
     </header>
 
     <div class="container__main">
-
       <!-- left sidebar -->
       <aside class="container__left">
         <nav class="flex-column">
-
           <div class="dropdown flex-column">
-
             <div class="flex-row">
               <a class="dropdown__btn" id="dropdown__btn">
                 Components
@@ -90,8 +78,7 @@
 
             <ul class="list-items flex-column dropdown__content" id="dropdown__content">
               <li><a href="#Alert">Alerts</a></li>
-              <li><a href="#Avatar">
-                  Avatar</a></li>
+              <li><a href="#Avatar">Avatar</a></li>
               <li><a href="#Badge">Badge</a></li>
               <li><a href="#Button">Button</a></li>
               <li><a href="#Card">Card</a></li>
@@ -100,54 +87,34 @@
               <li><a href="#Text">Text Utilities</a></li>
               <li><a href="#List">Lists</a></li>
               <li><a href="#Navigation">Navigation</a></li>
-              <!-- <li><a href="#Modal">Modal</a></li> -->
               <li><a href="#Rating">Rating</a></li>
-              <!-- <li><a href="#Toast">Toast</a></li>
-              <li><a href="Grids">Simplified Grids</a></li> -->
             </ul>
-
           </div>
-
-
-
         </nav>
       </aside>
 
       <!-- Main content -->
       <article class="container__middle">
-
-
-
-
-        <div id="Alert">
-        </div>
-
         <!-- alerts -->
+
+        <div id="Alert"></div>
         <section class="component">
           <div class="component__info">
-
             <div class="component__heading">
               <h2>Alerts</h2>
             </div>
 
             <p>
-              Alert is a notification component which is used to notify user and give a feedback on various events
-              like success, failure, info etc
-              Basically it tells user what is going on , the state of events that has already taken place.
+              Alert is a notification component which is used to notify user
+              and give a feedback on various events like success, failure,
+              info etc Basically it tells user what is going on , the state of
+              events that has already taken place.
             </p>
-
-
-            <p>
-
-            </p>
-
           </div>
-
 
           <h3>Examples of the Alerts</h3>
 
           <div class="component__display--container flex-column">
-
             <div class="alert alert-success">
               <i class="fa fa-check-circle"></i>
               <strong>Success Alert!</strong>
@@ -157,7 +124,8 @@
             <div class="alert alert-error">
               <i class="fa fa-times-circle"></i>
               <strong>Error Alert!</strong>
-              This alert box indicates a dangerous or potentially negative action.
+              This alert box indicates a dangerous or potentially negative
+              action.
             </div>
 
             <div class="alert alert-info">
@@ -181,50 +149,46 @@
                 <span class="sr-only">Button</span>
               </button>
             </div>
-
-
           </div>
 
           <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">
-  &lt;div class=&quot;alert alert-success&quot;&gt;
-      &lt;i class=&quot;fa fa-check-circle&quot;&gt;&lt;/i&gt;
-      &lt;strong&gt;Success Alert!&lt;/strong&gt;
-      This alert box indicates successful or positive action
-  &lt;/div&gt;
-    
-  &lt;div class=&quot;alert alert-error&quot;&gt;
-      &lt;i class=&quot;fa fa-times-circle&quot;&gt;&lt;/i&gt;
-      &lt;strong&gt;Error Alert!&lt;/strong&gt;
-      This alert box indicates a dangerous or potentially negative action.
-  &lt;/div&gt;
-    
-  &lt;div class=&quot;alert alert-closing&quot;&gt;
-      &lt;span&gt;
-          &lt;strong&gt;Closing Alert!&lt;/strong&gt;
-          Alert Bar with a close Button
-      &lt;/span&gt;
-    
-      &lt;button class=&quot;fa fa-times&quot; id=&quot;alert__close-btn&quot;&gt;
-      &lt;span class=&quot;sr-only&quot;&gt;Button&lt;/span&gt;
-      &lt;/button&gt;
-  &lt;/div&gt;
-    
-    </code></pre>
+            <pre class="code__snippet">
+      <code class="language-html">
+      &lt;div class=&quot;alert alert-success&quot;&gt;
+        &lt;i class=&quot;fa fa-check-circle&quot;&gt;&lt;/i&gt;
+        &lt;strong&gt;Success Alert!&lt;/strong&gt;
+        This alert box indicates successful or positive action
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;alert alert-error&quot;&gt;
+        &lt;i class=&quot;fa fa-times-circle&quot;&gt;&lt;/i&gt;
+        &lt;strong&gt;Error Alert!&lt;/strong&gt;
+        This alert box indicates a dangerous or potentially negative action.
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;alert alert-closing&quot;&gt;
+        &lt;span&gt;
+            &lt;strong&gt;Closing Alert!&lt;/strong&gt;
+            Alert Bar with a close Button
+        &lt;/span&gt;
+      
+        &lt;button class=&quot;fa fa-times&quot; id=&quot;alert__close-btn&quot;&gt;
+        &lt;span class=&quot;sr-only&quot;&gt;Button&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;</code></pre>
           </div>
 
           <!-- usecase/ description -->
           <div class="component__usecase">
-
             <h3>Usecase</h3>
 
-            <p> Alerts are used for Drawing attention
-              Its a message that lets user know about states as a feedback
+            <p>
+              Alerts are used for Drawing attention Its a message that lets
+              user know about states as a feedback
             </p>
 
-            <p>
-            <h4>Different types of alerts available are:
-            </h4>
+            <h4>Different types of alerts available are:</h4>
+
             <div class="alert-span">
               <span>Success Alert </span>
               <span>Error Alert</span>
@@ -233,39 +197,34 @@
               <span>Closing Alert </span>
             </div>
 
-            </p>
-
             <p>
-              To use this components add <code>class="alert"</code> and the type of the alert to be displayed.
+              To use this components add <code>class="alert"</code> and the
+              type of the alert to be displayed.
             </p>
-
-
           </div>
-
         </section>
 
-
-        <div id="Avatar">
-        </div>
+        <div class="gradient"></div>
 
         <!-- avatar -->
+        <div id="Avatar"></div>
+
         <section class="component">
           <div class="component__info">
-
             <div class="component__heading">
               <h2>Avatars</h2>
             </div>
 
             <p>
-              Avatar is a component which is used to represent user's identity on
-              various platforms
+              Avatar is a component which is used to represent user's identity
+              on various platforms
             </p>
 
             <p>
               We can see in places like profile pictures, comment threads,
-              header of webpage different avatars with different sizes are used.
+              header of webpage different avatars with different sizes are
+              used.
             </p>
-
           </div>
 
           <h3>Examples of the Image Avatars</h3>
@@ -294,54 +253,46 @@
 
           <div class="component__display--code">
             <pre class="code__snippet"><code class="language-html">&lt;div class=&quot;avatar avatar-sm&quot;&gt;
-  &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/user-48x48.png&quot; alt=&quot;user-avatar&quot; /&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;avatar avatar-md&quot;&gt;
-  &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/user-female-48x48.png&quot; alt=&quot;female-user-avatar&quot; /&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;avatar avatar-lg&quot;&gt;
-  &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/identicon.png&quot; alt=&quot;identicon&quot; /&gt;
-&lt;/div&gt;
-</code></pre>
+      &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/user-48x48.png&quot; alt=&quot;user-avatar&quot; /&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;avatar avatar-md&quot;&gt;
+      &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/user-female-48x48.png&quot; alt=&quot;female-user-avatar&quot; /&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;avatar avatar-lg&quot;&gt;
+      &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/identicon.png&quot; alt=&quot;identicon&quot; /&gt;
+      &lt;/div&gt;
+      </code></pre>
           </div>
 
           <h3>Examples of the Initial Avatars</h3>
           <p>
-            Initials are a good way to provide identifying information when no profile image is present. Pairing
-            initials with a unique color can help visually organize comment threads at a glance and provide extra
-            context as to who is commenting.
+            Initials are a good way to provide identifying information when no
+            profile image is present. Pairing initials with a unique color can
+            help visually organize comment threads at a glance and provide
+            extra context as to who is commenting.
           </p>
+
           <div class="component__display--container">
             <div class="avatar">
-              <div class="avatar__letters avatar-sm" role="img">
-                SR
-              </div>
+              <div class="avatar__letters avatar-sm" role="img">SR</div>
             </div>
 
             <div class="avatar">
-              <div class="avatar__letters avatar-md" role="img">
-                G
-              </div>
+              <div class="avatar__letters avatar-md" role="img">G</div>
             </div>
 
             <div class="avatar">
-              <div class="avatar__letters avatar-lg" role="img">
-                LJ
-              </div>
+              <div class="avatar__letters avatar-lg" role="img">LJ</div>
             </div>
 
             <div class="avatar">
-              <div class="avatar__letters avatar-xlg" role="img">
-                KSB
-              </div>
+              <div class="avatar__letters avatar-xlg" role="img">KSB</div>
             </div>
 
             <div class="avatar">
-              <div class="avatar__letters avatar-xxlg" role="img">
-                KS
-              </div>
+              <div class="avatar__letters avatar-xxlg" role="img">KS</div>
             </div>
           </div>
 
@@ -349,147 +300,142 @@
 
           <div class="component__display--code">
             <pre class="code__snippet"><code class="language-html"> &lt;div class=&quot;avatar&quot;&gt;
-  &lt;div class=&quot;avatar__letters avatar-sm&quot; role=&quot;img&quot;&gt;
-      SR
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;avatar&quot;&gt;
-  &lt;div class=&quot;avatar__letters avatar-md&quot; role=&quot;img&quot;&gt;
-      G
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;avatar&quot;&gt;
-  &lt;div class=&quot;avatar__letters avatar-lg&quot; role=&quot;img&quot;&gt;
-      LJ
-  &lt;/div&gt;
-&lt;/div&gt;</code>
-</pre>
+      &lt;div class=&quot;avatar__letters avatar-sm&quot; role=&quot;img&quot;&gt;
+        SR
+      &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;avatar&quot;&gt;
+      &lt;div class=&quot;avatar__letters avatar-md&quot; role=&quot;img&quot;&gt;
+        G
+      &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;avatar&quot;&gt;
+      &lt;div class=&quot;avatar__letters avatar-lg&quot; role=&quot;img&quot;&gt;
+        LJ
+      &lt;/div&gt;
+      &lt;/div&gt;</code>
+      </pre>
           </div>
 
           <!-- usecase/ description -->
           <div class="component__usecase">
-
             <h3>Usecase</h3>
 
-            <p> In most of the cases you will only need
+            <p>
+              In most of the cases you will only need
               <strong>small (sm-32px) </strong> and
               <strong>medium (md-48px) </strong> size avatars
             </p>
 
+            <h4>Different Sizes available for avatars:</h4>
+
             <p>
-            <h4>Different Sizes available for avatars:
-            </h4>
-            <span>sm - 32px </span>
-            <span>md - 48px</span>
-            <span>lg - 64px</span>
-            <span>xlg - 80px</span>
-            <span>xxlg - 96px</span>
+              <span>sm - 32px </span>
+              <span>md - 48px</span>
+              <span>lg - 64px</span>
+              <span>xlg - 80px</span>
+              <span>xxlg - 96px</span>
             </p>
 
             <p>
-              To use this components <code>class="avatar"</code> is required for parent container
-              and sm,md, lg denotes to different avatar sizes
+              To use this components <code>class="avatar"</code> is required
+              for parent container and sm,md, lg denotes to different avatar
+              sizes
             </p>
 
-            <p>While using Initial Avatars use <code>class="avatar__letters"</code> on child element</p>
+            <p>
+              While using Initial Avatars use
+              <code>class="avatar__letters"</code> on child element
+            </p>
           </div>
-
         </section>
 
+        <div class="gradient"></div>
+
         <!-- Badges -->
-        <div class="gradient">
-        </div>
 
-        <div id="Badge">
-        </div>
+        <div id="Badge"></div>
 
-        <!-- Badge -->
         <section class="component">
           <div class="component__info">
-
             <div class="component__heading">
               <h2>Badges</h2>
             </div>
 
             <p>
-              Badge (aka Tag) — small overlapped UI item which indicates a status, notification, or event that appears
-              in relativity with the underlying object.
+              Badge (aka Tag) — small overlapped UI item which indicates a
+              status, notification, or event that appears in relativity with
+              the underlying object.
             </p>
-
 
             <p>
-              Badge with a Numeric value is used to represent the number of events related to the parent UI item:
+              Badge with a Numeric value is used to represent the number of
+              events related to the parent UI item:
             </p>
-
           </div>
-
 
           <h3>Badges On Avatars</h3>
 
           <div class="component__display--container">
-
             <div class="badge__container">
               <div class="avatar avatar-xxlg">
-                <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar">
+                <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar" />
               </div>
               <span class="badge badge-status-active"></span>
             </div>
 
             <div class="badge__container">
               <div class="avatar avatar-xxlg">
-                <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar">
+                <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar" />
               </div>
               <span class="badge badge-status-inactive"></span>
             </div>
 
-
             <div class="badge__container">
               <div class="avatar avatar-xxlg">
-                <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar">
+                <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar" />
               </div>
               <span class="badge badge-status-away"></span>
             </div>
 
             <div class="badge__container">
               <div class="avatar avatar-xlg">
-                <img class="avatar__image" src="../docs/assets/avatars/user-48x48.png" alt="user-avatar">
+                <img class="avatar__image" src="../docs/assets/avatars/user-48x48.png" alt="user-avatar" />
               </div>
               <span class="badge badge-status-active"></span>
             </div>
 
             <div class="badge__container">
               <div class="avatar avatar-lg">
-                <img class="avatar__image" src="../docs/assets/avatars/user-48x48.png" alt="user-avatar">
+                <img class="avatar__image" src="../docs/assets/avatars/user-48x48.png" alt="user-avatar" />
               </div>
-              <span class="badge badge-status-inactive">
-
-              </span>
+              <span class="badge badge-status-inactive"> </span>
             </div>
 
             <div class="badge__container">
               <div class="avatar avatar-xxlg">
-                <img class="avatar__image" src="../docs/assets/avatars/profile_pic.svg" alt="user-avatar">
+                <img class="avatar__image" src="../docs/assets/avatars/profile_pic.svg" alt="user-avatar" />
               </div>
               <span class="badge badge-status-away"></span>
             </div>
-
           </div>
 
           <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html"> &lt;div class=&quot;badge__container&quot;&gt;
-        &lt;div class=&quot;avatar avatar-xxlg&quot;&gt;
-            &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/male_avatar.svg&quot; alt=&quot;male-avatar&quot;&gt;
-        &lt;/div&gt;
-            &lt;span class=&quot;badge badge-status-active&quot;&gt;&lt;/span&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;component__display--container&quot;&gt;  
-          &lt;div class=&quot;badge__container&quot;&gt;
-           &lt;i class=&quot;fas fa-shopping-cart fa-4x&quot;&gt;&lt;/i&gt;
-           &lt;span class=&quot;badge badge-icon badge-status-number&quot;&gt;5&lt;/span&gt;
-    &lt;/div&gt;</code></pre>
+            <pre class="code__snippet">
+      <code class="language-html"> &lt;div class=&quot;badge__container&quot;&gt;
+              &lt;div class=&quot;avatar avatar-xxlg&quot;&gt;
+                  &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/male_avatar.svg&quot; alt=&quot;male-avatar&quot;&gt;
+              &lt;/div&gt;
+                  &lt;span class=&quot;badge badge-status-active&quot;&gt;&lt;/span&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&quot;component__display--container&quot;&gt;  
+                &lt;div class=&quot;badge__container&quot;&gt;
+                 &lt;i class=&quot;fas fa-shopping-cart fa-4x&quot;&gt;&lt;/i&gt;
+                 &lt;span class=&quot;badge badge-icon badge-status-number&quot;&gt;5&lt;/span&gt;
+          &lt;/div&gt;</code></pre>
           </div>
 
           <h3>Badges on Icons</h3>
@@ -500,46 +446,42 @@
               <span class="badge badge-icon badge-status-number">5</span>
             </div>
 
-
             <div class="badge__container">
               <i class="far fa-heart fa-4x"></i>
               <span class="badge badge-icon badge-status-number">+5</span>
             </div>
 
-
             <div class="badge__container">
               <i class="far fa-message fa-4x"></i>
               <span class="badge badge-icon badge-status-number">+5</span>
             </div>
-
-
           </div>
-
 
           <!-- usecase/ description -->
           <div class="component__usecase">
-
             <h3>Usecase</h3>
 
-            <li>In conversational patterns (Chat, Messages, Inbox) Badge used to inform about new incoming messages. Dot
-              distinctly divides fresh emails and recent
-            </li>
+            <ul>
+              <li>
+                In conversational patterns (Chat, Messages, Inbox) Badge used
+                to inform about new incoming messages. Dot distinctly divides
+                fresh emails and recent
+              </li>
 
-            <li>
-              In most shopping apps Badges are used to display the number of products added to a cart
-            </li>
-
+              <li>
+                In most shopping apps Badges are used to display the number of
+                products added to a cart
+              </li>
+            </ul>
           </div>
-
         </section>
-
-        <!-- Buttons -->
 
         <div class="gradient"></div>
 
+        <!-- Buttons -->
+
         <div id="Button"></div>
 
-        <!-- Buttons -->
         <section class="component">
           <div class="component__info">
             <div class="component__heading">
@@ -547,31 +489,33 @@
             </div>
 
             <p>
-              Buttons are very important element on web , Buttons are generally used for actions like submit form data,
-              search data and many more.
+              Buttons are very important element on web , Buttons are
+              generally used for actions like submit form data, search data
+              and many more.
             </p>
 
             <p>
-              Buttons are known as CTA element(call to action).
-              It is designed in such a way that button takes user attention.
+              Buttons are known as CTA element(call to action). It is designed
+              in such a way that button takes user attention.
             </p>
           </div>
 
           <h3>Examples of Primary Button Styles</h3>
           <div class="component__display--container flex-row">
+            <button class="btn btn-primary" type="button">
+              .btn-primary
+            </button>
 
-            <button class="btn btn-primary" type="button">.btn-primary</button>
-
-            <button class="btn btn-primary-outline" type="button">.btn-primary-outline</button>
+            <button class="btn btn-primary-outline" type="button">
+              .btn-primary-outline
+            </button>
 
             <a class="btn btn-primary-link" role="button" tabindex="0">.btn-primary-link</a>
 
-
             <input class="btn btn-primary-outline" type="image" role="button"
-              src="../docs/assets/avatars/user-48x48.png" alt="user-img-button">
+              src="../docs/assets/avatars/user-48x48.png" alt="user-img-button" />
 
             <a class="btn btn-primary-icon" role="button">
-
               <span class="btn-icon">
                 <i class="fas fa-rupee"></i>
               </span>
@@ -581,37 +525,39 @@
 
           <div class="component__display--code">
             <pre class="code__snippet"><code class="language-html">
-        &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;.btn-primary&lt;/button&gt;
-    
-        &lt;button class=&quot;btn btn-primary-outline&quot; type=&quot;button&quot;&gt;.btn-primary-outline&lt;/button&gt;
-    
-        &lt;a class=&quot;btn btn-primary-link&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;.btn-primary-link&lt;/a&gt;
-    
+              &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;.btn-primary&lt;/button&gt;
           
-        &lt;input class=&quot;btn btn-primary-outline&quot; type=&quot;image&quot; role=&quot;button&quot; src=&quot;../docs/assets/avatars/user-48x48.png&quot; alt=&quot;user-img-button&quot;&gt;
-    
-        &lt;a class=&quot;btn btn-primary-icon&quot; role=&quot;button&quot;&gt;
-    
-            &lt;span class=&quot;btn-icon&quot;&gt;
-                &lt;i class=&quot;fas fa-rupee&quot;&gt;&lt;/i&gt;
-            &lt;/span&gt;
-            SELL
-        &lt;/a&gt;
-                    </code></pre>
+              &lt;button class=&quot;btn btn-primary-outline&quot; type=&quot;button&quot;&gt;.btn-primary-outline&lt;/button&gt;
+          
+              &lt;a class=&quot;btn btn-primary-link&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;.btn-primary-link&lt;/a&gt;
+          
+                
+              &lt;input class=&quot;btn btn-primary-outline&quot; type=&quot;image&quot; role=&quot;button&quot; src=&quot;../docs/assets/avatars/user-48x48.png&quot; alt=&quot;user-img-button&quot;&gt;
+          
+              &lt;a class=&quot;btn btn-primary-icon&quot; role=&quot;button&quot;&gt;
+          
+                  &lt;span class=&quot;btn-icon&quot;&gt;
+                      &lt;i class=&quot;fas fa-rupee&quot;&gt;&lt;/i&gt;
+                  &lt;/span&gt;
+                  SELL
+              &lt;/a&gt;
+                          </code></pre>
           </div>
-
 
           <h3>Examples of Secondary Button Styles</h3>
           <div class="component__display--container flex-row">
+            <button class="btn btn-secondary" type="button">
+              .btn-secondary
+            </button>
 
-            <button class="btn btn-secondary" type="button">.btn-secondary</button>
-
-            <button class="btn btn-secondary-outline" type="button">.btn-secondary-outline</button>
+            <button class="btn btn-secondary-outline" type="button">
+              .btn-secondary-outline
+            </button>
 
             <a class="btn btn-secondary-link" role="button" tabindex="0">.btn-secondary-link</a>
 
             <input class="btn btn-secondary-outline" type="image" role="button"
-              src="../docs/assets/avatars/user-48x48.png" alt="user-img-button">
+              src="../docs/assets/avatars/user-48x48.png" alt="user-img-button" />
 
             <a class="btn btn-secondary-icon" role="button">
               <span class="btn-icon">
@@ -619,60 +565,53 @@
               </span>
               BUY
             </a>
-
           </div>
-
 
           <div class="component__display--code">
             <pre class="code__snippet"><code class="language-html">&lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot;&gt;.btn-secondary&lt;/button&gt;
-    &lt;button class=&quot;btn btn-secondary-outline&quot; type=&quot;button&quot;&gt;.btn-secondary-outline
-    &lt;/button&gt;
-    
-    &lt;a class=&quot;btn btn-secondary-link&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;.btn-secondary-link&lt;/a&gt;
-    
-    &lt;input class=&quot;btn btn-secondary-outline&quot; type=&quot;image&quot; role=&quot;button&quot; src=&quot;../docs/assets/avatars/user-48x48.png&quot; alt=&quot;user-img-button&quot;&gt;
-    
-    &lt;a class=&quot;btn btn-secondary-icon&quot; role=&quot;button&quot;&gt;
-        &lt;span class=&quot;btn-icon&quot;&gt;
-        &lt;i class=&quot;fas fa-shopping-bag fa-2x&quot;&gt;&lt;/i&gt;
-        &lt;/span&gt;
-        BUY
-    &lt;/a&gt;</code></pre>
+          &lt;button class=&quot;btn btn-secondary-outline&quot; type=&quot;button&quot;&gt;.btn-secondary-outline
+          &lt;/button&gt;
+          
+          &lt;a class=&quot;btn btn-secondary-link&quot; role=&quot;button&quot; tabindex=&quot;0&quot;&gt;.btn-secondary-link&lt;/a&gt;
+          
+          &lt;input class=&quot;btn btn-secondary-outline&quot; type=&quot;image&quot; role=&quot;button&quot; src=&quot;../docs/assets/avatars/user-48x48.png&quot; alt=&quot;user-img-button&quot;&gt;
+          
+          &lt;a class=&quot;btn btn-secondary-icon&quot; role=&quot;button&quot;&gt;
+              &lt;span class=&quot;btn-icon&quot;&gt;
+              &lt;i class=&quot;fas fa-shopping-bag fa-2x&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+              BUY
+          &lt;/a&gt;</code></pre>
           </div>
 
           <h3>Examples Of Disabled Buttons Styles</h3>
           <div class="component__display--container">
-
-            <button type="button" class="btn btn-primary btn-disabled" type="button">.btn-primary btn-disabled</button>
-
-            <a class="btn btn-disabled" role="button" tabindex="-1">.btn-disabled</a>
-
-
-            <button type="button" class="btn btn-secondary btn-disabled" type="button">.btn-secondary
-              btn-disabled</button>
+            <button type="button" class="btn btn-primary btn-disabled" type="button">
+              .btn-primary btn-disabled
+            </button>
 
             <a class="btn btn-disabled" role="button" tabindex="-1">.btn-disabled</a>
 
+            <button type="button" class="btn btn-secondary btn-disabled" type="button">
+              .btn-secondary btn-disabled
+            </button>
 
-
+            <a class="btn btn-disabled" role="button" tabindex="-1">.btn-disabled</a>
           </div>
-
-
 
           <div class="component__display--code">
             <pre
               class="code__snippet"><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-disabled&quot; type=&quot;button&quot;&gt;.btn-primary btn-disabled&lt;/button&gt;
-    
-    &lt;a class=&quot;btn btn-disabled&quot; role=&quot;button&quot; tabindex=&quot;-1&quot;&gt;.btn-disabled&lt;/a&gt;
-    
-    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-disabled&quot; type=&quot;button&quot;&gt;.btn-secondary btn-disabled&lt;/button&gt;
-    
-    &lt;a class=&quot;btn btn-disabled&quot; role=&quot;button&quot; tabindex=&quot;-1&quot;&gt;.btn-disabled&lt;/a&gt;</code></pre>
+          
+          &lt;a class=&quot;btn btn-disabled&quot; role=&quot;button&quot; tabindex=&quot;-1&quot;&gt;.btn-disabled&lt;/a&gt;
+          
+          &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-disabled&quot; type=&quot;button&quot;&gt;.btn-secondary btn-disabled&lt;/button&gt;
+          
+          &lt;a class=&quot;btn btn-disabled&quot; role=&quot;button&quot; tabindex=&quot;-1&quot;&gt;.btn-disabled&lt;/a&gt;</code></pre>
           </div>
 
           <h3>Examples of Floating Buttons Styles</h3>
           <div class="component__display--container">
-
             <div class="btn btn-primary float-action-btn">
               <span>+</span>
             </div>
@@ -684,73 +623,68 @@
 
           <div class="component__display--code">
             <pre class="code__snippet"><code class="language-html">&lt;div class=&quot;btn btn-primary float-action-btn&quot;&gt;
-        &lt;span&gt;+&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;btn btn-secondary float-action-btn&quot;&gt;
-        &lt;span&gt;+&lt;/span&gt;
-    &lt;/div&gt;</code></pre>
+              &lt;span&gt;+&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;btn btn-secondary float-action-btn&quot;&gt;
+              &lt;span&gt;+&lt;/span&gt;
+          &lt;/div&gt;</code></pre>
           </div>
 
           <!-- usecase/ description -->
           <div class="component__usecase">
             <h3>Usecase</h3>
 
-            <li>
-              There a 2 types of buttons over here one is with anchor(a) tag and other is made using button tag
-            </li>
+            <ul>
+              <li>
+                There a 2 types of buttons over here one is with anchor(a) tag
+                and other is made using button tag
+              </li>
 
-            <li>
-              So Normal use anchor tag is preferred over button element.
-            </li>
+              <li>
+                So Normal use anchor tag is preferred over button element.
+              </li>
 
-            <li>
-              Button tag can be used for functinal tasks like submit data, change theme etc.
-            </li>
+              <li>
+                Button tag can be used for functinal tasks like submit data,
+                change theme etc.
+              </li>
 
-            <li>
-              All the classes for button component are displayed on components.
-            </li>
+              <li>
+                All the classes for button component are displayed on
+                components.
+              </li>
+            </ul>
           </div>
         </section>
 
-
-
-        <!-- Images -->
         <div class="gradient"></div>
 
-        <div id="Image">
-        </div>
-
         <!-- Images -->
+
+        <div id="Image"></div>
+
         <section class="component">
           <div class="component__info">
-
             <div class="component__heading">
               <h2>Images</h2>
             </div>
 
             <p>
-              Images can be customised to be responsive, round shaped and some performance parameters like resolution
-              switching, density switching can be added.
+              Images can be customised to be responsive, round shaped and some
+              performance parameters like resolution switching, density
+              switching can be added.
             </p>
-
-
-
-
-
           </div>
-
 
           <h3>Responsive Image</h3>
 
           <p>
-            Responsive images will automatically adjust to fit the size of the container.
+            Responsive images will automatically adjust to fit the size of the
+            container.
           </p>
 
           <div class="component__display--container">
-
             <img class="responsive-image" src="./assets/images/shrirangam.jpg" alt="shrirangam-reponsive-img" />
-
           </div>
 
           <div class="component__display--code">
@@ -761,45 +695,40 @@
           <h3>Round Shaped Images</h3>
 
           <div class="component__display--container">
-
             <div class="image-container-400x400 flex-column">
               <img class="round-image responsive-image" src="./assets/images/suryanarayan.jpg" alt="sun" />
             </div>
-
-
           </div>
 
           <div class="component__display--code">
             <pre
               class="code__snippet"><code class="language-html"> &lt;img class=&quot;round-image responsive-image&quot; src=&quot;../docs/assets/images/suryanarayan.jpg&quot; alt=&quot;sun&quot;/&gt;</code></pre>
-
-
           </div>
-
-
 
           <!-- usecase/ description -->
           <div class="component__usecase">
-
             <h3>Usecase</h3>
 
-            <li>
-              Responsive Images can be used as Background Cover Photos
-            </li>
+            <ul>
+              <li>
+                Responsive Images can be used as Background Cover Photos
+              </li>
 
-            <li>
-              Round Images can be used as avatars for user identity
-            </li>
+              <li>Round Images can be used as avatars for user identity</li>
 
-            <li>
-              To make use of this utility add <code>
-                        class="responsive-image"
-                    </code> and <code>class="round-image"</code> for round Images on your image.
-            </li>
+              <li>
+                To make use of this utility add
+                <code> class="responsive-image" </code> and
+                <code>class="round-image"</code> for round Images on your
+                image.
+              </li>
 
-            <li>Make Sure you add a wrapper around your images to handle its dimensions easily</li>
+              <li>
+                Make Sure you add a wrapper around your images to handle its
+                dimensions easily
+              </li>
+            </ul>
           </div>
-
         </section>
 
         <div class="gradient"></div>
@@ -807,7 +736,6 @@
         <!-- Input -->
         <div id="Input"></div>
 
-        <!-- Inputs -->
         <section class="component">
           <div class="component__info">
             <div class="component__heading">
@@ -815,150 +743,136 @@
             </div>
 
             <p>
-              Forms are the backbone of Web, Form is the reason for which web was made for. There are various types of
-              inputs we can use to take input from user in our applications which we are going to see in this section.
+              Forms are the backbone of Web, Form is the reason for which web
+              was made for. There are various types of inputs we can use to
+              take input from user in our applications which we are going to
+              see in this section.
             </p>
 
             <p>
-              so form is used to collect user input. The user input is most often sent to a server for processing.
+              so form is used to collect user input. The user input is most
+              often sent to a server for processing.
             </p>
           </div>
 
           <h3>Accessible Form Controls</h3>
-          <p>Accessible forms are easy to understand, complete, and submit. Instructions, cues, required form fields,
-            and
-            field formatting requirements must be clearly identified to users. Error recovery must be intuitive and
-            descriptive.</p>
+          <p>
+            Accessible forms are easy to understand, complete, and submit.
+            Instructions, cues, required form fields, and field formatting
+            requirements must be clearly identified to users. Error recovery
+            must be intuitive and descriptive.
+          </p>
+
           <h4>Text Inputs</h4>
 
           <div class="component__display--container flex-row">
-
             <form class="form-field flex-column">
-
-              <label class="input-label" for="name">Name:
-              </label>
+              <label class="input-label" for="name">Name: </label>
 
               <input class="input-field" type="text" aria-labelledby="name" autocomplete="name"
                 placeholder="Inclusive UI" />
 
-
-              <label class="input-label" for="password">Password:
-              </label>
+              <label class="input-label" for="password">Password: </label>
 
               <input class="input-field" type="password" aria-labelledby="password" autocomplete="new-password"
-                placeholder="*******">
+                placeholder="*******" />
             </form>
 
-
-
             <form class="form-field flex-column">
-
-
-              <label for="email" class="input-label">Email:
-              </label>
+              <label for="email" class="input-label">Email: </label>
               <input class="input-field" type="email" aria-labelledby="email" autocomplete="email"
                 placeholder="inclusive-ui@gmail.com" />
-
 
               <label for="address" class="input-label">Enter Your address:
               </label>
 
               <textarea class="textbox-field" aria-labelledby="address" autocomplete="street-address">
-        </textarea>
+                </textarea>
             </form>
           </div>
 
-
           <div class="component__display--code">
             <pre class="code__snippet"><code class="language-html">
-&lt;form class=&quot;form-field flex-column&quot;&gt;
-
-    &lt;label class=&quot;input-label&quot; for=&quot;name&quot;&gt;Name:
-    &lt;/label&gt;
-
-    &lt;input class=&quot;input-field&quot; type=&quot;text&quot; aria-labelledby=&quot;name&quot; autocomplete=&quot;name&quot; placeholder=&quot;Inclusive UI&quot;/&gt;
-
-    &lt;label class=&quot;input-label&quot; for=&quot;password&quot;&gt;Password:
-    &lt;/label&gt;
-
-    &lt;input class=&quot;input-field&quot; type=&quot;password&quot;
-    aria-labelledby=&quot;password&quot; autocomplete=&quot;new-password&quot; placeholder=&quot;*******&quot;&gt;
-&lt;/form&gt;
-</code></pre>
+      &lt;form class=&quot;form-field flex-column&quot;&gt;
+      
+         &lt;label class=&quot;input-label&quot; for=&quot;name&quot;&gt;Name:
+         &lt;/label&gt;
+      
+         &lt;input class=&quot;input-field&quot; type=&quot;text&quot; aria-labelledby=&quot;name&quot; autocomplete=&quot;name&quot; placeholder=&quot;Inclusive UI&quot;/&gt;
+      
+         &lt;label class=&quot;input-label&quot; for=&quot;password&quot;&gt;Password:
+         &lt;/label&gt;
+      
+         &lt;input class=&quot;input-field&quot; type=&quot;password&quot;
+         aria-labelledby=&quot;password&quot; autocomplete=&quot;new-password&quot; placeholder=&quot;*******&quot;&gt;
+      &lt;/form&gt;
+      </code></pre>
           </div>
-
 
           <h4>Checkboxes & Radio Buttons</h4>
 
           <div class="component__display--container flex-row">
-
-            <fieldset class="flex-row ">
+            <fieldset class="flex-row">
               <legend>Select Your Category</legend>
-              <input id="electronic" type="checkbox" name="category" value="electronic">
+              <input id="electronic" type="checkbox" name="category" value="electronic" />
               <label for="electronic">Electronic</label>
 
-              <input id="medical" type="checkbox" name="category" value="medical">
+              <input id="medical" type="checkbox" name="category" value="medical" />
               <label for="medical">Medical</label>
 
-              <input id="plastic" type="checkbox" name="category" value="plastic">
+              <input id="plastic" type="checkbox" name="category" value="plastic" />
               <label for="plastic">Plastic</label>
 
-              <input id="books" type="checkbox" name="category" value="books">
+              <input id="books" type="checkbox" name="category" value="books" />
               <label for="books">Books</label>
 
-              <input id="others" type="checkbox" name="category" value="others">
+              <input id="others" type="checkbox" name="category" value="others" />
               <label for="others">Others</label>
             </fieldset>
 
             <fieldset>
               <legend>Choose a shipping method:</legend>
-              <input id="overnight" type="radio" name="shipping" value="overnight">
-              <label for="overnight">Overnight</label><br>
-              <input id="twoday" type="radio" name="shipping" value="twoday">
-              <label for="twoday">Two day</label><br>
-              <input id="ground" type="radio" name="shipping" value="ground">
+              <input id="overnight" type="radio" name="shipping" value="overnight" />
+              <label for="overnight">Overnight</label><br />
+              <input id="twoday" type="radio" name="shipping" value="twoday" />
+              <label for="twoday">Two day</label><br />
+              <input id="ground" type="radio" name="shipping" value="ground" />
               <label for="ground">Ground</label>
             </fieldset>
-
-
           </div>
-
 
           <div class="component__display--code">
             <pre class="code__snippet"><code class="language-html">&lt;fieldset&gt;
-   &lt;legend&gt;Choose a shipping method:&lt;/legend&gt;
-   &lt;input id=&quot;overnight&quot; type=&quot;radio&quot; name=&quot;shipping&quot; value=&quot;overnight&quot;&gt;
-   &lt;label for=&quot;overnight&quot;&gt;Overnight&lt;/label&gt;&lt;br&gt;
-   &lt;input id=&quot;twoday&quot; type=&quot;radio&quot; name=&quot;shipping&quot; value=&quot;twoday&quot;&gt;
-   &lt;label for=&quot;twoday&quot;&gt;Two day&lt;/label&gt;&lt;br&gt;
-   &lt;input id=&quot;ground&quot; type=&quot;radio&quot; name=&quot;shipping&quot; value=&quot;ground&quot;&gt;
-   &lt;label for=&quot;ground&quot;&gt;Ground&lt;/label&gt;
-&lt;/fieldset&gt; 
-</code></pre>
-
-
+        &lt;legend&gt;Choose a shipping method:&lt;/legend&gt;
+        &lt;input id=&quot;overnight&quot; type=&quot;radio&quot; name=&quot;shipping&quot; value=&quot;overnight&quot;&gt;
+        &lt;label for=&quot;overnight&quot;&gt;Overnight&lt;/label&gt;&lt;br&gt;
+        &lt;input id=&quot;twoday&quot; type=&quot;radio&quot; name=&quot;shipping&quot; value=&quot;twoday&quot;&gt;
+        &lt;label for=&quot;twoday&quot;&gt;Two day&lt;/label&gt;&lt;br&gt;
+        &lt;input id=&quot;ground&quot; type=&quot;radio&quot; name=&quot;shipping&quot; value=&quot;ground&quot;&gt;
+        &lt;label for=&quot;ground&quot;&gt;Ground&lt;/label&gt;
+      &lt;/fieldset&gt; 
+      </code></pre>
           </div>
 
           <p>
-            The <strong>fieldset</strong> contains the group of checkboxes, and the <strong> legend</strong> labels the
-            group. Screen readers may repeat the legend for each control in the group, so the legend text should be
-            brief and descriptive.
+            The <strong>fieldset</strong> contains the group of checkboxes,
+            and the <strong> legend</strong> labels the group. Screen readers
+            may repeat the legend for each control in the group, so the legend
+            text should be brief and descriptive.
           </p>
 
           <p>
-            Fieldset and legend should only be used when a higher-level label is necessary.
-            Nested fieldsets can cause odd screen reader behavior and should be avoided.
+            Fieldset and legend should only be used when a higher-level label
+            is necessary. Nested fieldsets can cause odd screen reader
+            behavior and should be avoided.
           </p>
 
           <h4>Validation</h4>
           <div class="component__display--container">
-
             <form class="form-field flex-column" onsubmit="return false">
-
               <h3>VALIDATION</h3>
 
               <div class="input-wrapper flex-column">
-
                 <label class="input-label label-required" for="email">
                   Email
                 </label>
@@ -971,92 +885,87 @@
                 <input class="input-field" aria-labelledby="password" type="password" placeholder="Enter Password"
                   autocomplete="current-password" required />
 
-
-
                 <div class="redirect flex-row">
+                  <label class="input-label"><input class="input-filed" type="checkbox" />Remember
+                    me</label>
 
-                  <label class="input-label"><input class="input-filed" type="checkbox">Remember me</label>
-
-                  <a href="#images">
-                    Forgot Your Password ?
-                  </a>
-
+                  <a href="#images"> Forgot Your Password ? </a>
                 </div>
               </div>
 
               <input type="submit" name="login-button" class="form-submit" value="Submit" />
-
-
-
             </form>
           </div>
 
           <div class="component__display--code">
             <pre class="code__snippet"><code class="language-html">
-&lt;form class=&quot;form-field flex-column&quot; onsubmit=&quot;return false&quot;&gt;
-    &lt;h3&gt;VALIDATION&lt;/h3&gt;
-    
-    &lt;div class=&quot;input-wrapper flex-column&quot;&gt;
-    &lt;label class=&quot;input-label label-required&quot; for=&quot;email&quot;&gt;
-    Email
-    &lt;/label&gt;
-
-    &lt;input class=&quot;input-field&quot;
-    aria-labelledby=&quot;email&quot; type=&quot;email&quot;
-    placeholder=&quot;Enter Your Email&quot;
-    autocomplete=&quot;email&quot;
-    required
-    /&gt;
-
-    &lt;label class=&quot;input-label label-required&quot; for=&quot;password&quot;&gt;Password&lt;/label&gt;
-    &lt;input class=&quot;input-field&quot; aria-labelledby=&quot;password&quot;
-    type=&quot;password&quot;
-    placeholder=&quot;Enter Password&quot;
-    autocomplete=&quot;current-password&quot;
-    required/&gt;
-
-    &lt;div class=&quot;redirect flex-row&quot;&gt;
-    &lt;label class=&quot;input-label&quot;&gt;&lt;input class=&quot;input-filed&quot; type=&quot;checkbox&quot;&gt;Remember me&lt;/label&gt;
-    &lt;a href=&quot;#images&quot;&gt;Forgot Your Password ? &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;input type=&quot;submit&quot; name=&quot;login-button&quot; class=&quot;form-submit&quot; value=&quot;Submit&quot;/&gt;
-&lt;/form&gt;
-            </code></pre>
+      &lt;form class=&quot;form-field flex-column&quot; onsubmit=&quot;return false&quot;&gt;
+         &lt;h3&gt;VALIDATION&lt;/h3&gt;
+         
+         &lt;div class=&quot;input-wrapper flex-column&quot;&gt;
+         &lt;label class=&quot;input-label label-required&quot; for=&quot;email&quot;&gt;
+         Email
+         &lt;/label&gt;
+      
+         &lt;input class=&quot;input-field&quot;
+         aria-labelledby=&quot;email&quot; type=&quot;email&quot;
+         placeholder=&quot;Enter Your Email&quot;
+         autocomplete=&quot;email&quot;
+         required
+         /&gt;
+      
+         &lt;label class=&quot;input-label label-required&quot; for=&quot;password&quot;&gt;Password&lt;/label&gt;
+         &lt;input class=&quot;input-field&quot; aria-labelledby=&quot;password&quot;
+         type=&quot;password&quot;
+         placeholder=&quot;Enter Password&quot;
+         autocomplete=&quot;current-password&quot;
+         required/&gt;
+      
+         &lt;div class=&quot;redirect flex-row&quot;&gt;
+         &lt;label class=&quot;input-label&quot;&gt;&lt;input class=&quot;input-filed&quot; type=&quot;checkbox&quot;&gt;Remember me&lt;/label&gt;
+         &lt;a href=&quot;#images&quot;&gt;Forgot Your Password ? &lt;/a&gt;
+         &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;input type=&quot;submit&quot; name=&quot;login-button&quot; class=&quot;form-submit&quot; value=&quot;Submit&quot;/&gt;
+      &lt;/form&gt;
+                 </code></pre>
           </div>
-
-
 
           <!-- usecase/ description -->
           <div class="component__usecase">
             <h3>Usecase</h3>
+            <ul>
+              <li>
+                you can use <code>class="input-field"</code> for styling
+                inputs and <code>class="form-field"</code> for forms
+              </li>
 
-            <li>
-              you can use <code>class="input-field"</code> for styling inputs and <code>class="form-field"</code> for
-              forms
-            </li>
+              <li>
+                you can add <code>class="label-required"</code> for adding *
+                after the label.
+              </li>
 
-            <li>
-              you can add <code>class="label-required"</code> for adding * after the label.
-            </li>
+              <li>
+                For layout parts there are 2 classes
+                <strong>flex-row</strong> and
+                <strong>flex-column</strong>
+                can be used for arranging the form elements.
+              </li>
 
-            <li>
-              For layout parts there are 2 classes <strong>flex-row</strong> and <strong>flex-column</strong>
-              can be used for arranging the form elements.
-            </li>
-
-            <li>
-              To make use of Validating styles use <code>.input-wrapper</code> wrap it around your inputs.
-            </li>
+              <li>
+                To make use of Validating styles use
+                <code>.input-wrapper</code> wrap it around your inputs.
+              </li>
+            </ul>
           </div>
         </section>
 
         <div class="gradient"></div>
 
+        <!-- Text Utilities -->
 
         <div id="Text"></div>
 
-        <!-- Text Utilities -->
         <section class="component">
           <div class="component__info">
             <div class="component__heading">
@@ -1064,18 +973,13 @@
             </div>
 
             <p>
-              Text is the most used content on web
-              It Becomes very important to use heading appropriately on your webpage.
-            </p>
-
-            <p>
-
+              Text is the most used content on web It Becomes very important
+              to use heading appropriately on your webpage.
             </p>
           </div>
 
           <h3>Examples of Differen Text Heading</h3>
           <div class="component__display--container flex-column">
-
             <h1 class="h1">H1 Heading Example</h1>
             <h2 class="h2">H2 Heading Example</h2>
             <h3 class="h3">H3 Heading Example</h3>
@@ -1086,363 +990,640 @@
 
           <div class="component__display--code">
             <pre class="code__snippet"><code class="language-html">
-    &lt;h1 class=&quot;h1&quot;&gt;H1 Heading Example&lt;/h1&gt;
-    &lt;h2 class=&quot;h2&quot;&gt;H2 Heading Example&lt;/h2&gt; 
-    &lt;h3 class=&quot;h3&quot;&gt;H3 Heading Example&lt;/h3&gt;
-    &lt;h4 class=&quot;h4&quot;&gt;H4 Heading Example&lt;/h4&gt;
-    &lt;h5 class=&quot;h5&quot;&gt;H5 Heading Example&lt;/h5&gt;
-    &lt;h6 class=&quot;h6&quot;&gt;H6 Heading Example&lt;/h6&gt;
-                </code></pre>
+              &lt;h1 class=&quot;h1&quot;&gt;H1 Heading Example&lt;/h1&gt;
+              &lt;h2 class=&quot;h2&quot;&gt;H2 Heading Example&lt;/h2&gt; 
+              &lt;h3 class=&quot;h3&quot;&gt;H3 Heading Example&lt;/h3&gt;
+              &lt;h4 class=&quot;h4&quot;&gt;H4 Heading Example&lt;/h4&gt;
+              &lt;h5 class=&quot;h5&quot;&gt;H5 Heading Example&lt;/h5&gt;
+              &lt;h6 class=&quot;h6&quot;&gt;H6 Heading Example&lt;/h6&gt;
+                          </code></pre>
           </div>
-
 
           <h3>Examples of Small Text</h3>
           <div class="component__display--container flex-column">
-
             <p class="p-lg">Paragraph with Large Text</p>
             <p class="p-md">Paragraph with medium Text</p>
             <p class="p-sm">Paragraph with small Text</p>
           </div>
 
-
           <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">&lt;p class=&quot;p-large&quot;&gt;Paragraph with Large Text&lt;/p&gt;
-&lt;p class=&quot;p-medium&quot;&gt;Paragraph with medium Text&lt;/p&gt;
-&lt;p class=&quot;p-small&quot;&gt;Paragraph with small Text&lt;/p&gt;</code></pre>
+            <pre class="code__snippet"><code class="language-html">&lt;p class=&quot;p-lg&quot;&gt;Paragraph with Large Text&lt;/p&gt;
+          &lt;p class=&quot;p-md&quot;&gt;Paragraph with medium Text&lt;/p&gt;
+          &lt;p class=&quot;p-sm&quot;&gt;Paragraph with small Text&lt;/p&gt;</code></pre>
           </div>
 
           <h3>Examples Of Gray Text</h3>
           <div class="component__display--container flex-column">
-
             <p class="p-md gray-lt">Hello I am TEXT in GRAY</p>
             <p class="p-md gray-md">I have More Darker shade than you</p>
-            <p class="p-md gray-dk">Oh! Really you haven't seen more darker yet?</p>
-
-            <p class="p-md gray-dkst">Hey Kids what happened who is darker than me?</p>
-
+            <p class="p-md gray-dk">
+              Oh! Really you haven't seen more darker yet?
+            </p>
+            <p class="p-md gray-dkst">
+              Hey Kids what happened who is darker than me?
+            </p>
           </div>
 
-
-
           <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">&lt;p class=&quot;p-medium gray-lt&quot;&gt;Hello I am TEXT in GRAY&lt;/p&gt;
-&lt;p class=&quot;p-medium gray-md&quot;&gt;I have More Darker shade than you&lt;/p&gt;
-&lt;p class=&quot;p-medium gray-dk&quot;&gt;Oh! Really you haven't seen more darker yet?&lt;/p&gt;
-&lt;p class=&quot;p-medium gray-dkst&quot;&gt;Hey Kids what happened who is darker than me?&lt;/p&gt;</code></pre>
+            <pre
+              class="code__snippet"><code class="language-html">&lt;p class=&quot;p-md gray-lt&quot;&gt;Hello I am TEXT in GRAY&lt;/p&gt;
+          &lt;p class=&quot;p-md gray-md&quot;&gt;I have More Darker shade than you&lt;/p&gt;
+          &lt;p class=&quot;p-md gray-dk&quot;&gt;Oh! Really you haven't seen more darker yet?&lt;/p&gt;
+          &lt;p class=&quot;p-md gray-dkst&quot;&gt;Hey Kids what happened who is darker than me?&lt;/p&gt;</code></pre>
           </div>
 
           <h3>Examples of Center Text</h3>
           <div class="component__display--container">
-
-
             <div>
+              <h1 class="h1 text-center">H1 TEXT : AM IN CENTER ?</h1>
 
-
-              <h1 class="h1 text-center"> H1 TEXT : AM IN CENTER ?</h1>
-
-              <p class="p-md gray-md text-right">
-                Yes You are in center
-              </p>
+              <p class="p-md gray-md text-right">Yes You are in center</p>
 
               <small class="p-sm text-left">Hey P you are aligned Right</small>
-
             </div>
-
           </div>
 
           <div class="component__display--code">
             <pre class="code__snippet"><code class="language-html"> &lt;h1 class=&quot;h1 text-center&quot;&gt; H1 TEXT : AM IN CENTER ?&lt;/h1&gt;
-&lt;p class=&quot;p-md gray-md text-right&quot;&gt;Yes You are in center&lt;/p&gt;           
-&lt;small class=&quot;p-sm text-left&quot;&gt;Hey P you are aligned Right&lt;/small&gt;</code></pre>
+          &lt;p class=&quot;p-md gray-md text-right&quot;&gt;Yes You are in center&lt;/p&gt;           
+          &lt;small class=&quot;p-sm text-left&quot;&gt;Hey P you are aligned Right&lt;/small&gt;</code></pre>
           </div>
 
           <!-- usecase/ description -->
           <div class="component__usecase">
             <h3>Usecase</h3>
 
-            <li>
-              Use Heading in a chronological order from large to small.
-            </li>
+            <ul>
+              <li>
+                Use Heading in a chronological order from large to small.
+              </li>
 
-            <li>
-              As a rule of thumb use one h1 per webpage.
-            </li>
+              <li>As a rule of thumb use one h1 per webpage.</li>
 
-            <li>
-              by just using class you can apply this heading, paragraph style on block level, inline elements.
-            </li>
+              <li>
+                by just using class you can apply this heading, paragraph
+                style on block level, inline elements.
+              </li>
 
-            <li>
-              The heading components block level margins are 0 so you can use it directly without any modification.
-            </li>
+              <li>
+                The heading components block level margins are 0 so you can
+                use it directly without any modification.
+              </li>
+            </ul>
           </div>
         </section>
 
         <div class="gradient"></div>
 
+        <!-- Lists -->
         <div id="List"></div>
 
-        <!-- Lists -->
         <section class="component">
-            <div class="component__info">
-                <div class="component__heading">
-                    <h2>Lists</h2>
-                </div>
-    
-                <p>
-                 List is a very useful component in real life as well as on web
-                </p>
-    
-               <p>
-                we can see lists are used in navigation, displaying elements in order, Menus etc              
-                </p>
+          <div class="component__info">
+            <div class="component__heading">
+              <h2>Lists</h2>
             </div>
-    
-            <h3>Examples of Unordered List with bullets</h3>
-            <div class="component__display--container">
-                
-               
-                    <ul class="styled-list">
-                        <li>List Item 1</li>
-                    <li>List Item 2</li>
-                    <li>List Item 3</li>
-                    <li>List Item 4</li>
-                    </ul>
-    
-                    <ul class="styled-list list-style-circle">
-                    <li>List Item 1</li>
-                    <li>List Item 2</li>
-                    <li>List Item 3</li>
-                    <li>List Item 4</li>
-                    </ul>
-    
-                    <ul class="styled-list list-style-square">
-                        <li>List Item 1</li>
-                        <li>List Item 2</li>
-                        <li>List Item 3</li>
-                        <li>List Item 4</li>
-                        </ul>
-               
-            </div>
-            
-            <div class="component__display--code">
-                <pre
-                    class="code__snippet"><code class="language-html">
-    &lt;ul class=&quot;styled-list&quot;&gt;
-    &lt;li&gt;List Item 1&lt;/li&gt;
-    &lt;li&gt;List Item 2&lt;/li&gt;
-    &lt;li&gt;List Item 3&lt;/li&gt;
-    &lt;li&gt;List Item 4&lt;/li&gt;
-    &lt;/ul&gt;
-    
-    &lt;ul class=&quot;styled-list list-style-circle&quot;&gt;
-    &lt;li&gt;List Item 1&lt;/li&gt;
-    &lt;li&gt;List Item 2&lt;/li&gt;
-    &lt;li&gt;List Item 3&lt;/li&gt;
-    &lt;li&gt;List Item 4&lt;/li&gt;
-    &lt;/ul&gt;
-    
-    &lt;ul class=&quot;styled-list list-style-square&quot;&gt;
-    &lt;li&gt;List Item 1&lt;/li&gt;
-    &lt;li&gt;List Item 2&lt;/li&gt;
-    &lt;li&gt;List Item 3&lt;/li&gt;
-    &lt;li&gt;List Item 4&lt;/li&gt;
-    &lt;/ul&gt;</code></pre>
-            </div>
-    
-    
-            <h3>Examples of Ordered List</h3>
-            <div class="component__display--container flex-row">
-                
-                <ol class="styled-list">
-                    <li>List Item with numbers</li>
-                    <li>List Item with numbers</li>
-                    <li>List Item with numbers</li>
-                    <li>List Item with numbers</li>
-                </ol>
-    
-                <ol class="styled-list" reversed>
-                    <li>List Item reversed</li>
-                    <li>List Item reversed</li>
-                    <li>List Item reversed</li>
-                    <li>List Item reversed</li>
-                </ol>
-    
-                <ol class="styled-list list-style-alpha-up">
-                    <li>List Item with upper alphabets</li>
-                    <li>List Item with upper alphabets</li>
-                    <li>List Item with upper alphabets</li>
-                    <li>List Item with upper alphabets</li>
-                </ol>
-    
-                
-                <ol class="styled-list list-style-alpha-low">
-                    <li>List Item with lower alphabets</li>
-                    <li>List Item with lower alphabets</li>
-                    <li>List Item with lower alphabets</li>
-                    <li>List Item with lower alphabets</li>
-                </ol>
-    
-                <ol class="styled-list list-style-roman-up">
-                    <li>List Item with upper romans</li>
-                    <li>List Item with upper romans</li>
-                    <li>List Item with upper romans</li>
-                    <li>List Item with upper romans</li>
-                </ol>
-    
-                <ol class="styled-list list-style-roman-low">
-                    <li>List Item with lower romans</li>
-                    <li>List Item with lower romans</li>
-                    <li>List Item with lower romans</li>
-                    <li>List Item with lower romans</li>
-                </ol>
-    
-    
-            </div>       
-    
-            
-            <div class="component__display--code">
-                <pre
-                    class="code__snippet"><code class="language-html">&lt;ol class=&quot;styled-list&quot;&gt;
-       &lt;li&gt;List Item with numbers&lt;/li&gt;
-       &lt;li&gt;List Item with numbers&lt;/li&gt;
-       &lt;li&gt;List Item with numbers&lt;/li&gt;
-       &lt;li&gt;List Item with numbers&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;ol class=&quot;styled-list&quot; reversed&gt;
-       &lt;li&gt;List Item reversed&lt;/li&gt;
-       &lt;li&gt;List Item reversed&lt;/li&gt;
-       &lt;li&gt;List Item reversed&lt;/li&gt;
-       &lt;li&gt;List Item reversed&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;ol class=&quot;styled-list list-style-alpha-up&quot;&gt;
-       &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
-       &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
-       &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
-       &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;ol class=&quot;styled-list list-style-alpha-low&quot;&gt;
-       &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
-       &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
-       &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
-       &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;ol class=&quot;styled-list list-style-roman-up&quot;&gt;
-       &lt;li&gt;List Item with upper romans&lt;/li&gt;
-       &lt;li&gt;List Item with upper romans&lt;/li&gt;
-       &lt;li&gt;List Item with upper romans&lt;/li&gt;
-       &lt;li&gt;List Item with upper romans&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;ol class=&quot;styled-list list-style-roman-low&quot;&gt;
-       &lt;li&gt;List Item with lower romans&lt;/li&gt;
-       &lt;li&gt;List Item with lower romans&lt;/li&gt;
-       &lt;li&gt;List Item with lower romans&lt;/li&gt;
-       &lt;li&gt;List Item with lower romans&lt;/li&gt;
-    &lt;/ol&gt;</code></pre>
-            </div>
-    
-            <h3>Examples Of Inline List and List with no bullets</h3>
-    
-            <div class="component__display--container flex-wrap">
-    
-                <ul class="styled-list list-style-none">
-                    <li>List Items with no bullets</li>
-                    <li>List Items with no bullets</li>
-                    <li>List Items with no bullets</li>
-                    <li>List Items with no bullets</li>
-                </ul>
-                      
-                <ul class="styled-list list-display-inline list-style-none">
-                    <li>Inline Element</li>
-                    <li>Inline Element</li>
-                    <li>Inline Element</li>
-                </ul>
-            </div>
-    
-            
-    
-            <div class="component__display--code">
-                <pre
-                    class="code__snippet"><code class="language-html">&lt;ul class=&quot;styled-list list-style-none&quot;&gt;
-       &lt;li&gt;List Items with no bullets&lt;/li&gt;
-       &lt;li&gt;List Items with no bullets&lt;/li&gt;
-       &lt;li&gt;List Items with no bullets&lt;/li&gt;
-       &lt;li&gt;List Items with no bullets&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;ul class=&quot;styled-list list-display-inline list-style-none&quot;&gt;
-       &lt;li&gt;Inline Element&lt;/li&gt;
-       &lt;li&gt;Inline Element&lt;/li&gt;
-       &lt;li&gt;Inline Element&lt;/li&gt;
-    &lt;/ul&gt;</code></pre>
-            </div>
-                
-    <h3>Examples of Notification Stacked Lists</h3>
-            <div class="component__display--container">
-    
-                <ol class="notification-stack list-style-none flex-column">
-                    <li> <span>Notification One </span>
-                        <i class="fa fa-times fa-2x"></i>
-                    </li>
-                    <li> <span>Notification Two </span>
-                        <i class="fa fa-times fa-2x"></i>
-                    </li>
-                    <li> <span>Notification Three</span> 
-                        <i class="fa fa-times fa-2x"></i>
-                    </li>
-                    <li> <span>Notification Four</span> 
-                        <i class="fa fa-times fa-2x"></i>
-                    </li>
-                </ol>
-    
-    
-            </div>
-    
-            <div class="component__display--code">
-                <pre
-                    class="code__snippet"><code class="language-html"> &lt;ol class=&quot;notification-stack list-style-none flex-column&quot;&gt;
-       &lt;li&gt; &lt;span&gt;Notification One &lt;/span&gt;
-          &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
-       &lt;/li&gt;
-       &lt;li&gt; &lt;span&gt;Notification Two &lt;/span&gt;
-          &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
-       &lt;/li&gt;
-       &lt;li&gt; &lt;span&gt;Notification Three&lt;/span&gt; 
-          &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
-       &lt;/li&gt;
-       &lt;li&gt; &lt;span&gt;Notification Four&lt;/span&gt; 
-          &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
-       &lt;/li&gt;
-    &lt;/ol&gt;</code></pre>
-            </div>
-            
-            <!-- usecase/ description -->
-            <div class="component__usecase">
-                <h3>Usecase</h3>
-    
-                <li>
-                  you can use list with different styles like disc(default), circle, square with list-style-type class in this component.
-                </li>
-    
-                <li>
-                  There are multiple styles for ordered list like alphabets, romans 
-                </li>
-    
-                <li>
-                  with class .list-display-inline and .list-style-none you can use it for nav links.
-                </li>
-    
-                <li>
-                  the width of notification-stacked can customised to fit the with of container.                
-                </li>
-            </div>
+
+            <p>
+              List is a very useful component in real life as well as on web
+            </p>
+
+            <p>
+              we can see lists are used in navigation, displaying elements in
+              order, Menus etc
+            </p>
+          </div>
+
+          <h3>Examples of Unordered List with bullets</h3>
+          <div class="component__display--container">
+            <ul class="styled-list">
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+              <li>List Item 4</li>
+            </ul>
+
+            <ul class="styled-list list-style-circle">
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+              <li>List Item 4</li>
+            </ul>
+
+            <ul class="styled-list list-style-square">
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+              <li>List Item 4</li>
+            </ul>
+          </div>
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html">
+          &lt;ul class=&quot;styled-list&quot;&gt;
+          &lt;li&gt;List Item 1&lt;/li&gt;
+          &lt;li&gt;List Item 2&lt;/li&gt;
+          &lt;li&gt;List Item 3&lt;/li&gt;
+          &lt;li&gt;List Item 4&lt;/li&gt;
+          &lt;/ul&gt;
+          
+          &lt;ul class=&quot;styled-list list-style-circle&quot;&gt;
+          &lt;li&gt;List Item 1&lt;/li&gt;
+          &lt;li&gt;List Item 2&lt;/li&gt;
+          &lt;li&gt;List Item 3&lt;/li&gt;
+          &lt;li&gt;List Item 4&lt;/li&gt;
+          &lt;/ul&gt;
+          
+          &lt;ul class=&quot;styled-list list-style-square&quot;&gt;
+          &lt;li&gt;List Item 1&lt;/li&gt;
+          &lt;li&gt;List Item 2&lt;/li&gt;
+          &lt;li&gt;List Item 3&lt;/li&gt;
+          &lt;li&gt;List Item 4&lt;/li&gt;
+          &lt;/ul&gt;</code></pre>
+          </div>
+
+          <h3>Examples of Ordered List</h3>
+          <div class="component__display--container flex-row">
+            <ol class="styled-list">
+              <li>List Item with numbers</li>
+              <li>List Item with numbers</li>
+              <li>List Item with numbers</li>
+              <li>List Item with numbers</li>
+            </ol>
+
+            <ol class="styled-list" reversed>
+              <li>List Item reversed</li>
+              <li>List Item reversed</li>
+              <li>List Item reversed</li>
+              <li>List Item reversed</li>
+            </ol>
+
+            <ol class="styled-list list-style-alpha-up">
+              <li>List Item with upper alphabets</li>
+              <li>List Item with upper alphabets</li>
+              <li>List Item with upper alphabets</li>
+              <li>List Item with upper alphabets</li>
+            </ol>
+
+            <ol class="styled-list list-style-alpha-low">
+              <li>List Item with lower alphabets</li>
+              <li>List Item with lower alphabets</li>
+              <li>List Item with lower alphabets</li>
+              <li>List Item with lower alphabets</li>
+            </ol>
+
+            <ol class="styled-list list-style-roman-up">
+              <li>List Item with upper romans</li>
+              <li>List Item with upper romans</li>
+              <li>List Item with upper romans</li>
+              <li>List Item with upper romans</li>
+            </ol>
+
+            <ol class="styled-list list-style-roman-low">
+              <li>List Item with lower romans</li>
+              <li>List Item with lower romans</li>
+              <li>List Item with lower romans</li>
+              <li>List Item with lower romans</li>
+            </ol>
+          </div>
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html">&lt;ol class=&quot;styled-list&quot;&gt;
+             &lt;li&gt;List Item with numbers&lt;/li&gt;
+             &lt;li&gt;List Item with numbers&lt;/li&gt;
+             &lt;li&gt;List Item with numbers&lt;/li&gt;
+             &lt;li&gt;List Item with numbers&lt;/li&gt;
+          &lt;/ol&gt;
+          &lt;ol class=&quot;styled-list&quot; reversed&gt;
+             &lt;li&gt;List Item reversed&lt;/li&gt;
+             &lt;li&gt;List Item reversed&lt;/li&gt;
+             &lt;li&gt;List Item reversed&lt;/li&gt;
+             &lt;li&gt;List Item reversed&lt;/li&gt;
+          &lt;/ol&gt;
+          &lt;ol class=&quot;styled-list list-style-alpha-up&quot;&gt;
+             &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
+             &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
+             &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
+             &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
+          &lt;/ol&gt;
+          &lt;ol class=&quot;styled-list list-style-alpha-low&quot;&gt;
+             &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
+             &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
+             &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
+             &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
+          &lt;/ol&gt;
+          &lt;ol class=&quot;styled-list list-style-roman-up&quot;&gt;
+             &lt;li&gt;List Item with upper romans&lt;/li&gt;
+             &lt;li&gt;List Item with upper romans&lt;/li&gt;
+             &lt;li&gt;List Item with upper romans&lt;/li&gt;
+             &lt;li&gt;List Item with upper romans&lt;/li&gt;
+          &lt;/ol&gt;
+          &lt;ol class=&quot;styled-list list-style-roman-low&quot;&gt;
+             &lt;li&gt;List Item with lower romans&lt;/li&gt;
+             &lt;li&gt;List Item with lower romans&lt;/li&gt;
+             &lt;li&gt;List Item with lower romans&lt;/li&gt;
+             &lt;li&gt;List Item with lower romans&lt;/li&gt;
+          &lt;/ol&gt;</code></pre>
+          </div>
+
+          <h3>Examples Of Inline List and List with no bullets</h3>
+
+          <div class="component__display--container flex-wrap">
+            <ul class="styled-list list-style-none">
+              <li>List Items with no bullets</li>
+              <li>List Items with no bullets</li>
+              <li>List Items with no bullets</li>
+              <li>List Items with no bullets</li>
+            </ul>
+
+            <ul class="styled-list list-display-inline list-style-none">
+              <li>Inline Element</li>
+              <li>Inline Element</li>
+              <li>Inline Element</li>
+            </ul>
+          </div>
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html">&lt;ul class=&quot;styled-list list-style-none&quot;&gt;
+             &lt;li&gt;List Items with no bullets&lt;/li&gt;
+             &lt;li&gt;List Items with no bullets&lt;/li&gt;
+             &lt;li&gt;List Items with no bullets&lt;/li&gt;
+             &lt;li&gt;List Items with no bullets&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;ul class=&quot;styled-list list-display-inline list-style-none&quot;&gt;
+             &lt;li&gt;Inline Element&lt;/li&gt;
+             &lt;li&gt;Inline Element&lt;/li&gt;
+             &lt;li&gt;Inline Element&lt;/li&gt;
+          &lt;/ul&gt;</code></pre>
+          </div>
+
+          <h3>Examples of Notification Stacked Lists</h3>
+          <div class="component__display--container">
+            <ol class="notification-stack list-style-none flex-column">
+              <li>
+                <span>Notification One </span>
+                <i class="fa fa-times fa-2x"></i>
+              </li>
+              <li>
+                <span>Notification Two </span>
+                <i class="fa fa-times fa-2x"></i>
+              </li>
+              <li>
+                <span>Notification Three</span>
+                <i class="fa fa-times fa-2x"></i>
+              </li>
+              <li>
+                <span>Notification Four</span>
+                <i class="fa fa-times fa-2x"></i>
+              </li>
+            </ol>
+          </div>
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html"> &lt;ol class=&quot;notification-stack list-style-none flex-column&quot;&gt;
+             &lt;li&gt; &lt;span&gt;Notification One &lt;/span&gt;
+                &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
+             &lt;/li&gt;
+             &lt;li&gt; &lt;span&gt;Notification Two &lt;/span&gt;
+                &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
+             &lt;/li&gt;
+             &lt;li&gt; &lt;span&gt;Notification Three&lt;/span&gt; 
+                &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
+             &lt;/li&gt;
+             &lt;li&gt; &lt;span&gt;Notification Four&lt;/span&gt; 
+                &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
+             &lt;/li&gt;
+          &lt;/ol&gt;</code></pre>
+          </div>
+
+          <!-- usecase/ description -->
+          <div class="component__usecase">
+            <h3>Usecase</h3>
+
+            <ul>
+              <li>
+                you can use list with different styles like disc(default),
+                circle, square with list-style-type class in this component.
+              </li>
+
+              <li>
+                There are multiple styles for ordered list like alphabets,
+                romans
+              </li>
+
+              <li>
+                with class .list-display-inline and .list-style-none you can
+                use it for nav links.
+              </li>
+
+              <li>
+                the width of notification-stacked can customised to fit the
+                with of container.
+              </li>
+            </ul>
+          </div>
         </section>
 
+        <div class="gradient"></div>
 
+        <!-- Navigation -->
+        <div id="Navigation"></div>
+
+        <section class="component">
+          <div class="component__info">
+            <div class="component__heading">
+              <h2>Header</h2>
+            </div>
+
+            <p>Header is a component used for navigation</p>
+          </div>
+
+          <h3>Example of Navbar for desktop</h3>
+
+          <div class="component__display--container">
+            <div class="navbar">
+              <div class="navbar-left">
+                <div class="navbar-logo">
+                  <img class="responsive-image round-image" src="../docs/assets/images/krsn_arjun_sclputure.jpeg"
+                    alt="" />
+
+                  <div class="p-sm">LOGO</div>
+                </div>
+
+                <div class="navbar-search-container">
+                  <input type="text" class="input-field" placeholder="What are you looking for?" />
+
+                  <button class="btn btn-primary">Search</button>
+                </div>
+              </div>
+
+              <div class="navbar-right">
+                <ul class="navbar-icons list-style-none list-display-inline">
+                  <li><a href=""> HOME </a></li>
+
+                  <li><a href="#"> PRODUCTS </a></li>
+
+                  <li><a href="#"> ABOUT US </a></li>
+
+                  <li>
+                    <a href="#">
+                      <span>
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <span>
+                        <i class="fas fa-heart"></i>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <span>
+                        <i class="fas fa-shopping-cart"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html">
+      &lt;div class=&quot;navbar&quot;&gt;
+      &lt;div class=&quot;navbar-left&quot;&gt;
+      &lt;div class=&quot;navbar-logo&quot;&gt;
+         &lt;img class=&quot;responsive-image round-image&quot; src=&quot;../docs/assets/images/krsn_arjun_sclputure.jpeg&quot; alt=&quot;&quot;/&gt;
+         &lt;div class=&quot;p-sm&quot;&gt;LOGO&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;navbar-search-container&quot;&gt;
+         &lt;input type=&quot;text&quot; class=&quot;input-field&quot;
+            placeholder=&quot;What are you looking for?&quot;
+            &gt;
+         &lt;button class=&quot;btn btn-primary&quot;&gt;Search&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;navbar-right&quot;&gt;
+      &lt;ul class=&quot;navbar-icons list-style-none list-display-inline&quot;&gt;
+         &lt;li&gt;&lt;a href=&quot;&quot;&gt;
+            HOME 
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+            PRODUCTS
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+            ABOUT US
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+            &lt;span&gt;
+            &lt;i class=&quot;fas fa-user &quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+            &lt;span&gt;
+            &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+            &lt;span&gt;
+            &lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;
+            &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;</code></pre>
+          </div>
+
+          <div class="component__display--container">
+            <div class="navbar">
+              <div class="navbar-left">
+                <div class="navbar-logo">
+                  <img class="responsive-image round-image" src="../docs/assets/images/krsn_arjun_sclputure.jpeg"
+                    alt="" />
+
+                  <div class="p-sm">LOGO</div>
+                </div>
+              </div>
+
+              <div class="navbar-right">
+                <ul class="navbar-icons list-style-none list-display-inline flex-row">
+                  <li><a href=""> HOME </a></li>
+
+                  <li><a href="#"> PRODUCTS </a></li>
+
+                  <li><a href="#"> ABOUT US </a></li>
+
+                  <li>
+                    <a href="#">
+                      <span>
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <span>
+                        <i class="fas fa-heart"></i>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <span>
+                        <i class="fas fa-shopping-cart"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html">&lt;div class=&quot;navbar&quot;&gt;
+      &lt;div class=&quot;navbar-left&quot;&gt;
+         &lt;div class=&quot;navbar-logo&quot;&gt;
+            &lt;img class=&quot;responsive-image round-image&quot; src=&quot;../docs/assets/images/krsn_arjun_sclputure.jpeg&quot; alt=&quot;&quot;/&gt;
+            &lt;div class=&quot;p-sm&quot;&gt;LOGO&lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;navbar-right&quot;&gt;
+         &lt;ul class=&quot;navbar-icons list-style-none list-display-inline flex-row&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;
+               HOME 
+               &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+               PRODUCTS
+               &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+               ABOUT US
+               &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+               &lt;span&gt;
+               &lt;i class=&quot;fas fa-user &quot;&gt;&lt;/i&gt;
+               &lt;/span&gt;
+               &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+               &lt;span&gt;
+               &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;
+               &lt;/span&gt;
+               &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+               &lt;span&gt;
+               &lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;
+               &lt;/span&gt;
+               &lt;/a&gt;
+            &lt;/li&gt;
+         &lt;/ul&gt;
+      &lt;/div&gt;
+&lt;/div&gt;
+      </code></pre>
+          </div>
+
+          <!-- usecase/ description -->
+          <div class="component__usecase">
+            <h3>Usecase</h3>
+
+            <ul>
+              <li>
+                This component is made using flex box, with navbar classes you
+                can customize your navbar
+              </li>
+              <li>
+                You can use this component just by replacing your text with
+                the given text, position is by default sticky and top:0.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="gradient"></div>
+
+        <!-- Rating -->
+        <div id="Rating"></div>
+
+        <section class="component">
+          <div class="component__info">
+            <div class="component__heading">
+              <h2>Rating</h2>
+            </div>
+
+            <p>
+              Ratings are used for to filter content based on previous user
+              feedbacks.
+            </p>
+          </div>
+
+          <div class="component__display--container">
+            <div class="star-rating">
+              <input type="radio" id="5-stars" name="rating" value="5" />
+              <label for="5-stars" class="star">&#9733;</label>
+
+              <input type="radio" id="4-stars" name="rating" value="4" />
+              <label for="4-stars" class="star">&#9733;</label>
+
+              <input type="radio" id="3-stars" name="rating" value="3" />
+              <label for="3-stars" class="star">&#9733;</label>
+
+              <input type="radio" id="2-stars" name="rating" value="2" />
+              <label for="2-stars" class="star">&#9733;</label>
+
+              <input type="radio" id="1-star" name="rating" value="1" />
+              <label for="1-star" class="star">&#9733;</label>
+            </div>
+          </div>
+
+          <div class="component__display--code">
+            <pre class="code__snippet"><code class="language-html">&lt;div class=&quot;star-rating&quot;&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;5-stars&quot; name=&quot;rating&quot; value=&quot;5&quot;&gt;
+        &lt;label for=&quot;5-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;4-stars&quot; name=&quot;rating&quot; value=&quot;4&quot;&gt;
+        &lt;label for=&quot;4-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;3-stars&quot; name=&quot;rating&quot; value=&quot;3&quot;&gt;
+        &lt;label for=&quot;3-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;2-stars&quot; name=&quot;rating&quot; value=&quot;2&quot;&gt;
+        &lt;label for=&quot;2-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;1-star&quot; name=&quot;rating&quot; value=&quot;1&quot;&gt;
+        &lt;label for=&quot;1-star&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+      &lt;/div&gt;</code>
+      </pre>
+          </div>
+
+          <!-- usecase/ description -->
+          <div class="component__usecase">
+            <h3>Usecase</h3>
+
+            <ul>
+              <li>
+                use <code>.star-rating</code> for grouping star elements
+              </li>
+              <li>Can be used in filters</li>
+            </ul>
+          </div>
+        </section>
       </article>
-
     </div>
 
     <div class="gradient"></div>
+
     <footer class="flex-column">
       <nav>
         <h2 class="font-24">Dheeraj Purohit &middot; Web Engineer</h2>
@@ -1482,8 +1663,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="./index.js"></script>
-
-
 </body>
 
 </html>

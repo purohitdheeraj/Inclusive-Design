@@ -16,259 +16,82 @@
 
 <body>
     
-    <div id="List"></div>
+    
+    <div id="Rating"></div>
 
-    <!-- Lists -->
+    <!-- Rating -->
     <section class="component">
         <div class="component__info">
             <div class="component__heading">
-                <h2>Lists</h2>
+                <h2>Rating</h2>
             </div>
 
             <p>
-             List is a very useful component in real life as well as on web
+                Ratings are used for to filter content based on previous user feedbacks.
             </p>
 
-           <p>
-            we can see lists are used in navigation, displaying elements in order, Menus etc              
-            </p>
+           
         </div>
 
-        <h3>Examples of Unordered List with bullets</h3>
+
         <div class="component__display--container">
-            
-           
-                <ul class="styled-list">
-                    <li>List Item 1</li>
-                <li>List Item 2</li>
-                <li>List Item 3</li>
-                <li>List Item 4</li>
-                </ul>
 
-                <ul class="styled-list list-style-circle">
-                <li>List Item 1</li>
-                <li>List Item 2</li>
-                <li>List Item 3</li>
-                <li>List Item 4</li>
-                </ul>
+            <div class="star-rating">
+                
+                <input type="radio" id="5-stars" name="rating" value="5">
+                <label for="5-stars" class="star">&#9733;</label>
 
-                <ul class="styled-list list-style-square">
-                    <li>List Item 1</li>
-                    <li>List Item 2</li>
-                    <li>List Item 3</li>
-                    <li>List Item 4</li>
-                    </ul>
-           
+                
+                <input type="radio" id="4-stars" name="rating" value="4">
+                <label for="4-stars" class="star">&#9733;</label>
+
+
+                <input type="radio" id="3-stars" name="rating" value="3">
+                <label for="3-stars" class="star">&#9733;</label>
+
+                <input type="radio" id="2-stars" name="rating" value="2">
+                <label for="2-stars" class="star">&#9733;</label>
+
+                <input type="radio" id="1-star" name="rating" value="1">
+                <label for="1-star" class="star">&#9733;</label>
+
+            </div>
+
         </div>
-        
+
         <div class="component__display--code">
             <pre
                 class="code__snippet"><code class="language-html">
-&lt;ul class=&quot;styled-list&quot;&gt;
-&lt;li&gt;List Item 1&lt;/li&gt;
-&lt;li&gt;List Item 2&lt;/li&gt;
-&lt;li&gt;List Item 3&lt;/li&gt;
-&lt;li&gt;List Item 4&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&quot;star-rating&quot;&gt;
+   &lt;input type=&quot;radio&quot; id=&quot;5-stars&quot; name=&quot;rating&quot; value=&quot;5&quot;&gt;
+   &lt;label for=&quot;5-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+   &lt;input type=&quot;radio&quot; id=&quot;4-stars&quot; name=&quot;rating&quot; value=&quot;4&quot;&gt;
+   &lt;label for=&quot;4-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+   &lt;input type=&quot;radio&quot; id=&quot;3-stars&quot; name=&quot;rating&quot; value=&quot;3&quot;&gt;
+   &lt;label for=&quot;3-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+   &lt;input type=&quot;radio&quot; id=&quot;2-stars&quot; name=&quot;rating&quot; value=&quot;2&quot;&gt;
+   &lt;label for=&quot;2-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+   &lt;input type=&quot;radio&quot; id=&quot;1-star&quot; name=&quot;rating&quot; value=&quot;1&quot;&gt;
+   &lt;label for=&quot;1-star&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
+&lt;/div&gt;
+</code>
 
-&lt;ul class=&quot;styled-list list-style-circle&quot;&gt;
-&lt;li&gt;List Item 1&lt;/li&gt;
-&lt;li&gt;List Item 2&lt;/li&gt;
-&lt;li&gt;List Item 3&lt;/li&gt;
-&lt;li&gt;List Item 4&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ul class=&quot;styled-list list-style-square&quot;&gt;
-&lt;li&gt;List Item 1&lt;/li&gt;
-&lt;li&gt;List Item 2&lt;/li&gt;
-&lt;li&gt;List Item 3&lt;/li&gt;
-&lt;li&gt;List Item 4&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-        </div>
-
-
-        <h3>Examples of Ordered List</h3>
-        <div class="component__display--container flex-row">
-            
-            <ol class="styled-list">
-                <li>List Item with numbers</li>
-                <li>List Item with numbers</li>
-                <li>List Item with numbers</li>
-                <li>List Item with numbers</li>
-            </ol>
-
-            <ol class="styled-list" reversed>
-                <li>List Item reversed</li>
-                <li>List Item reversed</li>
-                <li>List Item reversed</li>
-                <li>List Item reversed</li>
-            </ol>
-
-            <ol class="styled-list list-style-alpha-up">
-                <li>List Item with upper alphabets</li>
-                <li>List Item with upper alphabets</li>
-                <li>List Item with upper alphabets</li>
-                <li>List Item with upper alphabets</li>
-            </ol>
-
-            
-            <ol class="styled-list list-style-alpha-low">
-                <li>List Item with lower alphabets</li>
-                <li>List Item with lower alphabets</li>
-                <li>List Item with lower alphabets</li>
-                <li>List Item with lower alphabets</li>
-            </ol>
-
-            <ol class="styled-list list-style-roman-up">
-                <li>List Item with upper romans</li>
-                <li>List Item with upper romans</li>
-                <li>List Item with upper romans</li>
-                <li>List Item with upper romans</li>
-            </ol>
-
-            <ol class="styled-list list-style-roman-low">
-                <li>List Item with lower romans</li>
-                <li>List Item with lower romans</li>
-                <li>List Item with lower romans</li>
-                <li>List Item with lower romans</li>
-            </ol>
-
-
-        </div>       
-
-        
-        <div class="component__display--code">
-            <pre
-                class="code__snippet"><code class="language-html">&lt;ol class=&quot;styled-list&quot;&gt;
-   &lt;li&gt;List Item with numbers&lt;/li&gt;
-   &lt;li&gt;List Item with numbers&lt;/li&gt;
-   &lt;li&gt;List Item with numbers&lt;/li&gt;
-   &lt;li&gt;List Item with numbers&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol class=&quot;styled-list&quot; reversed&gt;
-   &lt;li&gt;List Item reversed&lt;/li&gt;
-   &lt;li&gt;List Item reversed&lt;/li&gt;
-   &lt;li&gt;List Item reversed&lt;/li&gt;
-   &lt;li&gt;List Item reversed&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol class=&quot;styled-list list-style-alpha-up&quot;&gt;
-   &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
-   &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
-   &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
-   &lt;li&gt;List Item with upper alphabets&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol class=&quot;styled-list list-style-alpha-low&quot;&gt;
-   &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
-   &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
-   &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
-   &lt;li&gt;List Item with lower alphabets&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol class=&quot;styled-list list-style-roman-up&quot;&gt;
-   &lt;li&gt;List Item with upper romans&lt;/li&gt;
-   &lt;li&gt;List Item with upper romans&lt;/li&gt;
-   &lt;li&gt;List Item with upper romans&lt;/li&gt;
-   &lt;li&gt;List Item with upper romans&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol class=&quot;styled-list list-style-roman-low&quot;&gt;
-   &lt;li&gt;List Item with lower romans&lt;/li&gt;
-   &lt;li&gt;List Item with lower romans&lt;/li&gt;
-   &lt;li&gt;List Item with lower romans&lt;/li&gt;
-   &lt;li&gt;List Item with lower romans&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-        </div>
-
-        <h3>Examples Of Inline List and List with no bullets</h3>
-
-        <div class="component__display--container flex-wrap">
-
-            <ul class="styled-list list-style-none">
-                <li>List Items with no bullets</li>
-                <li>List Items with no bullets</li>
-                <li>List Items with no bullets</li>
-                <li>List Items with no bullets</li>
-            </ul>
-                  
-            <ul class="styled-list list-display-inline list-style-none">
-                <li>Inline Element</li>
-                <li>Inline Element</li>
-                <li>Inline Element</li>
-            </ul>
+</pre>
         </div>
 
         
-
-        <div class="component__display--code">
-            <pre
-                class="code__snippet"><code class="language-html">&lt;ul class=&quot;styled-list list-style-none&quot;&gt;
-   &lt;li&gt;List Items with no bullets&lt;/li&gt;
-   &lt;li&gt;List Items with no bullets&lt;/li&gt;
-   &lt;li&gt;List Items with no bullets&lt;/li&gt;
-   &lt;li&gt;List Items with no bullets&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul class=&quot;styled-list list-display-inline list-style-none&quot;&gt;
-   &lt;li&gt;Inline Element&lt;/li&gt;
-   &lt;li&gt;Inline Element&lt;/li&gt;
-   &lt;li&gt;Inline Element&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-        </div>
-            
-<h3>Examples of Notification Stacked Lists</h3>
-        <div class="component__display--container">
-
-            <ol class="notification-stack list-style-none flex-column">
-                <li> <span>Notification One </span>
-                    <i class="fa fa-times fa-2x"></i>
-                </li>
-                <li> <span>Notification Two </span>
-                    <i class="fa fa-times fa-2x"></i>
-                </li>
-                <li> <span>Notification Three</span> 
-                    <i class="fa fa-times fa-2x"></i>
-                </li>
-                <li> <span>Notification Four</span> 
-                    <i class="fa fa-times fa-2x"></i>
-                </li>
-            </ol>
-
-
-        </div>
-
-        <div class="component__display--code">
-            <pre
-                class="code__snippet"><code class="language-html"> &lt;ol class=&quot;notification-stack list-style-none flex-column&quot;&gt;
-   &lt;li&gt; &lt;span&gt;Notification One &lt;/span&gt;
-      &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
-   &lt;/li&gt;
-   &lt;li&gt; &lt;span&gt;Notification Two &lt;/span&gt;
-      &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
-   &lt;/li&gt;
-   &lt;li&gt; &lt;span&gt;Notification Three&lt;/span&gt; 
-      &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
-   &lt;/li&gt;
-   &lt;li&gt; &lt;span&gt;Notification Four&lt;/span&gt; 
-      &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
-   &lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-        </div>
+        
+    
         
         <!-- usecase/ description -->
         <div class="component__usecase">
             <h3>Usecase</h3>
 
             <li>
-              you can use list with different styles like disc(default), circle, square with list-style-type class in this component.
+              use <code>.star-rating</code> for grouping star elements
             </li>
-
             <li>
-              There are multiple styles for ordered list like alphabets, romans 
-            </li>
-
-            <li>
-              with class .list-display-inline and .list-style-none you can use it for nav links.
-            </li>
-
-            <li>
-              the width of notification-stacked can customised to fit the with of container.                
+                Can be used in filters
             </li>
         </div>
     </section>

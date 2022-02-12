@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../inclusive-ui.css" />
+    <link rel="stylesheet" href="../../../docs/main.css" />
+    <link rel="stylesheet" href="../../../docs/docs.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Images -->
+
+    <div id="Image"></div>
+
+    <section class="component">
+      <div class="component__info">
+        <div class="component__heading">
+          <h2>Images</h2>
+        </div>
+
+        <p>
+          Images can be customised to be responsive, round shaped and some
+          performance parameters like resolution switching, density switching
+          can be added.
+        </p>
+      </div>
+
+      <h3>Responsive Image</h3>
+
+      <p>
+        Responsive images will automatically adjust to fit the size of the
+        container.
+      </p>
+
+      <div class="component__display--container">
+        <img
+          class="responsive-image"
+          src="./assets/images/shrirangam.jpg"
+          alt="shrirangam-reponsive-img"
+        />
+      </div>
+
+      <div class="component__display--code">
+        <pre
+          class="code__snippet"
+        ><code class="language-html"> &lt;img class=&quot;responsive-image&quot;  src=&quot;../docs/assets/images/shrirangam.jpg&quot; alt=&quot;shrirangam-reponsive-img&quot;/&gt;</code></pre>
+      </div>
+
+      <h3>Round Shaped Images</h3>
+
+      <div class="component__display--container">
+        <div class="image-container-400x400 flex-column">
+          <img
+            class="round-image responsive-image"
+            src="./assets/images/suryanarayan.jpg"
+            alt="sun"
+          />
+        </div>
+      </div>
+
+      <div class="component__display--code">
+        <pre
+          class="code__snippet"
+        ><code class="language-html"> &lt;img class=&quot;round-image responsive-image&quot; src=&quot;../docs/assets/images/suryanarayan.jpg&quot; alt=&quot;sun&quot;/&gt;</code></pre>
+      </div>
+
+      <!-- usecase/ description -->
+      <div class="component__usecase">
+        <h3>Usecase</h3>
+
+        <ul>
+          <li>Responsive Images can be used as Background Cover Photos</li>
+
+          <li>Round Images can be used as avatars for user identity</li>
+
+          <li>
+            To make use of this utility add
+            <code> class="responsive-image" </code> and
+            <code>class="round-image"</code> for round Images on your image.
+          </li>
+
+          <li>
+            Make Sure you add a wrapper around your images to handle its
+            dimensions easily
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

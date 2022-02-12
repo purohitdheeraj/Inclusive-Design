@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../inclusive-ui.css" />
+    <link rel="stylesheet" href="../../../docs/main.css" />
+    <link rel="stylesheet" href="../../../docs/docs.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <div id="Navigation"></div>
+
+    <section class="component">
+      <div class="component__info">
+        <div class="component__heading">
+          <h2>Header</h2>
+        </div>
+
+        <p>Header is a component used for navigation</p>
+      </div>
+
+      <h3>Example of Navbar for desktop</h3>
+
+      <div class="component__display--container">
+        <div class="navbar">
+          <div class="navbar-left">
+            <div class="navbar-logo">
+              <img
+                class="responsive-image round-image"
+                src="../docs/assets/images/krsn_arjun_sclputure.jpeg"
+                alt=""
+              />
+
+              <div class="p-sm">LOGO</div>
+            </div>
+
+            <div class="navbar-search-container">
+              <input
+                type="text"
+                class="input-field"
+                placeholder="What are you looking for?"
+              />
+
+              <button class="btn btn-primary">Search</button>
+            </div>
+          </div>
+
+          <div class="navbar-right">
+            <ul class="navbar-icons list-style-none list-display-inline">
+              <li><a href=""> HOME </a></li>
+
+              <li><a href="#"> PRODUCTS </a></li>
+
+              <li><a href="#"> ABOUT US </a></li>
+
+              <li>
+                <a href="#">
+                  <span>
+                    <i class="fas fa-user"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <span>
+                    <i class="fas fa-heart"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <span>
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="component__display--code">
+        <pre class="code__snippet"><code class="language-html">
+&lt;div class=&quot;navbar&quot;&gt;
+&lt;div class=&quot;navbar-left&quot;&gt;
+&lt;div class=&quot;navbar-logo&quot;&gt;
+   &lt;img class=&quot;responsive-image round-image&quot; src=&quot;../docs/assets/images/krsn_arjun_sclputure.jpeg&quot; alt=&quot;&quot;/&gt;
+   &lt;div class=&quot;p-sm&quot;&gt;LOGO&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;navbar-search-container&quot;&gt;
+   &lt;input type=&quot;text&quot; class=&quot;input-field&quot;
+      placeholder=&quot;What are you looking for?&quot;
+      &gt;
+   &lt;button class=&quot;btn btn-primary&quot;&gt;Search&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;navbar-right&quot;&gt;
+&lt;ul class=&quot;navbar-icons list-style-none list-display-inline&quot;&gt;
+   &lt;li&gt;&lt;a href=&quot;&quot;&gt;
+      HOME 
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+      PRODUCTS
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+      ABOUT US
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+      &lt;span&gt;
+      &lt;i class=&quot;fas fa-user &quot;&gt;&lt;/i&gt;
+      &lt;/span&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+      &lt;span&gt;
+      &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;
+      &lt;/span&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+      &lt;span&gt;
+      &lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;
+      &lt;/span&gt;
+      &lt;/a&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      <div class="component__display--container">
+        <div class="navbar">
+          <div class="navbar-left">
+            <div class="navbar-logo">
+              <img
+                class="responsive-image round-image"
+                src="../docs/assets/images/krsn_arjun_sclputure.jpeg"
+                alt=""
+              />
+
+              <div class="p-sm">LOGO</div>
+            </div>
+          </div>
+
+          <div class="navbar-right">
+            <ul
+              class="navbar-icons list-style-none list-display-inline flex-row"
+            >
+              <li><a href=""> HOME </a></li>
+
+              <li><a href="#"> PRODUCTS </a></li>
+
+              <li><a href="#"> ABOUT US </a></li>
+
+              <li>
+                <a href="#">
+                  <span>
+                    <i class="fas fa-user"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <span>
+                    <i class="fas fa-heart"></i>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <span>
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="component__display--code">
+        <pre
+          class="code__snippet"
+        ><code class="language-html">&lt;div class=&quot;navbar&quot;&gt;
+&lt;div class=&quot;navbar-left&quot;&gt;
+   &lt;div class=&quot;navbar-logo&quot;&gt;
+      &lt;img class=&quot;responsive-image round-image&quot; src=&quot;../docs/assets/images/krsn_arjun_sclputure.jpeg&quot; alt=&quot;&quot;/&gt;
+      &lt;div class=&quot;p-sm&quot;&gt;LOGO&lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;navbar-right&quot;&gt;
+   &lt;ul class=&quot;navbar-icons list-style-none list-display-inline flex-row&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;
+         HOME 
+         &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+         PRODUCTS
+         &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+         ABOUT US
+         &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+         &lt;span&gt;
+         &lt;i class=&quot;fas fa-user &quot;&gt;&lt;/i&gt;
+         &lt;/span&gt;
+         &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+         &lt;span&gt;
+         &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;
+         &lt;/span&gt;
+         &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;
+         &lt;span&gt;
+         &lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;
+         &lt;/span&gt;
+         &lt;/a&gt;
+      &lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+
+      <!-- usecase/ description -->
+      <div class="component__usecase">
+        <h3>Usecase</h3>
+
+        <ul>
+          <li>
+            This component is made using flex box, with navbar classes you can
+            customize your navbar
+          </li>
+          <li>
+            You can use this component just by replacing your text with the
+            given text, position is by default sticky and top:0.
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
