@@ -1,226 +1,204 @@
 /* card container === ul element */
-.card-container{
-    all: unset;
-    padding: 2rem;   
-    max-width: 100%;
+.card-container {
+  all: unset;
+  padding: 2rem;
+  max-width: 100%;
 }
 
 .card + .card {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
-
 
 /* layout of card */
 
 /* .card ==== li element */
-.card, .card .card-text{
-    display: flex;
-    flex-direction: column;
+.card,
+.card .card-text {
+  display: flex;
+  flex-direction: column;
 }
-.card .card-text{
-    flex-grow: 1;   
+.card .card-text {
+  flex-grow: 1;
 }
-
 
 /* order of content for better accessibility */
-.card .card-text{
-    order: 1;
+.card .card-text {
+  order: 1;
 }
 
 /* OWL OPERATOR starts from second element(sibling) */
 
 .card .card-text > * + * {
-    margin-top: 7.5px;
-    padding: 1rem;
-    margin: 8px;
-    /* border: thin solid; */
+  margin-top: 7.5px;
+  padding: 1rem;
+  margin: 8px;
 }
 
-
 /* 2nd last child of .card-text (can be any depends on content)*/
-.card .card-text :nth-last-child(2){
-    margin-bottom: 7.5px;
+.card .card-text :nth-last-child(2) {
+  margin-bottom: 7.5px;
 }
 
 /* last child --author link */
-.card .card-text :last-child{
-    margin-top: auto;
-    padding-inline-end: 2px;
+.card .card-text :last-child {
+  margin-top: auto;
+  padding-inline-end: 2px;
 }
-
-
-
 
 /* content and image of cards */
-.card{
-    box-shadow: var(--BOX-SHADOW);
+.card {
+  box-shadow: var(--BOX-SHADOW);
 }
 
-.card > .card-text{
-    padding: .8rem;
+.card > .card-text {
+  padding: 0.8rem;
 }
 
-.card .card-text{
-    width: 100%;
-    background: var(--NEUTRAL);
+.card .card-text {
+  width: 100%;
+  background: var(--NEUTRAL);
 }
 
-.card .card-cover{
-    border-bottom: 2px solid var(--MEDIUM-GRAY);
+.card .card-cover {
+  border-bottom: 2px solid var(--MEDIUM-GRAY);
 }
 
-.card .card-cover img{
-    object-fit: cover;
-    object-position: center;
-    aspect-ratio: 1;
-    width: 100%;
-    height: 24rem;
-    box-shadow: var(--BOX-SHADOW);
+.card .card-cover img {
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1;
+  width: 100%;
+  height: 24rem;
+  box-shadow: var(--BOX-SHADOW);
 }
-
 
 /* author link */
-.card small a{
-    position: relative;
+.card small a {
+  position: relative;
 }
-
- 
 
 /* to make the whole card clickable */
-.card{
-    position: relative;
-    max-width: 40ch;
+.card {
+  position: relative;
+  max-width: 40ch;
 }
-
 
 /* bring p and small text above absolute layer of a */
-.card-text p, .card-text small, .card-text span{
-    position: relative;
+.card-text p,
+.card-text small,
+.card-text span {
+  position: relative;
 }
 
-.card-text p{
-    text-align: justify;
-    background: var(--LIGHT-GRAY);
-    overflow: hidden;
-    max-height: 15ch;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
+.card-text p {
+  text-align: justify;
+  background: var(--LIGHT-GRAY);
+  overflow: hidden;
+  max-height: 15ch;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }
 
 .card-text h6 {
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* Card Decorative style hover focus border */
 
-.card-cover .badge-top{
-    background: var(--ACCENT-GRADIENT);
-    color: var(--DARKEST-BASE);
-    border-radius: 0;
-    max-width: 10ch;
-    left: 0;
-    top: 0;
+.card-cover .badge-top {
+  background: var(--ACCENT-GRADIENT);
+  color: var(--DARKEST-BASE);
+  border-radius: 0;
+  max-width: 10ch;
+  left: 0;
+  top: 0;
 }
 
-.card-cover .badge-icon{
-    top: 0;
-    right: 0;
-    border: 0;
-    padding: 8px;
-    opacity: 0.5;
-    background: transparent;
-    height: 5rem;
-    width: 5rem;
+.card-cover .badge-icon {
+  top: 0;
+  right: 0;
+  border: 0;
+  padding: 8px;
+  opacity: 0.5;
+  background: transparent;
+  height: 5rem;
+  width: 5rem;
 }
 
-
-
-.card-cover .badge-icon:hover{
-    background: var(--MEDIUM-GRAY);
-    color: var(--DARKEST-GRAY);
+.card-cover .badge-icon:hover {
+  background: var(--MEDIUM-GRAY);
+  color: var(--DARKEST-GRAY);
 }
 
-
-.card-text a, .card-text .price-tag{
-    color: var(--DARK-BASE);
+.card-text a,
+.card-text .price-tag {
+  color: var(--DARK-BASE);
 }
-.card-text .price-tag{
-    font-size: 2.4rem;
-}
-
-
-.card-text h6 a::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.card-text .price-tag {
+  font-size: 2.4rem;
 }
 
+.card-text h6 a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
 /* fallback focus style for browsers not supporting focus-within*/
-.card h6 a:focus{
-    text-decoration: underline;
+.card h6 a:focus {
+  text-decoration: underline;
 }
 
 /* focus-within works with outer container li 
 */
 
-
-.card h6:focus-within ~ .btn-secondary{
-    box-shadow: var(--BOX-SHADOW);
-    outline: 4px solid var(--DARKEST-GRAY);
+.card h6:focus-within ~ .btn-secondary {
+  box-shadow: var(--BOX-SHADOW);
+  outline: 4px solid var(--DARKEST-GRAY);
 }
 
-.card:focus-within a:focus{
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--DARKEST-GRAY);
-    background: var(--LIGHT-GRAY);
-}  
-
-
-
-
+.card:focus-within a:focus {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--DARKEST-GRAY);
+  background: var(--LIGHT-GRAY);
+}
 
 /* Arrangement of cards */
-@supports (display: grid){
-    
-    /* .card-container === ul */
-    .card-container {
-        display: grid;
-        background: var(--ACCENT-GRADIENT);
-        grid-template-columns: repeat(auto-fit, minmax(24rem, auto));
-        grid-template-rows: repeat(auto-fit, minmax(min-content, auto));
-        overflow: auto;
-        gap: 1.5rem;
+@supports (display: grid) {
+  /* .card-container === ul */
+  .card-container {
+    display: grid;
+    background: var(--ACCENT-GRADIENT);
+    grid-template-columns: repeat(auto-fit, minmax(24rem, auto));
+    grid-template-rows: repeat(auto-fit, minmax(min-content, auto));
+    overflow: auto;
+    gap: 1.5rem;
+  }
 
-    } 
-
-    .card + .card{
-        margin-top: 0;
-    }
+  .card + .card {
+    margin-top: 0;
+  }
 }
 
-@media (max-width:400px){
-    .card-container{
-        grid-gap: 4.8rem;
-    }
+@media (max-width: 400px) {
+  .card-container {
+    grid-gap: 4.8rem;
+  }
 }
 
-
-
-.card-horizontal{
-    display: flex;
-    flex-direction: row;
-    min-width: 50rem;
-    max-width: 100%;
-    width: 50rem;
+.card-horizontal {
+  display: flex;
+  flex-direction: row;
+  min-width: 50rem;
+  max-width: 100%;
+  width: 50rem;
 }
-
