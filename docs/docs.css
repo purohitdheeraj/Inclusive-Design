@@ -21,9 +21,9 @@ aside{
 }
 
 nav .list-items li{
-  padding: 5px;
+  position: relative;
+  padding: 1rem;
 }
-
 
 nav .list-items li a{
   text-decoration: none;
@@ -33,15 +33,15 @@ nav .list-items li a{
 }
 
 
+nav .list-items li a{
+  display: block;
+}
+
+
 nav .list-items li a:active{
-  color: var(--BASE);
+  color: var(--DARK-BASE);
   font-weight: 600;
 }
-
-nav .list-items li:hover{
-  background: var(--LIGHT-GRAY);
-}
-
 
 
 article{
