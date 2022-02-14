@@ -14,7 +14,7 @@ Link : [Inclusive UI](https://inclusive-ui.netlify.app/)
 ![Screen4](/docs/assets/screens/Screen7.PNG)
 ## Features
 
-- Based on Inclusive Design
+- Based on Inclusive Design Principles
 - Principles
 - Semantic Elements 
 - Accessibility
@@ -41,14 +41,11 @@ Installation Guidelines for using Inclusive UI in your Project
 - Put this link tag in the head tag of your webpage
 
 ```bash 
-
 <link rel="stylesheet" href="https://inclusive-ui.netlify.app/library/inclusive-ui.css"/>
-
 ```
 - For Icons Font Awesome has been used
 ```bash
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 ```
 
 ### Author
