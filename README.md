@@ -15,7 +15,6 @@ Link : [Inclusive UI](https://inclusive-ui.netlify.app/)
 ## Features
 
 - Based on Inclusive Design Principles
-- Principles
 - Semantic Elements 
 - Accessibility
 - Follows [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) guidelines
