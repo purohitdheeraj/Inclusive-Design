@@ -1,5 +1,6 @@
 /* flex and column utility are used in alignment in library */
 @import url("../utils/utility.css");
+@import url("../utils/color.css");
 
 :root{
     --RED :  #FF715B;
