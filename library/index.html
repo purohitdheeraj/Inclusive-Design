@@ -20,25 +20,48 @@
 </head>
 
 <body>
-  <div id="Grid"></div>
+  
+  <div id="Snackbar"></div>
 
-  <!-- Grid -->
+  <!-- Snackbar -->
   <section class="component">
     <div class="component__info">
       <div class="component__heading">
-        <h2>Grids</h2>
+        <h2>Snackbar</h2>
       </div>
 
-      <p>Grid Simplified</p>
     </div>
 
-    <p>Two Column Layout</p>
     <div class="component__display--container flex-row">
 
-      <div class="row-1-col-2">
-        <div class="col-1">I am col 1</div>
-        <div class="col-2">I am col 2</div>
-      </div>
+        <button class="btn btn-primary btn__snackbar--leading">Leading</button>
+        <button class="btn btn-primary btn__snackbar--baseline">Baseline</button>
+
+        <div class="snackbar__output flex-row">
+
+          <div class="snackbar__baseline flex-row">
+            <div class="snackbar__baseline--text"> Can't send photo. Retry in 5 seconds.</div>
+            <div class="snackbar__baseline--actions">
+              <a href="#">Retry</a>
+              <span><button>X</button></span>
+            </div>
+  
+          </div>
+  
+          <div class="snackbar__leading flex-row">
+            <div class="snackbar__leading--text"> Your photo has been archived.</div>
+            <div class="snackbar__leading--actions">
+              <a href="#">Undo</a>
+              <span><button>X</button></span>
+            </div>
+  
+          </div>
+  
+        
+  
+        </div>
+  
+      
 
     </div>
 
@@ -46,80 +69,49 @@
 <pre class="language-html">
 <code>
 <script type="css" class="language-markup">
-  <div class="row-1-col-2">
-    <div class="col-1">I am col 1</div>
-    <div class="col-2">I am col 2</div>
+  <div class="snackbar__baseline flex-row">
+    <div class="snackbar__baseline--text"> Can't send photo. Retry in 5 seconds.</div>
+    <div class="snackbar__baseline--actions">
+      <a href="#">Retry</a>
+      <span><button>X</button></span>
+    </div>
   </div></script>
 </code>
 </pre>
-</div>
-
-<p>Three Column Layout</p>
-<div class="component__display--container flex-row">
-
-      <div class="row-1-col-3">
-        <div class="col-1">I am col 1</div>
-        <div class="col-2">I am col 2</div>
-        <div class="col-1">I am col 3</div>
-      </div>
 </div>
     
 <div class="component__display--code">
 <pre class="language-html">
 <code>
 <script type="css" class="language-markup">
-<div class="row-1-col-3">
-<div class="col-1">I am col 1</div>
-<div class="col-2">I am col 2</div>
-<div class="col-1">I am col 3</div>
-</div></script>
+  <div class="snackbar__leading flex-row">
+    <div class="snackbar__leading--text"> Your photo has been archived.</div>
+    <div class="snackbar__leading--actions">
+      <a href="#">Undo</a>
+      <span><button>X</button></span>
+    </div>
+
+  </div>
+
+</script>
 </code>
 </pre>
 </div>
-
-<p>Nth Column Layout</p>
-<div class="component__display--container flex-row">
-
-      <div class="row-n-col-n">
-        <div class="col-1">I am col 1</div>
-        <div class="col-2">I am col 2</div>
-        <div class="col-1">I am col 3</div>
-        <div class="col-2">I am col 4</div>
-        <div class="col-1">I am col 5</div>
-      </div>
-</div>
-
-<div class="component__display--code">
-  <pre class="language-html">
-  <code>
-  <script type="css" class="language-markup">
-  <div class="row-n-col-n">
-      <div class="col-1">I am col 1</div>
-      <div class="col-2">I am col 2</div>
-      <div class="col-1">I am col 3</div>
-      <div class="col-2">I am col 4</div>
-      <div class="col-1">I am col 5</div>
-  </div></script>
-  </code>
-  </pre>
-  </div>
-  
     <!-- usecase/ description -->
     <div class="component__usecase">
       <h3>Usecase</h3>
 
       <ul>
-        <li>Minimun Width of n column layout is 100px </li>
+        
 
         <li>
-          Use <code>class=".row-1-col-n"</code> to make your grid
-          layout.
+          Use <code>class="snackbar__X (leading, baseline)"</code> to make use snackbar in your project
         </li>
       </ul>
     </div>
   </section>
 
-
+  <script src="../library/components/snackbar/snackbar.js"></script>
   <script src="../docs/prism/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
   <script
