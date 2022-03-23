@@ -210,6 +210,12 @@
 									>
 								</li>
 								<li>
+									<a href="#Snackbar">
+										Snackbar
+									</a>
+								</li>
+								
+								<li>
 									<a href="#Grid"
 										>Grids</a
 									>
@@ -3481,6 +3487,97 @@
 						</div>
 					</section>
 
+					<!-- Snackbar -->
+					<div id="Snackbar"></div>
+
+  <!-- Snackbar -->
+  <section class="component">
+    <div class="component__info">
+      <div class="component__heading">
+        <h2>Snackbar</h2>
+      </div>
+
+    </div>
+
+    <div class="component__display--container flex-row">
+
+        <button class="btn btn-primary btn__snackbar--leading">Leading</button>
+        <button class="btn btn-primary btn__snackbar--baseline">Baseline</button>
+
+        <div class="snackbar__output flex-row">
+
+          <div class="snackbar__baseline flex-row">
+            <div class="snackbar__baseline--text"> Can't send photo. Retry in 5 seconds.</div>
+            <div class="snackbar__baseline--actions">
+              <a href="#">Retry</a>
+              <span><button>X</button></span>
+            </div>
+  
+          </div>
+  
+          <div class="snackbar__leading flex-row">
+            <div class="snackbar__leading--text"> Your photo has been archived.</div>
+            <div class="snackbar__leading--actions">
+              <a href="#">Undo</a>
+              <span><button>X</button></span>
+            </div>
+  
+          </div>
+  
+        
+  
+        </div>
+  
+      
+
+    </div>
+
+<div class="component__display--code">
+<pre class="language-html">
+<code>
+<script type="css" class="language-markup">
+  <div class="snackbar__baseline flex-row">
+    <div class="snackbar__baseline--text"> Can't send photo. Retry in 5 seconds.</div>
+    <div class="snackbar__baseline--actions">
+      <a href="#">Retry</a>
+      <span><button>X</button></span>
+    </div>
+  </div></script>
+</code>
+</pre>
+</div>
+    
+<div class="component__display--code">
+<pre class="language-html">
+<code>
+<script type="css" class="language-markup">
+  <div class="snackbar__leading flex-row">
+    <div class="snackbar__leading--text"> Your photo has been archived.</div>
+    <div class="snackbar__leading--actions">
+      <a href="#">Undo</a>
+      <span><button>X</button></span>
+    </div>
+
+  </div>
+
+</script>
+</code>
+</pre>
+</div>
+    <!-- usecase/ description -->
+    <div class="component__usecase">
+      <h3>Usecase</h3>
+
+      <ul>
+        
+
+        <li>
+          Use <code>class="snackbar__X (leading, baseline)"</code> to make use snackbar in your project
+        </li>
+      </ul>
+    </div>
+  </section>
+
 					<div class="gradient"></div>
 
 					<!-- Grid Layout -->
@@ -3688,6 +3785,8 @@
 				</nav>
 			</footer>
 		</div>
+
+		<script src="../library/components/snackbar/snackbar.js"></script>
 
 		<!-- Prism Js cdn -->
 		<script
