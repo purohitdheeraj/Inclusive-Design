@@ -1,164 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Documentation| Inclusive UI</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Documentation| Inclusive UI</title>
+		<!-- font-family-->
+		<!--Poppins-->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Montserrat -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
 
-  <!-- font-family-->
-  <!--Poppins-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
-  <!-- Montserrat -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+		/>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+		<!-- prism -->
+		<link
+			rel="stylesheet"
+			href="./prism/prism.min.css"
+		/>
 
-  <!-- prism -->
-  <link rel="stylesheet" href="./prism/prism.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css"
+		/>
 
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" />
+		<!-- cdn link -->
+		<!-- <link rel="stylesheet" href="https://inclusive-ui.netlify.app/library/inclusive-ui.css"> -->
+		<link
+			rel="stylesheet"
+			href="../library/inclusive-ui.css"
+		/>
+		<link rel="stylesheet" href="./main.css" />
+		<link rel="stylesheet" href="./docs.css" />
+	</head>
 
+	<body>
+		<button
+			class="btn btn-secondary-outline float-action-btn"
+			id="float-btn"
+			title="Go to Top"
+		>
+			<span> TOP </span>
+		</button>
 
-  <!-- cdn link -->
-  <!-- <link rel="stylesheet" href="https://inclusive-ui.netlify.app/library/inclusive-ui.css"> -->
-  <link rel="stylesheet" href="../library/inclusive-ui.css" />
-  <link rel="stylesheet" href="./main.css" />
-  <link rel="stylesheet" href="./docs.css" />
-  
-</head>
+		<div class="container">
+			<header class="header flex-row">
+				<a
+					class="hamburger"
+					href="#navbar"
+					aria-label="Open main menu"
+				>
+					<span class="sr-only"
+						>Open main menu</span
+					>
+					<span
+						class="fas fa-bars"
+						aria-hidden="true"
+					></span>
+				</a>
 
-<body>
-  <button class="btn btn-secondary-outline float-action-btn" id="float-btn" title="Go to Top">
-    <span> TOP </span>
-  </button>
+				<a href="../index.html">
+					<span class="logo">Inclusive UI</span>
+				</a>
 
-  <div class="container">
-    <header class="header flex-row">
-      <a class="hamburger" href="#navbar" aria-label="Open main menu">
-        <span class="sr-only">Open main menu</span>
-        <span class="fas fa-bars" aria-hidden="true"></span>
-      </a>
+				<nav id="navbar" class="flex-row">
+					<ul
+						class="navitems__container flex-row"
+					>
+						<li>
+							<a href="../index.html"
+								>Home Page</a
+							>
+						</li>
+						<li>
+							<a href="#">Documentation</a>
+						</li>
+						<li>
+							<a
+								href="https://github.com/purohitdheeraj/Inclusive-Design"
+								target="_blank"
+							>
+								<span
+									class="fa-brands fa-github fa-2x"
+									aria-hidden="true"
+								></span>
+								<span class="sr-only"
+									>Github</span
+								></a
+							>
+						</li>
+					</ul>
 
-      <a href="../index.html">
-        <span class="logo">Inclusive UI</span>
-      </a>
+					<a
+						class="close"
+						href="#"
+						aria-label="Close main menu"
+					>
+						<span class="sr-only"
+							>Close main menu</span
+						>
+						<span
+							class="fas fa-times"
+							aria-hidden="true"
+						></span>
+					</a>
+				</nav>
+			</header>
 
-      <nav id="navbar" class="flex-row">
-        <ul class="navitems__container flex-row">
-          <li><a href="../index.html">Home Page</a></li>
-          <li><a href="#">Documentation</a></li>
-          <li>
-            <a href="https://github.com/purohitdheeraj/Inclusive-Design" target="_blank">
-              <span class="fa-brands fa-github fa-2x" aria-hidden="true"></span>
-              <span class="sr-only">Github</span></a>
-          </li>
-        </ul>
+			<div class="container__main">
+				<!-- left sidebar -->
+				<aside class="container__left">
+					<nav class="flex-column">
+						<div class="dropdown flex-column">
+							<div class="flex-row">
+								<a
+									class="dropdown__btn"
+									id="dropdown__btn"
+								>
+									Components
+									<i
+										class="fa fa-caret-down caret-symbol"
+									></i>
+								</a>
+							</div>
 
-        <a class="close" href="#" aria-label="Close main menu">
-          <span class="sr-only">Close main menu</span>
-          <span class="fas fa-times" aria-hidden="true"></span>
-        </a>
-      </nav>
-    </header>
+							<div class="gradient"></div>
 
-    <div class="container__main">
-      <!-- left sidebar -->
-      <aside class="container__left">
-        <nav class="flex-column">
-          <div class="dropdown flex-column">
-            <div class="flex-row">
-              <a class="dropdown__btn" id="dropdown__btn">
-                Components
-                <i class="fa fa-caret-down caret-symbol"></i>
-              </a>
-            </div>
+							<ul
+								class="list-items flex-column dropdown__content"
+								id="dropdown__content"
+							>
+								<li>
+									<a href="#Alert"
+										>Alerts</a
+									>
+								</li>
+								<li>
+									<a href="#Avatar"
+										>Avatar</a
+									>
+								</li>
+								<li>
+									<a href="#Badge"
+										>Badge</a
+									>
+								</li>
+								<li>
+									<a href="#Button"
+										>Button</a
+									>
+								</li>
+								<li>
+									<a href="#Card">Card</a>
+								</li>
+								<li>
+									<a href="#Image"
+										>Image</a
+									>
+								</li>
+								<li>
+									<a href="#Input"
+										>Input</a
+									>
+								</li>
+								<li>
+									<a href="#Text"
+										>Text Utilities</a
+									>
+								</li>
+								<li>
+									<a href="#List"
+										>Lists</a
+									>
+								</li>
+								<li>
+									<a href="#Navigation"
+										>Navigation</a
+									>
+								</li>
+								<li>
+									<a href="#Rating"
+										>Rating</a
+									>
+								</li>
+								<li>
+									<a href="#Grid"
+										>Grids</a
+									>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</aside>
 
-            <div class="gradient"></div>
+				<!-- Main content -->
+				<article class="container__middle">
+					<!-- alerts -->
 
-            <ul class="list-items flex-column dropdown__content" id="dropdown__content">
-              <li><a href="#Alert">Alerts</a></li>
-              <li><a href="#Avatar">Avatar</a></li>
-              <li><a href="#Badge">Badge</a></li>
-              <li><a href="#Button">Button</a></li>
-              <li><a href="#Card">Card</a></li>
-              <li><a href="#Image">Image</a></li>
-              <li><a href="#Input">Input</a></li>
-              <li><a href="#Text">Text Utilities</a></li>
-              <li><a href="#List">Lists</a></li>
-              <li><a href="#Navigation">Navigation</a></li>
-              <li><a href="#Rating">Rating</a></li>
-              <li><a href="#Grid">Grids</a></li>
-            </ul>
-          </div>
-        </nav>
-      </aside>
+					<div id="Alert"></div>
+					<section class="component">
+						<div class="component__info">
+							<div class="component__heading">
+								<h2>Alerts</h2>
+							</div>
 
-      <!-- Main content -->
-      <article class="container__middle">
-        <!-- alerts -->
+							<p>
+								Alert is a notification
+								component which is used to
+								notify user and give a
+								feedback on various events
+								like success, failure, info
+								etc Basically it tells user
+								what is going on , the state
+								of events that has already
+								taken place.
+							</p>
+						</div>
 
-        <div id="Alert"></div>
-        <section class="component">
-          <div class="component__info">
-            <div class="component__heading">
-              <h2>Alerts</h2>
-            </div>
+						<h3>Examples of the Alerts</h3>
 
-            <p>
-              Alert is a notification component which is used to notify user
-              and give a feedback on various events like success, failure,
-              info etc Basically it tells user what is going on , the state of
-              events that has already taken place.
-            </p>
-          </div>
+						<div
+							class="component__display--container flex-column"
+						>
+							<div
+								class="alert alert-success"
+							>
+								<i
+									class="fa fa-check-circle"
+								></i>
+								<strong
+									>Success Alert!</strong
+								>
+								This alert box indicates
+								successful or positive
+								action
+							</div>
 
-          <h3>Examples of the Alerts</h3>
+							<div class="alert alert-error">
+								<i
+									class="fa fa-times-circle"
+								></i>
+								<strong
+									>Error Alert!</strong
+								>
+								This alert box indicates a
+								dangerous or potentially
+								negative action.
+							</div>
 
-          <div class="component__display--container flex-column">
-            <div class="alert alert-success">
-              <i class="fa fa-check-circle"></i>
-              <strong>Success Alert!</strong>
-              This alert box indicates successful or positive action
-            </div>
+							<div class="alert alert-info">
+								<i
+									class="fa fa-info-circle"
+								></i>
+								<strong>Info Alert!</strong>
+								This alert box indicates a
+								neutral informative change
+								or action.
+							</div>
 
-            <div class="alert alert-error">
-              <i class="fa fa-times-circle"></i>
-              <strong>Error Alert!</strong>
-              This alert box indicates a dangerous or potentially negative
-              action.
-            </div>
+							<div
+								class="alert alert-warning"
+							>
+								<i
+									class="fa fa-warning"
+								></i>
+								<strong
+									>Warning Alert!</strong
+								>
+								This alert box indicates a
+								warning that might need
+								attention.
+							</div>
 
-            <div class="alert alert-info">
-              <i class="fa fa-info-circle"></i>
-              <strong>Info Alert!</strong>
-              This alert box indicates a neutral informative change or action.
-            </div>
+							<div
+								class="alert alert-closing"
+							>
+								<span>
+									<strong
+										>Closing
+										Alert!</strong
+									>
+									Alert Bar with a close
+									Button
+								</span>
+								<button
+									class="fa fa-times"
+									id="alert__close-btn"
+								>
+									<span class="sr-only"
+										>Button</span
+									>
+								</button>
+							</div>
+						</div>
 
-            <div class="alert alert-warning">
-              <i class="fa fa-warning"></i>
-              <strong>Warning Alert!</strong>
-              This alert box indicates a warning that might need attention.
-            </div>
-
-            <div class="alert alert-closing">
-              <span>
-                <strong>Closing Alert!</strong>
-                Alert Bar with a close Button
-              </span>
-              <button class="fa fa-times" id="alert__close-btn">
-                <span class="sr-only">Button</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="component__display--code">
-            <pre class="code__snippet">
+						<div
+							class="component__display--code"
+						>
+							<pre class="code__snippet">
       <code class="language-html">
       &lt;div class=&quot;alert alert-success&quot;&gt;
         &lt;i class=&quot;fa fa-check-circle&quot;&gt;&lt;/i&gt;
@@ -182,83 +347,122 @@
         &lt;span class=&quot;sr-only&quot;&gt;Button&lt;/span&gt;
         &lt;/button&gt;
       &lt;/div&gt;</code></pre>
-          </div>
+						</div>
 
-          <!-- usecase/ description -->
-          <div class="component__usecase">
-            <h3>Usecase</h3>
+						<!-- usecase/ description -->
+						<div class="component__usecase">
+							<h3>Usecase</h3>
 
-            <p>
-              Alerts are used for Drawing attention Its a message that lets
-              user know about states as a feedback
-            </p>
+							<p>
+								Alerts are used for Drawing
+								attention Its a message that
+								lets user know about states
+								as a feedback
+							</p>
 
-            <h4>Different types of alerts available are:</h4>
+							<h4>
+								Different types of alerts
+								available are:
+							</h4>
 
-            <div class="alert-span">
-              <span>Success Alert </span>
-              <span>Error Alert</span>
-              <span>Info Alert </span>
-              <span>Warning Alert </span>
-              <span>Closing Alert </span>
-            </div>
+							<div class="alert-span">
+								<span>Success Alert </span>
+								<span>Error Alert</span>
+								<span>Info Alert </span>
+								<span>Warning Alert </span>
+								<span>Closing Alert </span>
+							</div>
 
-            <p>
-              To use this components add <code>class="alert"</code> and the
-              type of the alert to be displayed.
-            </p>
-          </div>
-        </section>
+							<p>
+								To use this components add
+								<code>class="alert"</code>
+								and the type of the alert to
+								be displayed.
+							</p>
+						</div>
+					</section>
 
-        <div class="gradient"></div>
+					<div class="gradient"></div>
 
-        <!-- avatar -->
-        <div id="Avatar"></div>
+					<!-- avatar -->
+					<div id="Avatar"></div>
 
-        <section class="component">
-          <div class="component__info">
-            <div class="component__heading">
-              <h2>Avatars</h2>
-            </div>
+					<section class="component">
+						<div class="component__info">
+							<div class="component__heading">
+								<h2>Avatars</h2>
+							</div>
 
-            <p>
-              Avatar is a component which is used to represent user's identity
-              on various platforms
-            </p>
+							<p>
+								Avatar is a component which
+								is used to represent user's
+								identity on various
+								platforms
+							</p>
 
-            <p>
-              We can see in places like profile pictures, comment threads,
-              header of webpage different avatars with different sizes are
-              used.
-            </p>
-          </div>
+							<p>
+								We can see in places like
+								profile pictures, comment
+								threads, header of webpage
+								different avatars with
+								different sizes are used.
+							</p>
+						</div>
 
-          <h3>Examples of the Image Avatars</h3>
+						<h3>
+							Examples of the Image Avatars
+						</h3>
 
-          <div class="component__display--container">
-            <div class="avatar avatar-sm">
-              <img class="avatar__image" src="../docs/assets/avatars/user-48x48.png" alt="user-avatar" />
-            </div>
+						<div
+							class="component__display--container"
+						>
+							<div class="avatar avatar-sm">
+								<img
+									class="avatar__image"
+									src="../docs/assets/avatars/user-48x48.png"
+									alt="user-avatar"
+								/>
+							</div>
 
-            <div class="avatar avatar-md">
-              <img class="avatar__image" src="../docs/assets/avatars/user-female-48x48.png" alt="female-user-avatar" />
-            </div>
+							<div class="avatar avatar-md">
+								<img
+									class="avatar__image"
+									src="../docs/assets/avatars/user-female-48x48.png"
+									alt="female-user-avatar"
+								/>
+							</div>
 
-            <div class="avatar avatar-lg">
-              <img class="avatar__image" src="../docs/assets/avatars/identicon.png" alt="identicon" />
-            </div>
+							<div class="avatar avatar-lg">
+								<img
+									class="avatar__image"
+									src="../docs/assets/avatars/identicon.png"
+									alt="identicon"
+								/>
+							</div>
 
-            <div class="avatar avatar-xlg">
-              <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar" />
-            </div>
+							<div class="avatar avatar-xlg">
+								<img
+									class="avatar__image"
+									src="../docs/assets/avatars/male_avatar.svg"
+									alt="male-avatar"
+								/>
+							</div>
 
-            <div class="avatar avatar-xxlg">
-              <img class="avatar__image" src="../docs/assets/avatars/profile_pic.svg" alt="profile-picture" />
-            </div>
-          </div>
+							<div class="avatar avatar-xxlg">
+								<img
+									class="avatar__image"
+									src="../docs/assets/avatars/profile_pic.svg"
+									alt="profile-picture"
+								/>
+							</div>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">&lt;div class=&quot;avatar avatar-sm&quot;&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">&lt;div class=&quot;avatar avatar-sm&quot;&gt;
       &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/user-48x48.png&quot; alt=&quot;user-avatar&quot; /&gt;
       &lt;/div&gt;
       
@@ -270,42 +474,79 @@
       &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/identicon.png&quot; alt=&quot;identicon&quot; /&gt;
       &lt;/div&gt;
       </code></pre>
-          </div>
+						</div>
 
-          <h3>Examples of the Initial Avatars</h3>
-          <p>
-            Initials are a good way to provide identifying information when no
-            profile image is present. Pairing initials with a unique color can
-            help visually organize comment threads at a glance and provide
-            extra context as to who is commenting.
-          </p>
+						<h3>
+							Examples of the Initial Avatars
+						</h3>
+						<p>
+							Initials are a good way to
+							provide identifying information
+							when no profile image is
+							present. Pairing initials with a
+							unique color can help visually
+							organize comment threads at a
+							glance and provide extra context
+							as to who is commenting.
+						</p>
 
-          <div class="component__display--container">
-            <div class="avatar">
-              <div class="avatar__letters avatar-sm" role="img">SR</div>
-            </div>
+						<div
+							class="component__display--container"
+						>
+							<div class="avatar">
+								<div
+									class="avatar__letters avatar-sm"
+									role="img"
+								>
+									SR
+								</div>
+							</div>
 
-            <div class="avatar">
-              <div class="avatar__letters avatar-md" role="img">G</div>
-            </div>
+							<div class="avatar">
+								<div
+									class="avatar__letters avatar-md"
+									role="img"
+								>
+									G
+								</div>
+							</div>
 
-            <div class="avatar">
-              <div class="avatar__letters avatar-lg" role="img">LJ</div>
-            </div>
+							<div class="avatar">
+								<div
+									class="avatar__letters avatar-lg"
+									role="img"
+								>
+									LJ
+								</div>
+							</div>
 
-            <div class="avatar">
-              <div class="avatar__letters avatar-xlg" role="img">KSB</div>
-            </div>
+							<div class="avatar">
+								<div
+									class="avatar__letters avatar-xlg"
+									role="img"
+								>
+									KSB
+								</div>
+							</div>
 
-            <div class="avatar">
-              <div class="avatar__letters avatar-xxlg" role="img">KS</div>
-            </div>
-          </div>
+							<div class="avatar">
+								<div
+									class="avatar__letters avatar-xxlg"
+									role="img"
+								>
+									KS
+								</div>
+							</div>
+						</div>
 
-          <!-- initial avatars code -->
+						<!-- initial avatars code -->
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html"> &lt;div class=&quot;avatar&quot;&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html"> &lt;div class=&quot;avatar&quot;&gt;
       &lt;div class=&quot;avatar__letters avatar-sm&quot; role=&quot;img&quot;&gt;
         SR
       &lt;/div&gt;
@@ -323,113 +564,188 @@
       &lt;/div&gt;
       &lt;/div&gt;</code>
       </pre>
-          </div>
+						</div>
 
-          <!-- usecase/ description -->
-          <div class="component__usecase">
-            <h3>Usecase</h3>
+						<!-- usecase/ description -->
+						<div class="component__usecase">
+							<h3>Usecase</h3>
 
-            <p>
-              In most of the cases you will only need
-              <strong>small (sm-32px) </strong> and
-              <strong>medium (md-48px) </strong> size avatars
-            </p>
+							<p>
+								In most of the cases you
+								will only need
+								<strong
+									>small (sm-32px)
+								</strong>
+								and
+								<strong
+									>medium (md-48px)
+								</strong>
+								size avatars
+							</p>
 
-            <h4>Different Sizes available for avatars:</h4>
+							<h4>
+								Different Sizes available
+								for avatars:
+							</h4>
 
-            <p>
-              <span>sm - 32px </span>
-              <span>md - 48px</span>
-              <span>lg - 64px</span>
-              <span>xlg - 80px</span>
-              <span>xxlg - 96px</span>
-            </p>
+							<p>
+								<span>sm - 32px </span>
+								<span>md - 48px</span>
+								<span>lg - 64px</span>
+								<span>xlg - 80px</span>
+								<span>xxlg - 96px</span>
+							</p>
 
-            <p>
-              To use this components <code>class="avatar"</code> is required
-              for parent container and sm,md, lg denotes to different avatar
-              sizes
-            </p>
+							<p>
+								To use this components
+								<code>class="avatar"</code>
+								is required for parent
+								container and sm,md, lg
+								denotes to different avatar
+								sizes
+							</p>
 
-            <p>
-              While using Initial Avatars use
-              <code>class="avatar__letters"</code> on child element
-            </p>
-          </div>
-        </section>
+							<p>
+								While using Initial Avatars
+								use
+								<code
+									>class="avatar__letters"</code
+								>
+								on child element
+							</p>
+						</div>
+					</section>
 
-        <div class="gradient"></div>
+					<div class="gradient"></div>
 
-        <!-- Badges -->
+					<!-- Badges -->
 
-        <div id="Badge"></div>
+					<div id="Badge"></div>
 
-        <section class="component">
-          <div class="component__info">
-            <div class="component__heading">
-              <h2>Badges</h2>
-            </div>
+					<section class="component">
+						<div class="component__info">
+							<div class="component__heading">
+								<h2>Badges</h2>
+							</div>
 
-            <p>
-              Badge (aka Tag) — small overlapped UI item which indicates a
-              status, notification, or event that appears in relativity with
-              the underlying object.
-            </p>
+							<p>
+								Badge (aka Tag) — small
+								overlapped UI item which
+								indicates a status,
+								notification, or event that
+								appears in relativity with
+								the underlying object.
+							</p>
 
-            <p>
-              Badge with a Numeric value is used to represent the number of
-              events related to the parent UI item:
-            </p>
-          </div>
+							<p>
+								Badge with a Numeric value
+								is used to represent the
+								number of events related to
+								the parent UI item:
+							</p>
+						</div>
 
-          <h3>Badges On Avatars</h3>
+						<h3>Badges On Avatars</h3>
 
-          <div class="component__display--container">
-            <div class="badge__container">
-              <div class="avatar avatar-xxlg">
-                <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar" />
-              </div>
-              <span class="badge badge-status-active"></span>
-            </div>
+						<div
+							class="component__display--container"
+						>
+							<div class="badge__container">
+								<div
+									class="avatar avatar-xxlg"
+								>
+									<img
+										class="avatar__image"
+										src="../docs/assets/avatars/male_avatar.svg"
+										alt="male-avatar"
+									/>
+								</div>
+								<span
+									class="badge badge-status-active"
+								></span>
+							</div>
 
-            <div class="badge__container">
-              <div class="avatar avatar-xxlg">
-                <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar" />
-              </div>
-              <span class="badge badge-status-inactive"></span>
-            </div>
+							<div class="badge__container">
+								<div
+									class="avatar avatar-xxlg"
+								>
+									<img
+										class="avatar__image"
+										src="../docs/assets/avatars/male_avatar.svg"
+										alt="male-avatar"
+									/>
+								</div>
+								<span
+									class="badge badge-status-inactive"
+								></span>
+							</div>
 
-            <div class="badge__container">
-              <div class="avatar avatar-xxlg">
-                <img class="avatar__image" src="../docs/assets/avatars/male_avatar.svg" alt="male-avatar" />
-              </div>
-              <span class="badge badge-status-away"></span>
-            </div>
+							<div class="badge__container">
+								<div
+									class="avatar avatar-xxlg"
+								>
+									<img
+										class="avatar__image"
+										src="../docs/assets/avatars/male_avatar.svg"
+										alt="male-avatar"
+									/>
+								</div>
+								<span
+									class="badge badge-status-away"
+								></span>
+							</div>
 
-            <div class="badge__container">
-              <div class="avatar avatar-xlg">
-                <img class="avatar__image" src="../docs/assets/avatars/user-48x48.png" alt="user-avatar" />
-              </div>
-              <span class="badge badge-status-active"></span>
-            </div>
+							<div class="badge__container">
+								<div
+									class="avatar avatar-xlg"
+								>
+									<img
+										class="avatar__image"
+										src="../docs/assets/avatars/user-48x48.png"
+										alt="user-avatar"
+									/>
+								</div>
+								<span
+									class="badge badge-status-active"
+								></span>
+							</div>
 
-            <div class="badge__container">
-              <div class="avatar avatar-lg">
-                <img class="avatar__image" src="../docs/assets/avatars/user-48x48.png" alt="user-avatar" />
-              </div>
-              <span class="badge badge-status-inactive"> </span>
-            </div>
+							<div class="badge__container">
+								<div
+									class="avatar avatar-lg"
+								>
+									<img
+										class="avatar__image"
+										src="../docs/assets/avatars/user-48x48.png"
+										alt="user-avatar"
+									/>
+								</div>
+								<span
+									class="badge badge-status-inactive"
+								>
+								</span>
+							</div>
 
-            <div class="badge__container">
-              <div class="avatar avatar-xxlg">
-                <img class="avatar__image" src="../docs/assets/avatars/profile_pic.svg" alt="user-avatar" />
-              </div>
-              <span class="badge badge-status-away"></span>
-            </div>
-          </div>
+							<div class="badge__container">
+								<div
+									class="avatar avatar-xxlg"
+								>
+									<img
+										class="avatar__image"
+										src="../docs/assets/avatars/profile_pic.svg"
+										alt="user-avatar"
+									/>
+								</div>
+								<span
+									class="badge badge-status-away"
+								></span>
+							</div>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet">
+						<div
+							class="component__display--code"
+						>
+							<pre class="code__snippet">
       <code class="language-html"> &lt;div class=&quot;badge__container&quot;&gt;
               &lt;div class=&quot;avatar avatar-xxlg&quot;&gt;
                   &lt;img class=&quot;avatar__image&quot; src=&quot;../docs/assets/avatars/male_avatar.svg&quot; alt=&quot;male-avatar&quot;&gt;
@@ -442,95 +758,153 @@
                  &lt;i class=&quot;fas fa-shopping-cart fa-4x&quot;&gt;&lt;/i&gt;
                  &lt;span class=&quot;badge badge-icon badge-status-number&quot;&gt;5&lt;/span&gt;
           &lt;/div&gt;</code></pre>
-          </div>
+						</div>
 
-          <h3>Badges on Icons</h3>
+						<h3>Badges on Icons</h3>
 
-          <div class="component__display--container">
-            <div class="badge__container">
-              <i class="fas fa-shopping-cart fa-4x"></i>
-              <span class="badge badge-icon badge-status-number">5</span>
-            </div>
+						<div
+							class="component__display--container"
+						>
+							<div class="badge__container">
+								<i
+									class="fas fa-shopping-cart fa-4x"
+								></i>
+								<span
+									class="badge badge-icon badge-status-number"
+									>5</span
+								>
+							</div>
 
-            <div class="badge__container">
-              <i class="far fa-heart fa-4x"></i>
-              <span class="badge badge-icon badge-status-number">+5</span>
-            </div>
+							<div class="badge__container">
+								<i
+									class="far fa-heart fa-4x"
+								></i>
+								<span
+									class="badge badge-icon badge-status-number"
+									>+5</span
+								>
+							</div>
 
-            <div class="badge__container">
-              <i class="far fa-message fa-4x"></i>
-              <span class="badge badge-icon badge-status-number">+5</span>
-            </div>
-          </div>
+							<div class="badge__container">
+								<i
+									class="far fa-message fa-4x"
+								></i>
+								<span
+									class="badge badge-icon badge-status-number"
+									>+5</span
+								>
+							</div>
+						</div>
 
-          <!-- usecase/ description -->
-          <div class="component__usecase">
-            <h3>Usecase</h3>
+						<!-- usecase/ description -->
+						<div class="component__usecase">
+							<h3>Usecase</h3>
 
-            <ul>
-              <li>
-                In conversational patterns (Chat, Messages, Inbox) Badge used
-                to inform about new incoming messages. Dot distinctly divides
-                fresh emails and recent
-              </li>
+							<ul>
+								<li>
+									In conversational
+									patterns (Chat,
+									Messages, Inbox) Badge
+									used to inform about new
+									incoming messages. Dot
+									distinctly divides fresh
+									emails and recent
+								</li>
 
-              <li>
-                In most shopping apps Badges are used to display the number of
-                products added to a cart
-              </li>
-            </ul>
-          </div>
-        </section>
+								<li>
+									In most shopping apps
+									Badges are used to
+									display the number of
+									products added to a cart
+								</li>
+							</ul>
+						</div>
+					</section>
 
-        <div class="gradient"></div>
+					<div class="gradient"></div>
 
-        <!-- Buttons -->
+					<!-- Buttons -->
 
-        <div id="Button"></div>
+					<div id="Button"></div>
 
-        <section class="component">
-          <div class="component__info">
-            <div class="component__heading">
-              <h2>Buttons</h2>
-            </div>
+					<section class="component">
+						<div class="component__info">
+							<div class="component__heading">
+								<h2>Buttons</h2>
+							</div>
 
-            <p>
-              Buttons are very important element on web , Buttons are
-              generally used for actions like submit form data, search data
-              and many more.
-            </p>
+							<p>
+								Buttons are very important
+								element on web , Buttons are
+								generally used for actions
+								like submit form data,
+								search data and many more.
+							</p>
 
-            <p>
-              Buttons are known as CTA element(call to action). It is designed
-              in such a way that button takes user attention.
-            </p>
-          </div>
+							<p>
+								Buttons are known as CTA
+								element(call to action). It
+								is designed in such a way
+								that button takes user
+								attention.
+							</p>
+						</div>
 
-          <h3>Examples of Primary Button Styles</h3>
-          <div class="component__display--container flex-row">
-            <button class="btn btn-primary" type="button">
-              .btn-primary
-            </button>
+						<h3>
+							Examples of Primary Button
+							Styles
+						</h3>
+						<div
+							class="component__display--container flex-row"
+						>
+							<button
+								class="btn btn-primary"
+								type="button"
+							>
+								.btn-primary
+							</button>
 
-            <button class="btn btn-primary-outline" type="button">
-              .btn-primary-outline
-            </button>
+							<button
+								class="btn btn-primary-outline"
+								type="button"
+							>
+								.btn-primary-outline
+							</button>
 
-            <a class="btn btn-primary-link" role="button" tabindex="0">.btn-primary-link</a>
+							<a
+								class="btn btn-primary-link"
+								role="button"
+								tabindex="0"
+								>.btn-primary-link</a
+							>
 
-            <input class="btn btn-primary-outline" type="image" role="button"
-              src="../docs/assets/avatars/user-48x48.png" alt="user-img-button" />
+							<input
+								class="btn btn-primary-outline"
+								type="image"
+								role="button"
+								src="../docs/assets/avatars/user-48x48.png"
+								alt="user-img-button"
+							/>
 
-            <a class="btn btn-primary-icon" role="button">
-              <span class="btn-icon">
-                <i class="fas fa-rupee"></i>
-              </span>
-              SELL
-            </a>
-          </div>
+							<a
+								class="btn btn-primary-icon"
+								role="button"
+							>
+								<span class="btn-icon">
+									<i
+										class="fas fa-rupee"
+									></i>
+								</span>
+								SELL
+							</a>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">
               &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;.btn-primary&lt;/button&gt;
           
               &lt;button class=&quot;btn btn-primary-outline&quot; type=&quot;button&quot;&gt;.btn-primary-outline&lt;/button&gt;
@@ -548,33 +922,63 @@
                   SELL
               &lt;/a&gt;
                           </code></pre>
-          </div>
+						</div>
 
-          <h3>Examples of Secondary Button Styles</h3>
-          <div class="component__display--container flex-row">
-            <button class="btn btn-secondary" type="button">
-              .btn-secondary
-            </button>
+						<h3>
+							Examples of Secondary Button
+							Styles
+						</h3>
+						<div
+							class="component__display--container flex-row"
+						>
+							<button
+								class="btn btn-secondary"
+								type="button"
+							>
+								.btn-secondary
+							</button>
 
-            <button class="btn btn-secondary-outline" type="button">
-              .btn-secondary-outline
-            </button>
+							<button
+								class="btn btn-secondary-outline"
+								type="button"
+							>
+								.btn-secondary-outline
+							</button>
 
-            <a class="btn btn-secondary-link" role="button" tabindex="0">.btn-secondary-link</a>
+							<a
+								class="btn btn-secondary-link"
+								role="button"
+								tabindex="0"
+								>.btn-secondary-link</a
+							>
 
-            <input class="btn btn-secondary-outline" type="image" role="button"
-              src="../docs/assets/avatars/user-48x48.png" alt="user-img-button" />
+							<input
+								class="btn btn-secondary-outline"
+								type="image"
+								role="button"
+								src="../docs/assets/avatars/user-48x48.png"
+								alt="user-img-button"
+							/>
 
-            <a class="btn btn-secondary-icon" role="button">
-              <span class="btn-icon">
-                <i class="fas fa-shopping-bag fa-2x"></i>
-              </span>
-              BUY
-            </a>
-          </div>
+							<a
+								class="btn btn-secondary-icon"
+								role="button"
+							>
+								<span class="btn-icon">
+									<i
+										class="fas fa-shopping-bag fa-2x"
+									></i>
+								</span>
+								BUY
+							</a>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">&lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot;&gt;.btn-secondary&lt;/button&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">&lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot;&gt;.btn-secondary&lt;/button&gt;
           &lt;button class=&quot;btn btn-secondary-outline&quot; type=&quot;button&quot;&gt;.btn-secondary-outline
           &lt;/button&gt;
           
@@ -588,264 +992,432 @@
               &lt;/span&gt;
               BUY
           &lt;/a&gt;</code></pre>
-          </div>
+						</div>
 
-          <h3>Examples Of Disabled Buttons Styles</h3>
-          <div class="component__display--container">
-            <button type="button" class="btn btn-primary btn-disabled" type="button">
-              .btn-primary btn-disabled
-            </button>
+						<h3>
+							Examples Of Disabled Buttons
+							Styles
+						</h3>
+						<div
+							class="component__display--container"
+						>
+							<button
+								type="button"
+								class="btn btn-primary btn-disabled"
+								type="button"
+							>
+								.btn-primary btn-disabled
+							</button>
 
-            <a class="btn btn-disabled" role="button" tabindex="-1">.btn-disabled</a>
+							<a
+								class="btn btn-disabled"
+								role="button"
+								tabindex="-1"
+								>.btn-disabled</a
+							>
 
-            <button type="button" class="btn btn-secondary btn-disabled" type="button">
-              .btn-secondary btn-disabled
-            </button>
+							<button
+								type="button"
+								class="btn btn-secondary btn-disabled"
+								type="button"
+							>
+								.btn-secondary btn-disabled
+							</button>
 
-            <a class="btn btn-disabled" role="button" tabindex="-1">.btn-disabled</a>
-          </div>
+							<a
+								class="btn btn-disabled"
+								role="button"
+								tabindex="-1"
+								>.btn-disabled</a
+							>
+						</div>
 
-          <div class="component__display--code">
-            <pre
-              class="code__snippet"><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-disabled&quot; type=&quot;button&quot;&gt;.btn-primary btn-disabled&lt;/button&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-disabled&quot; type=&quot;button&quot;&gt;.btn-primary btn-disabled&lt;/button&gt;
           
           &lt;a class=&quot;btn btn-disabled&quot; role=&quot;button&quot; tabindex=&quot;-1&quot;&gt;.btn-disabled&lt;/a&gt;
           
           &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-disabled&quot; type=&quot;button&quot;&gt;.btn-secondary btn-disabled&lt;/button&gt;
           
           &lt;a class=&quot;btn btn-disabled&quot; role=&quot;button&quot; tabindex=&quot;-1&quot;&gt;.btn-disabled&lt;/a&gt;</code></pre>
-          </div>
+						</div>
 
-          <h3>Examples of Floating Buttons Styles</h3>
-          <div class="component__display--container">
-            <div class="btn btn-primary float-action-btn">
-              <span>+</span>
-            </div>
+						<h3>
+							Examples of Floating Buttons
+							Styles
+						</h3>
+						<div
+							class="component__display--container"
+						>
+							<div
+								class="btn btn-primary float-action-btn"
+							>
+								<span>+</span>
+							</div>
 
-            <div class="btn btn-secondary float-action-btn">
-              <span>+</span>
-            </div>
-          </div>
+							<div
+								class="btn btn-secondary float-action-btn"
+							>
+								<span>+</span>
+							</div>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">&lt;div class=&quot;btn btn-primary float-action-btn&quot;&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">&lt;div class=&quot;btn btn-primary float-action-btn&quot;&gt;
               &lt;span&gt;+&lt;/span&gt;
           &lt;/div&gt;
           &lt;div class=&quot;btn btn-secondary float-action-btn&quot;&gt;
               &lt;span&gt;+&lt;/span&gt;
           &lt;/div&gt;</code></pre>
-          </div>
+						</div>
 
-          <!-- usecase/ description -->
-          <div class="component__usecase">
-            <h3>Usecase</h3>
+						<!-- usecase/ description -->
+						<div class="component__usecase">
+							<h3>Usecase</h3>
 
-            <ul>
-              <li>
-                There a 2 types of buttons over here one is with anchor(a) tag
-                and other is made using button tag
-              </li>
+							<ul>
+								<li>
+									There a 2 types of
+									buttons over here one is
+									with anchor(a) tag and
+									other is made using
+									button tag
+								</li>
 
-              <li>
-                So Normal use anchor tag is preferred over button element.
-              </li>
+								<li>
+									So Normal use anchor tag
+									is preferred over button
+									element.
+								</li>
 
-              <li>
-                Button tag can be used for functinal tasks like submit data,
-                change theme etc.
-              </li>
+								<li>
+									Button tag can be used
+									for functinal tasks like
+									submit data, change
+									theme etc.
+								</li>
 
-              <li>
-                All the classes for button component are displayed on
-                components.
-              </li>
-            </ul>
-          </div>
-        </section>
+								<li>
+									All the classes for
+									button component are
+									displayed on components.
+								</li>
+							</ul>
+						</div>
+					</section>
 
-        <div class="gradient"></div>
+					<div class="gradient"></div>
 
-        <!-- Cards -->
-        <div id="Card"></div>
+					<!-- Cards -->
+					<div id="Card"></div>
 
-    <!-- Cards -->
-    <section class="component">
-      <div class="component__info">
-        <div class="component__heading">
-          <h2>Card</h2>
-        </div>
+					<!-- Cards -->
+					<section class="component">
+						<div class="component__info">
+							<div class="component__heading">
+								<h2>Card</h2>
+							</div>
 
-        <p>Teaser Blog Cards</p>
-      </div>
+							<p>Teaser Blog Cards</p>
+						</div>
 
-      <div class="component__display--container flex-row">
-        <ul class="card-container list-style-none">
-          <li class="card text-center">
-            <div class="card-text">
-              <h6 class="h6">
-                <a
-                  href="#index.html"
-                  class="card-link"
-                  aria-describedby="vertical-card-description"
-                  >Indian Architecture</a
-                >
-              </h6>
+						<div
+							class="component__display--container flex-row"
+						>
+							<ul
+								class="card-container list-style-none"
+							>
+								<li
+									class="card text-center"
+								>
+									<div class="card-text">
+										<h6 class="h6">
+											<a
+												href="#index.html"
+												class="card-link"
+												aria-describedby="vertical-card-description"
+												>Indian
+												Architecture</a
+											>
+										</h6>
 
-              <p class="p-sm text-left">
-                Srirangam also known as Thiruvarangam, is an island of the city
-                of Tiruchirappalli and a part of Tiruchirappalli Metropolitan
-                Area in the Indian state of Tamil Nadu. A river island,
-                Srirangam is bounded by the Kaveri River on one side and its
-                distributary Kollidam on the other side.
-              </p>
+										<p
+											class="p-sm text-left"
+										>
+											Srirangam also
+											known as
+											Thiruvarangam,
+											is an island of
+											the city of
+											Tiruchirappalli
+											and a part of
+											Tiruchirappalli
+											Metropolitan
+											Area in the
+											Indian state of
+											Tamil Nadu. A
+											river island,
+											Srirangam is
+											bounded by the
+											Kaveri River on
+											one side and its
+											distributary
+											Kollidam on the
+											other side.
+										</p>
 
-              <span
-                class="btn-secondary"
-                aria-hidden="true"
-                role="button"
-                id="vertical-card-description"
-              >
-                Read More
-              </span>
+										<span
+											class="btn-secondary"
+											aria-hidden="true"
+											role="button"
+											id="vertical-card-description"
+										>
+											Read More
+										</span>
 
-              <small class="text-right">
-                Blog By <a href="#">Dheeraj Purohit </a>
-              </small>
-            </div>
+										<small
+											class="text-right"
+										>
+											Blog By
+											<a href="#"
+												>Dheeraj
+												Purohit
+											</a>
+										</small>
+									</div>
 
-            <div class="card-cover">
-              <img
-                src="../docs/assets/images/shrirangam.jpg"
-                alt="shrirangam"
-              />
-            </div>
-          </li>
+									<div class="card-cover">
+										<img
+											src="../docs/assets/images/shrirangam.jpg"
+											alt="shrirangam"
+										/>
+									</div>
+								</li>
 
-          <li class="card text-center">
-            <div class="card-text">
-              <h6 class="h6">
-                <a
-                  href="#index.html"
-                  class="card-link"
-                  aria-describedby="vertical-card-description"
-                  >Kalaripayattu</a
-                >
-              </h6>
+								<li
+									class="card text-center"
+								>
+									<div class="card-text">
+										<h6 class="h6">
+											<a
+												href="#index.html"
+												class="card-link"
+												aria-describedby="vertical-card-description"
+												>Kalaripayattu</a
+											>
+										</h6>
 
-              <p class="p-sm text-left">
-                Kalaripayattu is a martial art designed for the ancient
-                battlefield (the word "Kalari" meaning "battlefield"), with
-                weapons and combative techniques that are unique to India. Like
-                most Indian martial arts, Kalaripayattu contains rituals and
-                philosophies inspired by Hinduism.
-              </p>
+										<p
+											class="p-sm text-left"
+										>
+											Kalaripayattu is
+											a martial art
+											designed for the
+											ancient
+											battlefield (the
+											word "Kalari"
+											meaning
+											"battlefield"),
+											with weapons and
+											combative
+											techniques that
+											are unique to
+											India. Like most
+											Indian martial
+											arts,
+											Kalaripayattu
+											contains rituals
+											and philosophies
+											inspired by
+											Hinduism.
+										</p>
 
-              <span
-                class="btn-secondary"
-                aria-hidden="true"
-                role="button"
-                id="vertical-card-description"
-              >
-                Read More
-              </span>
+										<span
+											class="btn-secondary"
+											aria-hidden="true"
+											role="button"
+											id="vertical-card-description"
+										>
+											Read More
+										</span>
 
-              <small class="text-right">
-                Blog By <a href="#">Dheeraj Purohit </a>
-              </small>
-            </div>
+										<small
+											class="text-right"
+										>
+											Blog By
+											<a href="#"
+												>Dheeraj
+												Purohit
+											</a>
+										</small>
+									</div>
 
-            <div class="card-cover">
-              <img src="../docs/assets/images/kalari.jpg" alt="Kalari" />
-            </div>
-          </li>
+									<div class="card-cover">
+										<img
+											src="../docs/assets/images/kalari.jpg"
+											alt="Kalari"
+										/>
+									</div>
+								</li>
 
-          <li class="card text-center">
-            <div class="card-text">
-              <h6 class="h6">
-                <a
-                  href="#index.html"
-                  class="card-link"
-                  aria-describedby="vertical-card-description"
-                  >Dwarka Dham</a
-                >
-              </h6>
+								<li
+									class="card text-center"
+								>
+									<div class="card-text">
+										<h6 class="h6">
+											<a
+												href="#index.html"
+												class="card-link"
+												aria-describedby="vertical-card-description"
+												>Dwarka
+												Dham</a
+											>
+										</h6>
 
-              <p class="p-sm text-left">
-                Dwarka is an ancient city in the northwestern Indian state of
-                Gujarat. It’s known as a Hindu pilgrimage site. The ancient
-                Dwarkadhish Temple has an elaborately tiered main shrine, a
-                carved entrance and a black-marble idol of Lord Krishna. Dwarka
-                Beach and nearby Dwarka Lighthouse offer views of the Arabian
-                Sea. Southeast, Gaga Wildlife Sanctuary protects migratory birds
-                and endangered species like the Indian wolf.
-              </p>
+										<p
+											class="p-sm text-left"
+										>
+											Dwarka is an
+											ancient city in
+											the northwestern
+											Indian state of
+											Gujarat. It’s
+											known as a Hindu
+											pilgrimage site.
+											The ancient
+											Dwarkadhish
+											Temple has an
+											elaborately
+											tiered main
+											shrine, a carved
+											entrance and a
+											black-marble
+											idol of Lord
+											Krishna. Dwarka
+											Beach and nearby
+											Dwarka
+											Lighthouse offer
+											views of the
+											Arabian Sea.
+											Southeast, Gaga
+											Wildlife
+											Sanctuary
+											protects
+											migratory birds
+											and endangered
+											species like the
+											Indian wolf.
+										</p>
 
-              <span
-                class="btn-secondary"
-                aria-hidden="true"
-                role="button"
-                id="vertical-card-description"
-              >
-                Read More
-              </span>
+										<span
+											class="btn-secondary"
+											aria-hidden="true"
+											role="button"
+											id="vertical-card-description"
+										>
+											Read More
+										</span>
 
-              <small class="text-right">
-                Blog By <a href="#">Dheeraj Purohit </a>
-              </small>
-            </div>
+										<small
+											class="text-right"
+										>
+											Blog By
+											<a href="#"
+												>Dheeraj
+												Purohit
+											</a>
+										</small>
+									</div>
 
-            <div class="card-cover">
-              <img
-                src="../docs/assets/images/shridwarkadham.jpg"
-                alt="Dwarka"
-              />
-            </div>
-          </li>
+									<div class="card-cover">
+										<img
+											src="../docs/assets/images/shridwarkadham.jpg"
+											alt="Dwarka"
+										/>
+									</div>
+								</li>
 
-          <li class="card text-center">
-            <div class="card-text">
-              <h6 class="h6">
-                <a
-                  href="#index.html"
-                  class="card-link"
-                  aria-describedby="vertical-card-description"
-                  >Jagannath Swami</a
-                >
-              </h6>
+								<li
+									class="card text-center"
+								>
+									<div class="card-text">
+										<h6 class="h6">
+											<a
+												href="#index.html"
+												class="card-link"
+												aria-describedby="vertical-card-description"
+												>Jagannath
+												Swami</a
+											>
+										</h6>
 
-              <p class="p-sm text-left">
-                Lord Jagannath is presiding deity and King of Puri. Jagannathji
-                idol is made up of wood He is significant regionally in the
-                Indian states of Odisha, Chhattisgarh, West Bengal, Jharkhand,
-                Bihar, Gujarat, Assam, Manipur and Tripura.
-              </p>
+										<p
+											class="p-sm text-left"
+										>
+											Lord Jagannath
+											is presiding
+											deity and King
+											of Puri.
+											Jagannathji idol
+											is made up of
+											wood He is
+											significant
+											regionally in
+											the Indian
+											states of
+											Odisha,
+											Chhattisgarh,
+											West Bengal,
+											Jharkhand,
+											Bihar, Gujarat,
+											Assam, Manipur
+											and Tripura.
+										</p>
 
-              <span
-                class="btn-secondary"
-                aria-hidden="true"
-                role="button"
-                id="vertical-card-description"
-              >
-                Read More
-              </span>
+										<span
+											class="btn-secondary"
+											aria-hidden="true"
+											role="button"
+											id="vertical-card-description"
+										>
+											Read More
+										</span>
 
-              <small class="text-right">
-                Blog By <a href="#">Dheeraj Purohit </a>
-              </small>
-            </div>
+										<small
+											class="text-right"
+										>
+											Blog By
+											<a href="#"
+												>Dheeraj
+												Purohit
+											</a>
+										</small>
+									</div>
 
-            <div class="card-cover">
-              <img
-                src="../docs/assets/images/jagannathji.jpg"
-                alt="Jagannathji"
-              />
-            </div>
-          </li>
-        </ul>
-      </div>
+									<div class="card-cover">
+										<img
+											src="../docs/assets/images/jagannathji.jpg"
+											alt="Jagannathji"
+										/>
+									</div>
+								</li>
+							</ul>
+						</div>
 
-      <div class="component__display--code">
-        <pre class="code__snippet"><code class="language-html">
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">
           &lt;li class=&quot;card text-center&quot;&gt;
           &lt;div class=&quot;card-text&quot;&gt;
              &lt;h6 class=&quot;h6&quot;&gt;
@@ -880,93 +1452,177 @@
           &lt;/div&gt;
        &lt;/li&gt;
         </code></pre>
-      </div>
+						</div>
 
-      <p>Product Cards</p>
-      <div class="component__display--container flex-row">
-        <ul class="card-container list-style-none">
-          <li class="card text-center">
-            <div class="card-text">
-              <h6 class="h6">
-                <a
-                  href="#index.html"
-                  class="card-link"
-                  aria-describedby="vertical-card-description"
-                  >Shri Ganesh Idol</a
-                >
-              </h6>
+						<p>Product Cards</p>
+						<div
+							class="component__display--container flex-row"
+						>
+							<ul
+								class="card-container list-style-none"
+							>
+								<li
+									class="card text-center"
+								>
+									<div class="card-text">
+										<h6 class="h6">
+											<a
+												href="#index.html"
+												class="card-link"
+												aria-describedby="vertical-card-description"
+												>Shri Ganesh
+												Idol</a
+											>
+										</h6>
 
-              <p class="p-sm text-left">
-                Material : Made with Oxidized Silver/available in Gold / Brass
-              </p>
+										<p
+											class="p-sm text-left"
+										>
+											Material : Made
+											with Oxidized
+											Silver/available
+											in Gold / Brass
+										</p>
 
-              <span class="btn-secondary" role="button"> Add To Cart </span>
+										<span
+											class="btn-secondary"
+											role="button"
+										>
+											Add To Cart
+										</span>
 
-              <span class="btn-secondary-outline" role="button"> Buy Now </span>
+										<span
+											class="btn-secondary-outline"
+											role="button"
+										>
+											Buy Now
+										</span>
 
-              <small class="text-left">
-                Price: <a href="#"><i class="fa fa-rupee"></i></a>
-                <span class="price-tag">40,000/-</span>
-              </small>
-            </div>
+										<small
+											class="text-left"
+										>
+											Price:
+											<a href="#"
+												><i
+													class="fa fa-rupee"
+												></i
+											></a>
+											<span
+												class="price-tag"
+												>40,000/-</span
+											>
+										</small>
+									</div>
 
-            <div class="card-cover badge-container">
-              <img
-                src="../docs/assets/images/shriganesh_silver.jpg"
-                alt="shriganesh_silver"
-              />
+									<div
+										class="card-cover badge-container"
+									>
+										<img
+											src="../docs/assets/images/shriganesh_silver.jpg"
+											alt="shriganesh_silver"
+										/>
 
-              <div class="badge badge-top">Popular</div>
+										<div
+											class="badge badge-top"
+										>
+											Popular
+										</div>
 
-              <div class="badge badge-icon">
-                <i class="far fa-heart fa-2x"></i>
-              </div>
-            </div>
-          </li>
+										<div
+											class="badge badge-icon"
+										>
+											<i
+												class="far fa-heart fa-2x"
+											></i>
+										</div>
+									</div>
+								</li>
 
-          <li class="card text-center">
-            <div class="card-text">
-              <h6 class="h6">
-                <a
-                  href="#index.html"
-                  class="card-link"
-                  aria-describedby="vertical-card-description"
-                  >Saraswati Mata Idol</a
-                >
-              </h6>
+								<li
+									class="card text-center"
+								>
+									<div class="card-text">
+										<h6 class="h6">
+											<a
+												href="#index.html"
+												class="card-link"
+												aria-describedby="vertical-card-description"
+												>Saraswati
+												Mata Idol</a
+											>
+										</h6>
 
-              <p class="p-sm text-left">
-                Made with Oxidized Silver/available in Gold / Brass
-              </p>
+										<p
+											class="p-sm text-left"
+										>
+											Made with
+											Oxidized
+											Silver/available
+											in Gold / Brass
+										</p>
 
-              <span class="btn-secondary" role="button"> Add To Cart </span>
+										<span
+											class="btn-secondary"
+											role="button"
+										>
+											Add To Cart
+										</span>
 
-              <span class="btn-secondary-outline" role="button"> Buy Now </span>
+										<span
+											class="btn-secondary-outline"
+											role="button"
+										>
+											Buy Now
+										</span>
 
-              <small class="text-left">
-                Price: <a href="#"><i class="fa fa-rupee"></i></a>
-                <span class="price-tag">50,000/-</span>
-              </small>
-            </div>
+										<small
+											class="text-left"
+										>
+											Price:
+											<a href="#"
+												><i
+													class="fa fa-rupee"
+												></i
+											></a>
+											<span
+												class="price-tag"
+												>50,000/-</span
+											>
+										</small>
+									</div>
 
-            <div class="card-cover badge-container">
-              <img
-                src="../docs/assets/images/saraswatimata_silver.jpg"
-                alt="shriganesh_silver"
-              />
+									<div
+										class="card-cover badge-container"
+									>
+										<img
+											src="../docs/assets/images/saraswatimata_silver.jpg"
+											alt="shriganesh_silver"
+										/>
 
-              <div class="badge badge-top">New</div>
+										<div
+											class="badge badge-top"
+										>
+											New
+										</div>
 
-              <div class="badge badge-icon">
-                <i class="far fa-heart fa-2x"></i>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+										<div
+											class="badge badge-icon"
+										>
+											<i
+												class="far fa-heart fa-2x"
+											></i>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
 
-      <div class="component__display--code">
-        <pre class="code__snippet"><code class="language-html">
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">
           &lt;ul class=&quot;card-container list-style-none&quot;&gt;
           &lt;li class=&quot;card text-center&quot;&gt;
              &lt;div class=&quot;card-text&quot;&gt;
@@ -1046,50 +1702,90 @@
           &lt;/li&gt;
        &lt;/ul&gt;
         </code></pre>
-      </div>
+						</div>
 
-      <p>Card With Text and Dismiss</p>
+						<p>Card With Text and Dismiss</p>
 
-      <div class="component__display--container flex-row">
-        <ul class="card-container list-style-none">
-          <li class="card text-center">
-            <div class="card-text">
-              <h6 class="h6">
-                <a
-                  href="#index.html"
-                  class="card-link"
-                  aria-describedby="vertical-card-description"
-                  >Card Title</a
-                >
-              </h6>
+						<div
+							class="component__display--container flex-row"
+						>
+							<ul
+								class="card-container list-style-none"
+							>
+								<li
+									class="card text-center"
+								>
+									<div class="card-text">
+										<h6 class="h6">
+											<a
+												href="#index.html"
+												class="card-link"
+												aria-describedby="vertical-card-description"
+												>Card
+												Title</a
+											>
+										</h6>
 
-              <p class="p-sm">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Doloremque fugit magnam, labore quibusdam repudiandae
-                perferendis dolor non praesentium commodi! Rem adipisci quia
-                pariatur, eius voluptates unde quae eligendi sed suscipit! lo
-              </p>
+										<p class="p-sm">
+											Lorem ipsum
+											dolor sit amet
+											consectetur,
+											adipisicing
+											elit. Doloremque
+											fugit magnam,
+											labore quibusdam
+											repudiandae
+											perferendis
+											dolor non
+											praesentium
+											commodi! Rem
+											adipisci quia
+											pariatur, eius
+											voluptates unde
+											quae eligendi
+											sed suscipit! lo
+										</p>
 
-              <span class="btn-secondary" role="button"> Read More </span>
+										<span
+											class="btn-secondary"
+											role="button"
+										>
+											Read More
+										</span>
 
-              <small class="text-right">
-                Author :
+										<small
+											class="text-right"
+										>
+											Author :
 
-                <a href="#">Author Name</a>
-              </small>
-            </div>
+											<a href="#"
+												>Author
+												Name</a
+											>
+										</small>
+									</div>
 
-            <div class="card-cover badge-container">
-              <div class="badge badge-icon">
-                <i class="fas fa-times"></i>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+									<div
+										class="card-cover badge-container"
+									>
+										<div
+											class="badge badge-icon"
+										>
+											<i
+												class="fas fa-times"
+											></i>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
 
-      <div class="component__display--code">
-        <pre class="code__snippet"><code class="language-html">
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">
   &lt;li class=&quot;card text-center&quot;&gt;
    &lt;div class=&quot;card-text&quot;&gt;
       &lt;h6 class=&quot;h6 &quot;&gt;
@@ -1121,201 +1817,326 @@
    &lt;/div&gt;
 &lt;/li&gt;
           </code></pre>
-      </div>
+						</div>
 
-      <p>Horizontal Cards</p>
-      <div class="component__display--container flex-row">
-        <ul class="card-container list-style-none">
-          <li class="card card-horizontal text-center">
-            <div class="card-cover">
-              <img
-                src="../docs/assets/images/shrirangam.jpg"
-                alt="shrirangam"
-              />
-            </div>
-            <div class="card-text">
-              <h6 class="h6">
-                <a
-                  href="#index.html"
-                  class="card-link"
-                  aria-describedby="vertical-card-description"
-                  >Indian Architecture</a
-                >
-              </h6>
+						<p>Horizontal Cards</p>
+						<div
+							class="component__display--container flex-row"
+						>
+							<ul
+								class="card-container list-style-none"
+							>
+								<li
+									class="card card-horizontal text-center"
+								>
+									<div class="card-cover">
+										<img
+											src="../docs/assets/images/shrirangam.jpg"
+											alt="shrirangam"
+										/>
+									</div>
+									<div class="card-text">
+										<h6 class="h6">
+											<a
+												href="#index.html"
+												class="card-link"
+												aria-describedby="vertical-card-description"
+												>Indian
+												Architecture</a
+											>
+										</h6>
 
-              <p class="p-sm text-left">
-                Srirangam also known as Thiruvarangam, is an island of the city
-                of Tiruchirappalli and a part of Tiruchirappalli Metropolitan
-                Area in the Indian state of Tamil Nadu. A river island,
-                Srirangam is bounded by the Kaveri River on one side and its
-                distributary Kollidam on the other side.
-              </p>
+										<p
+											class="p-sm text-left"
+										>
+											Srirangam also
+											known as
+											Thiruvarangam,
+											is an island of
+											the city of
+											Tiruchirappalli
+											and a part of
+											Tiruchirappalli
+											Metropolitan
+											Area in the
+											Indian state of
+											Tamil Nadu. A
+											river island,
+											Srirangam is
+											bounded by the
+											Kaveri River on
+											one side and its
+											distributary
+											Kollidam on the
+											other side.
+										</p>
 
-              <span
-                class="btn-secondary"
-                aria-hidden="true"
-                role="button"
-                id="vertical-card-description"
-              >
-                Read More
-              </span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- usecase/ description -->
-      <div class="component__usecase">
-        <h3>Usecase</h3>
+										<span
+											class="btn-secondary"
+											aria-hidden="true"
+											role="button"
+											id="vertical-card-description"
+										>
+											Read More
+										</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- usecase/ description -->
+						<div class="component__usecase">
+							<h3>Usecase</h3>
 
-        <ul>
-          <li>Cards with li provides better accessiblity</li>
+							<ul>
+								<li>
+									Cards with li provides
+									better accessiblity
+								</li>
 
-          <li>
-            Use <code>class=".card-horizontal"</code> to make your card
-            horizontal by default card is vertical based on most of the usecase.
-          </li>
-        </ul>
-      </div>
-    </section>
+								<li>
+									Use
+									<code
+										>class=".card-horizontal"</code
+									>
+									to make your card
+									horizontal by default
+									card is vertical based
+									on most of the usecase.
+								</li>
+							</ul>
+						</div>
+					</section>
 
+					<div class="gradient"></div>
 
+					<!-- Images -->
 
-        <div class="gradient"></div>
+					<div id="Image"></div>
 
-        <!-- Images -->
+					<section class="component">
+						<div class="component__info">
+							<div class="component__heading">
+								<h2>Images</h2>
+							</div>
 
-        <div id="Image"></div>
+							<p>
+								Images can be customised to
+								be responsive, round shaped
+								and some performance
+								parameters like resolution
+								switching, density switching
+								can be added.
+							</p>
+						</div>
 
-        <section class="component">
-          <div class="component__info">
-            <div class="component__heading">
-              <h2>Images</h2>
-            </div>
+						<h3>Responsive Image</h3>
 
-            <p>
-              Images can be customised to be responsive, round shaped and some
-              performance parameters like resolution switching, density
-              switching can be added.
-            </p>
-          </div>
+						<p>
+							Responsive images will
+							automatically adjust to fit the
+							size of the container.
+						</p>
 
-          <h3>Responsive Image</h3>
+						<div
+							class="component__display--container"
+						>
+							<img
+								class="responsive-image"
+								src="./assets/images/shrirangam.jpg"
+								alt="shrirangam-reponsive-img"
+							/>
+						</div>
 
-          <p>
-            Responsive images will automatically adjust to fit the size of the
-            container.
-          </p>
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html"> &lt;img class=&quot;responsive-image&quot;  src=&quot;../docs/assets/images/shrirangam.jpg&quot; alt=&quot;shrirangam-reponsive-img&quot;/&gt;</code></pre>
+						</div>
 
-          <div class="component__display--container">
-            <img class="responsive-image" src="./assets/images/shrirangam.jpg" alt="shrirangam-reponsive-img" />
-          </div>
+						<h3>Round Shaped Images</h3>
 
-          <div class="component__display--code">
-            <pre
-              class="code__snippet"><code class="language-html"> &lt;img class=&quot;responsive-image&quot;  src=&quot;../docs/assets/images/shrirangam.jpg&quot; alt=&quot;shrirangam-reponsive-img&quot;/&gt;</code></pre>
-          </div>
+						<div
+							class="component__display--container"
+						>
+							<div
+								class="image-container-400x400 flex-column"
+							>
+								<img
+									class="round-image responsive-image"
+									src="./assets/images/suryanarayan.jpg"
+									alt="sun"
+								/>
+							</div>
+						</div>
 
-          <h3>Round Shaped Images</h3>
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html"> &lt;img class=&quot;round-image responsive-image&quot; src=&quot;../docs/assets/images/suryanarayan.jpg&quot; alt=&quot;sun&quot;/&gt;</code></pre>
+						</div>
 
-          <div class="component__display--container">
-            <div class="image-container-400x400 flex-column">
-              <img class="round-image responsive-image" src="./assets/images/suryanarayan.jpg" alt="sun" />
-            </div>
-          </div>
+						<!-- usecase/ description -->
+						<div class="component__usecase">
+							<h3>Usecase</h3>
 
-          <div class="component__display--code">
-            <pre
-              class="code__snippet"><code class="language-html"> &lt;img class=&quot;round-image responsive-image&quot; src=&quot;../docs/assets/images/suryanarayan.jpg&quot; alt=&quot;sun&quot;/&gt;</code></pre>
-          </div>
+							<ul>
+								<li>
+									Responsive Images can be
+									used as Background Cover
+									Photos
+								</li>
 
-          <!-- usecase/ description -->
-          <div class="component__usecase">
-            <h3>Usecase</h3>
+								<li>
+									Round Images can be used
+									as avatars for user
+									identity
+								</li>
 
-            <ul>
-              <li>
-                Responsive Images can be used as Background Cover Photos
-              </li>
+								<li>
+									To make use of this
+									utility add
+									<code>
+										class="responsive-image"
+									</code>
+									and
+									<code
+										>class="round-image"</code
+									>
+									for round Images on your
+									image.
+								</li>
 
-              <li>Round Images can be used as avatars for user identity</li>
+								<li>
+									Make Sure you add a
+									wrapper around your
+									images to handle its
+									dimensions easily
+								</li>
+							</ul>
+						</div>
+					</section>
 
-              <li>
-                To make use of this utility add
-                <code> class="responsive-image" </code> and
-                <code>class="round-image"</code> for round Images on your
-                image.
-              </li>
+					<div class="gradient"></div>
 
-              <li>
-                Make Sure you add a wrapper around your images to handle its
-                dimensions easily
-              </li>
-            </ul>
-          </div>
-        </section>
+					<!-- Input -->
+					<div id="Input"></div>
 
-        <div class="gradient"></div>
+					<section class="component">
+						<div class="component__info">
+							<div class="component__heading">
+								<h2>Inputs</h2>
+							</div>
 
-        <!-- Input -->
-        <div id="Input"></div>
+							<p>
+								Forms are the backbone of
+								Web, Form is the reason for
+								which web was made for.
+								There are various types of
+								inputs we can use to take
+								input from user in our
+								applications which we are
+								going to see in this
+								section.
+							</p>
 
-        <section class="component">
-          <div class="component__info">
-            <div class="component__heading">
-              <h2>Inputs</h2>
-            </div>
+							<p>
+								so form is used to collect
+								user input. The user input
+								is most often sent to a
+								server for processing.
+							</p>
+						</div>
 
-            <p>
-              Forms are the backbone of Web, Form is the reason for which web
-              was made for. There are various types of inputs we can use to
-              take input from user in our applications which we are going to
-              see in this section.
-            </p>
+						<h3>Accessible Form Controls</h3>
+						<p>
+							Accessible forms are easy to
+							understand, complete, and
+							submit. Instructions, cues,
+							required form fields, and field
+							formatting requirements must be
+							clearly identified to users.
+							Error recovery must be intuitive
+							and descriptive.
+						</p>
 
-            <p>
-              so form is used to collect user input. The user input is most
-              often sent to a server for processing.
-            </p>
-          </div>
+						<h4>Text Inputs</h4>
 
-          <h3>Accessible Form Controls</h3>
-          <p>
-            Accessible forms are easy to understand, complete, and submit.
-            Instructions, cues, required form fields, and field formatting
-            requirements must be clearly identified to users. Error recovery
-            must be intuitive and descriptive.
-          </p>
+						<div
+							class="component__display--container flex-row"
+						>
+							<form
+								class="form-field flex-column"
+							>
+								<label
+									class="input-label"
+									for="name"
+									>Name:
+								</label>
 
-          <h4>Text Inputs</h4>
+								<input
+									class="input-field"
+									type="text"
+									aria-labelledby="name"
+									autocomplete="name"
+									placeholder="Inclusive UI"
+								/>
 
-          <div class="component__display--container flex-row">
-            <form class="form-field flex-column">
-              <label class="input-label" for="name">Name: </label>
+								<label
+									class="input-label"
+									for="password"
+									>Password:
+								</label>
 
-              <input class="input-field" type="text" aria-labelledby="name" autocomplete="name"
-                placeholder="Inclusive UI" />
+								<input
+									class="input-field"
+									type="password"
+									aria-labelledby="password"
+									autocomplete="new-password"
+									placeholder="*******"
+								/>
+							</form>
 
-              <label class="input-label" for="password">Password: </label>
+							<form
+								class="form-field flex-column"
+							>
+								<label
+									for="email"
+									class="input-label"
+									>Email:
+								</label>
+								<input
+									class="input-field"
+									type="email"
+									aria-labelledby="email"
+									autocomplete="email"
+									placeholder="inclusive-ui@gmail.com"
+								/>
 
-              <input class="input-field" type="password" aria-labelledby="password" autocomplete="new-password"
-                placeholder="*******" />
-            </form>
+								<label
+									for="address"
+									class="input-label"
+									>Enter Your address:
+								</label>
 
-            <form class="form-field flex-column">
-              <label for="email" class="input-label">Email: </label>
-              <input class="input-field" type="email" aria-labelledby="email" autocomplete="email"
-                placeholder="inclusive-ui@gmail.com" />
+								<textarea
+									class="textbox-field"
+									aria-labelledby="address"
+									autocomplete="street-address"
+								>
+								</textarea>
+							</form>
+						</div>
 
-              <label for="address" class="input-label">Enter Your address:
-              </label>
-
-              <textarea class="textbox-field" aria-labelledby="address" autocomplete="street-address">
-                </textarea>
-            </form>
-          </div>
-
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">
       &lt;form class=&quot;form-field flex-column&quot;&gt;
       
          &lt;label class=&quot;input-label&quot; for=&quot;name&quot;&gt;Name:
@@ -1330,42 +2151,109 @@
          aria-labelledby=&quot;password&quot; autocomplete=&quot;new-password&quot; placeholder=&quot;*******&quot;&gt;
       &lt;/form&gt;
       </code></pre>
-          </div>
+						</div>
 
-          <h4>Checkboxes & Radio Buttons</h4>
+						<h4>Checkboxes & Radio Buttons</h4>
 
-          <div class="component__display--container flex-row">
-            <fieldset class="flex-row">
-              <legend>Select Your Category</legend>
-              <input id="electronic" type="checkbox" name="category" value="electronic" />
-              <label for="electronic">Electronic</label>
+						<div
+							class="component__display--container flex-row"
+						>
+							<fieldset class="flex-row">
+								<legend>
+									Select Your Category
+								</legend>
+								<input
+									id="electronic"
+									type="checkbox"
+									name="category"
+									value="electronic"
+								/>
+								<label for="electronic"
+									>Electronic</label
+								>
 
-              <input id="medical" type="checkbox" name="category" value="medical" />
-              <label for="medical">Medical</label>
+								<input
+									id="medical"
+									type="checkbox"
+									name="category"
+									value="medical"
+								/>
+								<label for="medical"
+									>Medical</label
+								>
 
-              <input id="plastic" type="checkbox" name="category" value="plastic" />
-              <label for="plastic">Plastic</label>
+								<input
+									id="plastic"
+									type="checkbox"
+									name="category"
+									value="plastic"
+								/>
+								<label for="plastic"
+									>Plastic</label
+								>
 
-              <input id="books" type="checkbox" name="category" value="books" />
-              <label for="books">Books</label>
+								<input
+									id="books"
+									type="checkbox"
+									name="category"
+									value="books"
+								/>
+								<label for="books"
+									>Books</label
+								>
 
-              <input id="others" type="checkbox" name="category" value="others" />
-              <label for="others">Others</label>
-            </fieldset>
+								<input
+									id="others"
+									type="checkbox"
+									name="category"
+									value="others"
+								/>
+								<label for="others"
+									>Others</label
+								>
+							</fieldset>
 
-            <fieldset>
-              <legend>Choose a shipping method:</legend>
-              <input id="overnight" type="radio" name="shipping" value="overnight" />
-              <label for="overnight">Overnight</label><br />
-              <input id="twoday" type="radio" name="shipping" value="twoday" />
-              <label for="twoday">Two day</label><br />
-              <input id="ground" type="radio" name="shipping" value="ground" />
-              <label for="ground">Ground</label>
-            </fieldset>
-          </div>
+							<fieldset>
+								<legend>
+									Choose a shipping
+									method:
+								</legend>
+								<input
+									id="overnight"
+									type="radio"
+									name="shipping"
+									value="overnight"
+								/>
+								<label for="overnight"
+									>Overnight</label
+								><br />
+								<input
+									id="twoday"
+									type="radio"
+									name="shipping"
+									value="twoday"
+								/>
+								<label for="twoday"
+									>Two day</label
+								><br />
+								<input
+									id="ground"
+									type="radio"
+									name="shipping"
+									value="ground"
+								/>
+								<label for="ground"
+									>Ground</label
+								>
+							</fieldset>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">&lt;fieldset&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">&lt;fieldset&gt;
         &lt;legend&gt;Choose a shipping method:&lt;/legend&gt;
         &lt;input id=&quot;overnight&quot; type=&quot;radio&quot; name=&quot;shipping&quot; value=&quot;overnight&quot;&gt;
         &lt;label for=&quot;overnight&quot;&gt;Overnight&lt;/label&gt;&lt;br&gt;
@@ -1375,53 +2263,107 @@
         &lt;label for=&quot;ground&quot;&gt;Ground&lt;/label&gt;
       &lt;/fieldset&gt; 
       </code></pre>
-          </div>
+						</div>
 
-          <p>
-            The <strong>fieldset</strong> contains the group of checkboxes,
-            and the <strong> legend</strong> labels the group. Screen readers
-            may repeat the legend for each control in the group, so the legend
-            text should be brief and descriptive.
-          </p>
+						<p>
+							The
+							<strong>fieldset</strong>
+							contains the group of
+							checkboxes, and the
+							<strong> legend</strong> labels
+							the group. Screen readers may
+							repeat the legend for each
+							control in the group, so the
+							legend text should be brief and
+							descriptive.
+						</p>
 
-          <p>
-            Fieldset and legend should only be used when a higher-level label
-            is necessary. Nested fieldsets can cause odd screen reader
-            behavior and should be avoided.
-          </p>
+						<p>
+							Fieldset and legend should only
+							be used when a higher-level
+							label is necessary. Nested
+							fieldsets can cause odd screen
+							reader behavior and should be
+							avoided.
+						</p>
 
-          <h4>Validation</h4>
-          <div class="component__display--container">
-            <form class="form-field flex-column" onsubmit=`return false`>
-              <h3>VALIDATION</h3>
+						<h4>Validation</h4>
+						<div
+							class="component__display--container"
+						>
+							<form
+								class="form-field flex-column"
+							>
+								<h3>VALIDATION</h3>
 
-              <div class="input-wrapper flex-column">
-                <label class="input-label label-required" for="email">
-                  Email
-                </label>
+								<div
+									class="input-wrapper flex-column"
+								>
+									<label
+										class="input-label label-required"
+										for="email"
+									>
+										Email
+									</label>
 
-                <input class="input-field" aria-labelledby="email" type="email" placeholder="Enter Your Email"
-                  autocomplete="email" required />
+									<input
+										class="input-field"
+										aria-labelledby="email"
+										type="email"
+										placeholder="Enter Your Email"
+										autocomplete="email"
+										required
+									/>
 
-                <label class="input-label label-required" for="password">Password</label>
+									<label
+										class="input-label label-required"
+										for="password"
+										>Password</label
+									>
 
-                <input class="input-field" aria-labelledby="password" type="password" placeholder="Enter Password"
-                  autocomplete="current-password" required />
+									<input
+										class="input-field"
+										aria-labelledby="password"
+										type="password"
+										placeholder="Enter Password"
+										autocomplete="current-password"
+										required
+									/>
 
-                <div class="redirect flex-row">
-                  <label class="input-label"><input class="input-filed" type="checkbox" />Remember
-                    me</label>
+									<div
+										class="redirect flex-row"
+									>
+										<label
+											class="input-label"
+											><input
+												class="input-filed"
+												type="checkbox"
+											/>Remember
+											me</label
+										>
 
-                  <a href="#images"> Forgot Your Password ? </a>
-                </div>
-              </div>
+										<a href="#images">
+											Forgot Your
+											Password ?
+										</a>
+									</div>
+								</div>
 
-              <input type="submit" name="login-button" class="form-submit" value="Submit" />
-            </form>
-          </div>
+								<input
+									type="submit"
+									name="login-button"
+									class="form-submit"
+									value="Submit"
+								/>
+							</form>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">
       &lt;form class=&quot;form-field flex-column&quot; onsubmit=&quot;return false&quot;&gt;
          &lt;h3&gt;VALIDATION&lt;/h3&gt;
          
@@ -1452,67 +2394,115 @@
          &lt;input type=&quot;submit&quot; name=&quot;login-button&quot; class=&quot;form-submit&quot; value=&quot;Submit&quot;/&gt;
       &lt;/form&gt;
                  </code></pre>
-          </div>
+						</div>
 
-          <!-- usecase/ description -->
-          <div class="component__usecase">
-            <h3>Usecase</h3>
-            <ul>
-              <li>
-                you can use <code>class="input-field"</code> for styling
-                inputs and <code>class="form-field"</code> for forms
-              </li>
+						<!-- usecase/ description -->
+						<div class="component__usecase">
+							<h3>Usecase</h3>
+							<ul>
+								<li>
+									you can use
+									<code
+										>class="input-field"</code
+									>
+									for styling inputs and
+									<code
+										>class="form-field"</code
+									>
+									for forms
+								</li>
 
-              <li>
-                you can add <code>class="label-required"</code> for adding *
-                after the label.
-              </li>
+								<li>
+									you can add
+									<code
+										>class="label-required"</code
+									>
+									for adding * after the
+									label.
+								</li>
 
-              <li>
-                For layout parts there are 2 classes
-                <strong>flex-row</strong> and
-                <strong>flex-column</strong>
-                can be used for arranging the form elements.
-              </li>
+								<li>
+									For layout parts there
+									are 2 classes
+									<strong
+										>flex-row</strong
+									>
+									and
+									<strong
+										>flex-column</strong
+									>
+									can be used for
+									arranging the form
+									elements.
+								</li>
 
-              <li>
-                To make use of Validating styles use
-                <code>.input-wrapper</code> wrap it around your inputs.
-              </li>
-            </ul>
-          </div>
-        </section>
+								<li>
+									To make use of
+									Validating styles use
+									<code
+										>.input-wrapper</code
+									>
+									wrap it around your
+									inputs.
+								</li>
+							</ul>
+						</div>
+					</section>
 
-        <div class="gradient"></div>
+					<div class="gradient"></div>
 
-        <!-- Text Utilities -->
+					<!-- Text Utilities -->
 
-        <div id="Text"></div>
+					<div id="Text"></div>
 
-        <section class="component">
-          <div class="component__info">
-            <div class="component__heading">
-              <h2>Text Utilities</h2>
-            </div>
+					<section class="component">
+						<div class="component__info">
+							<div class="component__heading">
+								<h2>Text Utilities</h2>
+							</div>
 
-            <p>
-              Text is the most used content on web It Becomes very important
-              to use heading appropriately on your webpage.
-            </p>
-          </div>
+							<p>
+								Text is the most used
+								content on web It Becomes
+								very important to use
+								heading appropriately on
+								your webpage.
+							</p>
+						</div>
 
-          <h3>Examples of Differen Text Heading</h3>
-          <div class="component__display--container flex-column">
-            <h1 class="h1">H1 Heading Example</h1>
-            <h2 class="h2">H2 Heading Example</h2>
-            <h3 class="h3">H3 Heading Example</h3>
-            <h4 class="h4">H4 Heading Example</h4>
-            <h5 class="h5">H5 Heading Example</h5>
-            <h6 class="h6">H6 Heading Example</h6>
-          </div>
+						<h3>
+							Examples of Differen Text
+							Heading
+						</h3>
+						<div
+							class="component__display--container flex-column"
+						>
+							<h1 class="h1">
+								H1 Heading Example
+							</h1>
+							<h2 class="h2">
+								H2 Heading Example
+							</h2>
+							<h3 class="h3">
+								H3 Heading Example
+							</h3>
+							<h4 class="h4">
+								H4 Heading Example
+							</h4>
+							<h5 class="h5">
+								H5 Heading Example
+							</h5>
+							<h6 class="h6">
+								H6 Heading Example
+							</h6>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">
               &lt;h1 class=&quot;h1&quot;&gt;H1 Heading Example&lt;/h1&gt;
               &lt;h2 class=&quot;h2&quot;&gt;H2 Heading Example&lt;/h2&gt; 
               &lt;h3 class=&quot;h3&quot;&gt;H3 Heading Example&lt;/h3&gt;
@@ -1520,129 +2510,195 @@
               &lt;h5 class=&quot;h5&quot;&gt;H5 Heading Example&lt;/h5&gt;
               &lt;h6 class=&quot;h6&quot;&gt;H6 Heading Example&lt;/h6&gt;
                           </code></pre>
-          </div>
+						</div>
 
-          <h3>Examples of Small Text</h3>
-          <div class="component__display--container flex-column">
-            <p class="p-lg">Paragraph with Large Text</p>
-            <p class="p-md">Paragraph with medium Text</p>
-            <p class="p-sm">Paragraph with small Text</p>
-          </div>
+						<h3>Examples of Small Text</h3>
+						<div
+							class="component__display--container flex-column"
+						>
+							<p class="p-lg">
+								Paragraph with Large Text
+							</p>
+							<p class="p-md">
+								Paragraph with medium Text
+							</p>
+							<p class="p-sm">
+								Paragraph with small Text
+							</p>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">&lt;p class=&quot;p-lg&quot;&gt;Paragraph with Large Text&lt;/p&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">&lt;p class=&quot;p-lg&quot;&gt;Paragraph with Large Text&lt;/p&gt;
           &lt;p class=&quot;p-md&quot;&gt;Paragraph with medium Text&lt;/p&gt;
           &lt;p class=&quot;p-sm&quot;&gt;Paragraph with small Text&lt;/p&gt;</code></pre>
-          </div>
+						</div>
 
-          <h3>Examples Of Gray Text</h3>
-          <div class="component__display--container flex-column">
-            <p class="p-md gray-lt">Hello I am TEXT in GRAY</p>
-            <p class="p-md gray-md">I have More Darker shade than you</p>
-            <p class="p-md gray-dk">
-              Oh! Really you haven't seen more darker yet?
-            </p>
-            <p class="p-md gray-dkst">
-              Hey Kids what happened who is darker than me?
-            </p>
-          </div>
+						<h3>Examples Of Gray Text</h3>
+						<div
+							class="component__display--container flex-column"
+						>
+							<p class="p-md gray-lt">
+								Hello I am TEXT in GRAY
+							</p>
+							<p class="p-md gray-md">
+								I have More Darker shade
+								than you
+							</p>
+							<p class="p-md gray-dk">
+								Oh! Really you haven't seen
+								more darker yet?
+							</p>
+							<p class="p-md gray-dkst">
+								Hey Kids what happened who
+								is darker than me?
+							</p>
+						</div>
 
-          <div class="component__display--code">
-            <pre
-              class="code__snippet"><code class="language-html">&lt;p class=&quot;p-md gray-lt&quot;&gt;Hello I am TEXT in GRAY&lt;/p&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">&lt;p class=&quot;p-md gray-lt&quot;&gt;Hello I am TEXT in GRAY&lt;/p&gt;
           &lt;p class=&quot;p-md gray-md&quot;&gt;I have More Darker shade than you&lt;/p&gt;
           &lt;p class=&quot;p-md gray-dk&quot;&gt;Oh! Really you haven't seen more darker yet?&lt;/p&gt;
           &lt;p class=&quot;p-md gray-dkst&quot;&gt;Hey Kids what happened who is darker than me?&lt;/p&gt;</code></pre>
-          </div>
+						</div>
 
-          <h3>Examples of Center Text</h3>
-          <div class="component__display--container">
-            <div>
-              <h1 class="h1 text-center">H1 TEXT : AM IN CENTER ?</h1>
+						<h3>Examples of Center Text</h3>
+						<div
+							class="component__display--container"
+						>
+							<div>
+								<h1 class="h1 text-center">
+									H1 TEXT : AM IN CENTER ?
+								</h1>
 
-              <p class="p-md gray-md text-right">Yes You are in center</p>
+								<p
+									class="p-md gray-md text-right"
+								>
+									Yes You are in center
+								</p>
 
-              <small class="p-sm text-left">Hey P you are aligned Right</small>
-            </div>
-          </div>
+								<small
+									class="p-sm text-left"
+									>Hey P you are aligned
+									Right</small
+								>
+							</div>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html"> &lt;h1 class=&quot;h1 text-center&quot;&gt; H1 TEXT : AM IN CENTER ?&lt;/h1&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html"> &lt;h1 class=&quot;h1 text-center&quot;&gt; H1 TEXT : AM IN CENTER ?&lt;/h1&gt;
           &lt;p class=&quot;p-md gray-md text-right&quot;&gt;Yes You are in center&lt;/p&gt;           
           &lt;small class=&quot;p-sm text-left&quot;&gt;Hey P you are aligned Right&lt;/small&gt;</code></pre>
-          </div>
+						</div>
 
-          <!-- usecase/ description -->
-          <div class="component__usecase">
-            <h3>Usecase</h3>
+						<!-- usecase/ description -->
+						<div class="component__usecase">
+							<h3>Usecase</h3>
 
-            <ul>
-              <li>
-                Use Heading in a chronological order from large to small.
-              </li>
+							<ul>
+								<li>
+									Use Heading in a
+									chronological order from
+									large to small.
+								</li>
 
-              <li>As a rule of thumb use one h1 per webpage.</li>
+								<li>
+									As a rule of thumb use
+									one h1 per webpage.
+								</li>
 
-              <li>
-                by just using class you can apply this heading, paragraph
-                style on block level, inline elements.
-              </li>
+								<li>
+									by just using class you
+									can apply this heading,
+									paragraph style on block
+									level, inline elements.
+								</li>
 
-              <li>
-                The heading components block level margins are 0 so you can
-                use it directly without any modification.
-              </li>
-            </ul>
-          </div>
-        </section>
+								<li>
+									The heading components
+									block level margins are
+									0 so you can use it
+									directly without any
+									modification.
+								</li>
+							</ul>
+						</div>
+					</section>
 
-        <div class="gradient"></div>
+					<div class="gradient"></div>
 
-        <!-- Lists -->
-        <div id="List"></div>
+					<!-- Lists -->
+					<div id="List"></div>
 
-        <section class="component">
-          <div class="component__info">
-            <div class="component__heading">
-              <h2>Lists</h2>
-            </div>
+					<section class="component">
+						<div class="component__info">
+							<div class="component__heading">
+								<h2>Lists</h2>
+							</div>
 
-            <p>
-              List is a very useful component in real life as well as on web
-            </p>
+							<p>
+								List is a very useful
+								component in real life as
+								well as on web
+							</p>
 
-            <p>
-              we can see lists are used in navigation, displaying elements in
-              order, Menus etc
-            </p>
-          </div>
+							<p>
+								we can see lists are used in
+								navigation, displaying
+								elements in order, Menus etc
+							</p>
+						</div>
 
-          <h3>Examples of Unordered List with bullets</h3>
-          <div class="component__display--container">
-            <ul class="styled-list">
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-              <li>List Item 4</li>
-            </ul>
+						<h3>
+							Examples of Unordered List with
+							bullets
+						</h3>
+						<div
+							class="component__display--container"
+						>
+							<ul class="styled-list">
+								<li>List Item 1</li>
+								<li>List Item 2</li>
+								<li>List Item 3</li>
+								<li>List Item 4</li>
+							</ul>
 
-            <ul class="styled-list list-style-circle">
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-              <li>List Item 4</li>
-            </ul>
+							<ul
+								class="styled-list list-style-circle"
+							>
+								<li>List Item 1</li>
+								<li>List Item 2</li>
+								<li>List Item 3</li>
+								<li>List Item 4</li>
+							</ul>
 
-            <ul class="styled-list list-style-square">
-              <li>List Item 1</li>
-              <li>List Item 2</li>
-              <li>List Item 3</li>
-              <li>List Item 4</li>
-            </ul>
-          </div>
+							<ul
+								class="styled-list list-style-square"
+							>
+								<li>List Item 1</li>
+								<li>List Item 2</li>
+								<li>List Item 3</li>
+								<li>List Item 4</li>
+							</ul>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">
           &lt;ul class=&quot;styled-list&quot;&gt;
           &lt;li&gt;List Item 1&lt;/li&gt;
           &lt;li&gt;List Item 2&lt;/li&gt;
@@ -1663,55 +2719,128 @@
           &lt;li&gt;List Item 3&lt;/li&gt;
           &lt;li&gt;List Item 4&lt;/li&gt;
           &lt;/ul&gt;</code></pre>
-          </div>
+						</div>
 
-          <h3>Examples of Ordered List</h3>
-          <div class="component__display--container flex-row">
-            <ol class="styled-list">
-              <li>List Item with numbers</li>
-              <li>List Item with numbers</li>
-              <li>List Item with numbers</li>
-              <li>List Item with numbers</li>
-            </ol>
+						<h3>Examples of Ordered List</h3>
+						<div
+							class="component__display--container flex-row"
+						>
+							<ol class="styled-list">
+								<li>
+									List Item with numbers
+								</li>
+								<li>
+									List Item with numbers
+								</li>
+								<li>
+									List Item with numbers
+								</li>
+								<li>
+									List Item with numbers
+								</li>
+							</ol>
 
-            <ol class="styled-list" reversed>
-              <li>List Item reversed</li>
-              <li>List Item reversed</li>
-              <li>List Item reversed</li>
-              <li>List Item reversed</li>
-            </ol>
+							<ol
+								class="styled-list"
+								reversed
+							>
+								<li>List Item reversed</li>
+								<li>List Item reversed</li>
+								<li>List Item reversed</li>
+								<li>List Item reversed</li>
+							</ol>
 
-            <ol class="styled-list list-style-alpha-up">
-              <li>List Item with upper alphabets</li>
-              <li>List Item with upper alphabets</li>
-              <li>List Item with upper alphabets</li>
-              <li>List Item with upper alphabets</li>
-            </ol>
+							<ol
+								class="styled-list list-style-alpha-up"
+							>
+								<li>
+									List Item with upper
+									alphabets
+								</li>
+								<li>
+									List Item with upper
+									alphabets
+								</li>
+								<li>
+									List Item with upper
+									alphabets
+								</li>
+								<li>
+									List Item with upper
+									alphabets
+								</li>
+							</ol>
 
-            <ol class="styled-list list-style-alpha-low">
-              <li>List Item with lower alphabets</li>
-              <li>List Item with lower alphabets</li>
-              <li>List Item with lower alphabets</li>
-              <li>List Item with lower alphabets</li>
-            </ol>
+							<ol
+								class="styled-list list-style-alpha-low"
+							>
+								<li>
+									List Item with lower
+									alphabets
+								</li>
+								<li>
+									List Item with lower
+									alphabets
+								</li>
+								<li>
+									List Item with lower
+									alphabets
+								</li>
+								<li>
+									List Item with lower
+									alphabets
+								</li>
+							</ol>
 
-            <ol class="styled-list list-style-roman-up">
-              <li>List Item with upper romans</li>
-              <li>List Item with upper romans</li>
-              <li>List Item with upper romans</li>
-              <li>List Item with upper romans</li>
-            </ol>
+							<ol
+								class="styled-list list-style-roman-up"
+							>
+								<li>
+									List Item with upper
+									romans
+								</li>
+								<li>
+									List Item with upper
+									romans
+								</li>
+								<li>
+									List Item with upper
+									romans
+								</li>
+								<li>
+									List Item with upper
+									romans
+								</li>
+							</ol>
 
-            <ol class="styled-list list-style-roman-low">
-              <li>List Item with lower romans</li>
-              <li>List Item with lower romans</li>
-              <li>List Item with lower romans</li>
-              <li>List Item with lower romans</li>
-            </ol>
-          </div>
+							<ol
+								class="styled-list list-style-roman-low"
+							>
+								<li>
+									List Item with lower
+									romans
+								</li>
+								<li>
+									List Item with lower
+									romans
+								</li>
+								<li>
+									List Item with lower
+									romans
+								</li>
+								<li>
+									List Item with lower
+									romans
+								</li>
+							</ol>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">&lt;ol class=&quot;styled-list&quot;&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">&lt;ol class=&quot;styled-list&quot;&gt;
              &lt;li&gt;List Item with numbers&lt;/li&gt;
              &lt;li&gt;List Item with numbers&lt;/li&gt;
              &lt;li&gt;List Item with numbers&lt;/li&gt;
@@ -1747,27 +2876,52 @@
              &lt;li&gt;List Item with lower romans&lt;/li&gt;
              &lt;li&gt;List Item with lower romans&lt;/li&gt;
           &lt;/ol&gt;</code></pre>
-          </div>
+						</div>
 
-          <h3>Examples Of Inline List and List with no bullets</h3>
+						<h3>
+							Examples Of Inline List and List
+							with no bullets
+						</h3>
 
-          <div class="component__display--container flex-wrap">
-            <ul class="styled-list list-style-none">
-              <li>List Items with no bullets</li>
-              <li>List Items with no bullets</li>
-              <li>List Items with no bullets</li>
-              <li>List Items with no bullets</li>
-            </ul>
+						<div
+							class="component__display--container flex-wrap"
+						>
+							<ul
+								class="styled-list list-style-none"
+							>
+								<li>
+									List Items with no
+									bullets
+								</li>
+								<li>
+									List Items with no
+									bullets
+								</li>
+								<li>
+									List Items with no
+									bullets
+								</li>
+								<li>
+									List Items with no
+									bullets
+								</li>
+							</ul>
 
-            <ul class="styled-list list-display-inline list-style-none">
-              <li>Inline Element</li>
-              <li>Inline Element</li>
-              <li>Inline Element</li>
-            </ul>
-          </div>
+							<ul
+								class="styled-list list-display-inline list-style-none"
+							>
+								<li>Inline Element</li>
+								<li>Inline Element</li>
+								<li>Inline Element</li>
+							</ul>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">&lt;ul class=&quot;styled-list list-style-none&quot;&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">&lt;ul class=&quot;styled-list list-style-none&quot;&gt;
              &lt;li&gt;List Items with no bullets&lt;/li&gt;
              &lt;li&gt;List Items with no bullets&lt;/li&gt;
              &lt;li&gt;List Items with no bullets&lt;/li&gt;
@@ -1778,32 +2932,61 @@
              &lt;li&gt;Inline Element&lt;/li&gt;
              &lt;li&gt;Inline Element&lt;/li&gt;
           &lt;/ul&gt;</code></pre>
-          </div>
+						</div>
 
-          <h3>Examples of Notification Stacked Lists</h3>
-          <div class="component__display--container">
-            <ol class="notification-stack list-style-none flex-column">
-              <li>
-                <span>Notification One </span>
-                <i class="fa fa-times fa-2x"></i>
-              </li>
-              <li>
-                <span>Notification Two </span>
-                <i class="fa fa-times fa-2x"></i>
-              </li>
-              <li>
-                <span>Notification Three</span>
-                <i class="fa fa-times fa-2x"></i>
-              </li>
-              <li>
-                <span>Notification Four</span>
-                <i class="fa fa-times fa-2x"></i>
-              </li>
-            </ol>
-          </div>
+						<h3>
+							Examples of Notification Stacked
+							Lists
+						</h3>
+						<div
+							class="component__display--container"
+						>
+							<ol
+								class="notification-stack list-style-none flex-column"
+							>
+								<li>
+									<span
+										>Notification One
+									</span>
+									<i
+										class="fa fa-times fa-2x"
+									></i>
+								</li>
+								<li>
+									<span
+										>Notification Two
+									</span>
+									<i
+										class="fa fa-times fa-2x"
+									></i>
+								</li>
+								<li>
+									<span
+										>Notification
+										Three</span
+									>
+									<i
+										class="fa fa-times fa-2x"
+									></i>
+								</li>
+								<li>
+									<span
+										>Notification
+										Four</span
+									>
+									<i
+										class="fa fa-times fa-2x"
+									></i>
+								</li>
+							</ol>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html"> &lt;ol class=&quot;notification-stack list-style-none flex-column&quot;&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html"> &lt;ol class=&quot;notification-stack list-style-none flex-column&quot;&gt;
              &lt;li&gt; &lt;span&gt;Notification One &lt;/span&gt;
                 &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
              &lt;/li&gt;
@@ -1817,107 +3000,164 @@
                 &lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;
              &lt;/li&gt;
           &lt;/ol&gt;</code></pre>
-          </div>
+						</div>
 
-          <!-- usecase/ description -->
-          <div class="component__usecase">
-            <h3>Usecase</h3>
+						<!-- usecase/ description -->
+						<div class="component__usecase">
+							<h3>Usecase</h3>
 
-            <ul>
-              <li>
-                you can use list with different styles like disc(default),
-                circle, square with list-style-type class in this component.
-              </li>
+							<ul>
+								<li>
+									you can use list with
+									different styles like
+									disc(default), circle,
+									square with
+									list-style-type class in
+									this component.
+								</li>
 
-              <li>
-                There are multiple styles for ordered list like alphabets,
-                romans
-              </li>
+								<li>
+									There are multiple
+									styles for ordered list
+									like alphabets, romans
+								</li>
 
-              <li>
-                with class .list-display-inline and .list-style-none you can
-                use it for nav links.
-              </li>
+								<li>
+									with class
+									.list-display-inline and
+									.list-style-none you can
+									use it for nav links.
+								</li>
 
-              <li>
-                the width of notification-stacked can customised to fit the
-                with of container.
-              </li>
-            </ul>
-          </div>
-        </section>
+								<li>
+									the width of
+									notification-stacked can
+									customised to fit the
+									with of container.
+								</li>
+							</ul>
+						</div>
+					</section>
 
-        <div class="gradient"></div>
+					<div class="gradient"></div>
 
-        <!-- Navigation -->
-        <div id="Navigation"></div>
+					<!-- Navigation -->
+					<div id="Navigation"></div>
 
-        <section class="component">
-          <div class="component__info">
-            <div class="component__heading">
-              <h2>Header</h2>
-            </div>
+					<section class="component">
+						<div class="component__info">
+							<div class="component__heading">
+								<h2>Header</h2>
+							</div>
 
-            <p>Header is a component used for navigation</p>
-          </div>
+							<p>
+								Header is a component used
+								for navigation
+							</p>
+						</div>
 
-          <h3>Example of Navbar for desktop</h3>
+						<h3>
+							Example of Navbar for desktop
+						</h3>
 
-          <div class="component__display--container">
-            <div class="navbar">
-              <div class="navbar-left">
-                <div class="navbar-logo">
-                  <img class="responsive-image round-image" src="../docs/assets/images/krsn_arjun_sclputure.jpeg"
-                    alt="" />
+						<div
+							class="component__display--container"
+						>
+							<div class="navbar">
+								<div class="navbar-left">
+									<div
+										class="navbar-logo"
+									>
+										<img
+											class="responsive-image round-image"
+											src="../docs/assets/images/krsn_arjun_sclputure.jpeg"
+											alt=""
+										/>
 
-                  <div class="p-sm">LOGO</div>
-                </div>
+										<div class="p-sm">
+											LOGO
+										</div>
+									</div>
 
-                <div class="navbar-search-container">
-                  <input type="text" class="input-field" placeholder="What are you looking for?" />
+									<div
+										class="navbar-search-container"
+									>
+										<input
+											type="text"
+											class="input-field"
+											placeholder="What are you looking for?"
+										/>
 
-                  <button class="btn btn-primary">Search</button>
-                </div>
-              </div>
+										<button
+											class="btn btn-primary"
+										>
+											Search
+										</button>
+									</div>
+								</div>
 
-              <div class="navbar-right">
-                <ul class="navbar-icons list-style-none list-display-inline">
-                  <li><a href=""> HOME </a></li>
+								<div class="navbar-right">
+									<ul
+										class="navbar-icons list-style-none list-display-inline"
+									>
+										<li>
+											<a href="">
+												HOME
+											</a>
+										</li>
 
-                  <li><a href="#"> PRODUCTS </a></li>
+										<li>
+											<a href="#">
+												PRODUCTS
+											</a>
+										</li>
 
-                  <li><a href="#"> ABOUT US </a></li>
+										<li>
+											<a href="#">
+												ABOUT US
+											</a>
+										</li>
 
-                  <li>
-                    <a href="#">
-                      <span>
-                        <i class="fas fa-user"></i>
-                      </span>
-                    </a>
-                  </li>
+										<li>
+											<a href="#">
+												<span>
+													<i
+														class="fas fa-user"
+													></i>
+												</span>
+											</a>
+										</li>
 
-                  <li>
-                    <a href="#">
-                      <span>
-                        <i class="fas fa-heart"></i>
-                      </span>
-                    </a>
-                  </li>
+										<li>
+											<a href="#">
+												<span>
+													<i
+														class="fas fa-heart"
+													></i>
+												</span>
+											</a>
+										</li>
 
-                  <li>
-                    <a href="#">
-                      <span>
-                        <i class="fas fa-shopping-cart"></i>
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+										<li>
+											<a href="#">
+												<span>
+													<i
+														class="fas fa-shopping-cart"
+													></i>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">
       &lt;div class=&quot;navbar&quot;&gt;
       &lt;div class=&quot;navbar-left&quot;&gt;
       &lt;div class=&quot;navbar-logo&quot;&gt;
@@ -1966,57 +3206,90 @@
       &lt;/ul&gt;
       &lt;/div&gt;
       &lt;/div&gt;</code></pre>
-          </div>
+						</div>
 
-          <div class="component__display--container">
-            <div class="navbar">
-              <div class="navbar-left">
-                <div class="navbar-logo">
-                  <img class="responsive-image round-image" src="../docs/assets/images/krsn_arjun_sclputure.jpeg"
-                    alt="" />
+						<div
+							class="component__display--container"
+						>
+							<div class="navbar">
+								<div class="navbar-left">
+									<div
+										class="navbar-logo"
+									>
+										<img
+											class="responsive-image round-image"
+											src="../docs/assets/images/krsn_arjun_sclputure.jpeg"
+											alt=""
+										/>
 
-                  <div class="p-sm">LOGO</div>
-                </div>
-              </div>
+										<div class="p-sm">
+											LOGO
+										</div>
+									</div>
+								</div>
 
-              <div class="navbar-right">
-                <ul class="navbar-icons list-style-none list-display-inline flex-row">
-                  <li><a href=""> HOME </a></li>
+								<div class="navbar-right">
+									<ul
+										class="navbar-icons list-style-none list-display-inline flex-row"
+									>
+										<li>
+											<a href="">
+												HOME
+											</a>
+										</li>
 
-                  <li><a href="#"> PRODUCTS </a></li>
+										<li>
+											<a href="#">
+												PRODUCTS
+											</a>
+										</li>
 
-                  <li><a href="#"> ABOUT US </a></li>
+										<li>
+											<a href="#">
+												ABOUT US
+											</a>
+										</li>
 
-                  <li>
-                    <a href="#">
-                      <span>
-                        <i class="fas fa-user"></i>
-                      </span>
-                    </a>
-                  </li>
+										<li>
+											<a href="#">
+												<span>
+													<i
+														class="fas fa-user"
+													></i>
+												</span>
+											</a>
+										</li>
 
-                  <li>
-                    <a href="#">
-                      <span>
-                        <i class="fas fa-heart"></i>
-                      </span>
-                    </a>
-                  </li>
+										<li>
+											<a href="#">
+												<span>
+													<i
+														class="fas fa-heart"
+													></i>
+												</span>
+											</a>
+										</li>
 
-                  <li>
-                    <a href="#">
-                      <span>
-                        <i class="fas fa-shopping-cart"></i>
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+										<li>
+											<a href="#">
+												<span>
+													<i
+														class="fas fa-shopping-cart"
+													></i>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">&lt;div class=&quot;navbar&quot;&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">&lt;div class=&quot;navbar&quot;&gt;
       &lt;div class=&quot;navbar-left&quot;&gt;
          &lt;div class=&quot;navbar-logo&quot;&gt;
             &lt;img class=&quot;responsive-image round-image&quot; src=&quot;../docs/assets/images/krsn_arjun_sclputure.jpeg&quot; alt=&quot;&quot;/&gt;
@@ -2059,63 +3332,121 @@
       &lt;/div&gt;
 &lt;/div&gt;
       </code></pre>
-          </div>
+						</div>
 
-          <!-- usecase/ description -->
-          <div class="component__usecase">
-            <h3>Usecase</h3>
+						<!-- usecase/ description -->
+						<div class="component__usecase">
+							<h3>Usecase</h3>
 
-            <ul>
-              <li>
-                This component is made using flex box, with navbar classes you
-                can customize your navbar
-              </li>
-              <li>
-                You can use this component just by replacing your text with
-                the given text, position is by default sticky and top:0.
-              </li>
-            </ul>
-          </div>
-        </section>
+							<ul>
+								<li>
+									This component is made
+									using flex box, with
+									navbar classes you can
+									customize your navbar
+								</li>
+								<li>
+									You can use this
+									component just by
+									replacing your text with
+									the given text, position
+									is by default sticky and
+									top:0.
+								</li>
+							</ul>
+						</div>
+					</section>
 
-        <div class="gradient"></div>
+					<div class="gradient"></div>
 
-        <!-- Rating -->
-        <div id="Rating"></div>
+					<!-- Rating -->
+					<div id="Rating"></div>
 
-        <section class="component">
-          <div class="component__info">
-            <div class="component__heading">
-              <h2>Rating</h2>
-            </div>
+					<section class="component">
+						<div class="component__info">
+							<div class="component__heading">
+								<h2>Rating</h2>
+							</div>
 
-            <p>
-              Ratings are used for to filter content based on previous user
-              feedbacks.
-            </p>
-          </div>
+							<p>
+								Ratings are used for to
+								filter content based on
+								previous user feedbacks.
+							</p>
+						</div>
 
-          <div class="component__display--container">
-            <div class="star-rating">
-              <input type="radio" id="5-stars" name="rating" value="5" />
-              <label for="5-stars" class="star">&#9733;</label>
+						<div
+							class="component__display--container"
+						>
+							<div class="star-rating">
+								<input
+									type="radio"
+									id="5-stars"
+									name="rating"
+									value="5"
+								/>
+								<label
+									for="5-stars"
+									class="star"
+									>&#9733;</label
+								>
 
-              <input type="radio" id="4-stars" name="rating" value="4" />
-              <label for="4-stars" class="star">&#9733;</label>
+								<input
+									type="radio"
+									id="4-stars"
+									name="rating"
+									value="4"
+								/>
+								<label
+									for="4-stars"
+									class="star"
+									>&#9733;</label
+								>
 
-              <input type="radio" id="3-stars" name="rating" value="3" />
-              <label for="3-stars" class="star">&#9733;</label>
+								<input
+									type="radio"
+									id="3-stars"
+									name="rating"
+									value="3"
+								/>
+								<label
+									for="3-stars"
+									class="star"
+									>&#9733;</label
+								>
 
-              <input type="radio" id="2-stars" name="rating" value="2" />
-              <label for="2-stars" class="star">&#9733;</label>
+								<input
+									type="radio"
+									id="2-stars"
+									name="rating"
+									value="2"
+								/>
+								<label
+									for="2-stars"
+									class="star"
+									>&#9733;</label
+								>
 
-              <input type="radio" id="1-star" name="rating" value="1" />
-              <label for="1-star" class="star">&#9733;</label>
-            </div>
-          </div>
+								<input
+									type="radio"
+									id="1-star"
+									name="rating"
+									value="1"
+								/>
+								<label
+									for="1-star"
+									class="star"
+									>&#9733;</label
+								>
+							</div>
+						</div>
 
-          <div class="component__display--code">
-            <pre class="code__snippet"><code class="language-html">&lt;div class=&quot;star-rating&quot;&gt;
+						<div
+							class="component__display--code"
+						>
+							<pre
+								class="code__snippet"
+							><code class="language-html">&lt;div class=&quot;star-rating&quot;&gt;
         &lt;input type=&quot;radio&quot; id=&quot;5-stars&quot; name=&quot;rating&quot; value=&quot;5&quot;&gt;
         &lt;label for=&quot;5-stars&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
         &lt;input type=&quot;radio&quot; id=&quot;4-stars&quot; name=&quot;rating&quot; value=&quot;4&quot;&gt;
@@ -2128,49 +3459,62 @@
         &lt;label for=&quot;1-star&quot; class=&quot;star&quot;&gt;&amp;#9733;&lt;/label&gt;
       &lt;/div&gt;</code>
       </pre>
-          </div>
+						</div>
 
-          <!-- usecase/ description -->
-          <div class="component__usecase">
-            <h3>Usecase</h3>
+						<!-- usecase/ description -->
+						<div class="component__usecase">
+							<h3>Usecase</h3>
 
-            <ul>
-              <li>
-                use <code>.star-rating</code> for grouping star elements
-              </li>
-              <li>Can be used in filters</li>
-            </ul>
-          </div>
-        </section>
+							<ul>
+								<li>
+									use
+									<code
+										>.star-rating</code
+									>
+									for grouping star
+									elements
+								</li>
+								<li>
+									Can be used in filters
+								</li>
+							</ul>
+						</div>
+					</section>
 
-        <div class="gradient"></div>
+					<div class="gradient"></div>
 
-        <!-- Grid Layout -->
+					<!-- Grid Layout -->
 
-        <div id="Grid"></div>
+					<div id="Grid"></div>
 
-        <!-- Grid -->
-        <section class="component">
-          <div class="component__info">
-            <div class="component__heading">
-              <h2>Grids</h2>
-            </div>
-      
-            <p>Grid Simplified</p>
-          </div>
-      
-          <p>Two Column Layout</p>
-          <div class="component__display--container flex-row">
-      
-            <div class="row-1-col-2">
-              <div class="col-1">I am col 1</div>
-              <div class="col-2">I am col 2</div>
-            </div>
-      
-          </div>
-      
-      <div class="component__display--code">
-      <pre class="language-html">
+					<!-- Grid -->
+					<section class="component">
+						<div class="component__info">
+							<div class="component__heading">
+								<h2>Grids</h2>
+							</div>
+
+							<p>Grid Simplified</p>
+						</div>
+
+						<p>Two Column Layout</p>
+						<div
+							class="component__display--container flex-row"
+						>
+							<div class="row-1-col-2">
+								<div class="col-1">
+									I am col 1
+								</div>
+								<div class="col-2">
+									I am col 2
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="component__display--code"
+						>
+							<pre class="language-html">
       <code>
       <script type="css" class="language-markup">
         <div class="row-1-col-2">
@@ -2179,20 +3523,29 @@
         </div></script>
       </code>
       </pre>
-      </div>
-      
-      <p>Three Column Layout</p>
-      <div class="component__display--container flex-row">
-      
-            <div class="row-1-col-3">
-              <div class="col-1">I am col 1</div>
-              <div class="col-2">I am col 2</div>
-              <div class="col-1">I am col 3</div>
-            </div>
-      </div>
-          
-      <div class="component__display--code">
-      <pre class="language-html">
+						</div>
+
+						<p>Three Column Layout</p>
+						<div
+							class="component__display--container flex-row"
+						>
+							<div class="row-1-col-3">
+								<div class="col-1">
+									I am col 1
+								</div>
+								<div class="col-2">
+									I am col 2
+								</div>
+								<div class="col-1">
+									I am col 3
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="component__display--code"
+						>
+							<pre class="language-html">
       <code>
       <script type="css" class="language-markup">
       <div class="row-1-col-3">
@@ -2202,22 +3555,35 @@
       </div></script>
       </code>
       </pre>
-      </div>
-      
-      <p>Nth Column Layout</p>
-      <div class="component__display--container flex-row">
-      
-            <div class="row-n-col-n">
-              <div class="col-1">I am col 1</div>
-              <div class="col-2">I am col 2</div>
-              <div class="col-1">I am col 3</div>
-              <div class="col-2">I am col 4</div>
-              <div class="col-1">I am col 5</div>
-            </div>
-      </div>
-      
-      <div class="component__display--code">
-        <pre class="language-html">
+						</div>
+
+						<p>Nth Column Layout</p>
+						<div
+							class="component__display--container flex-row"
+						>
+							<div class="row-n-col-n">
+								<div class="col-1">
+									I am col 1
+								</div>
+								<div class="col-2">
+									I am col 2
+								</div>
+								<div class="col-1">
+									I am col 3
+								</div>
+								<div class="col-2">
+									I am col 4
+								</div>
+								<div class="col-1">
+									I am col 5
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="component__display--code"
+						>
+							<pre class="language-html">
         <code>
         <script type="css" class="language-markup">
         <div class="row-n-col-n">
@@ -2229,72 +3595,112 @@
         </div></script>
         </code>
         </pre>
-        </div>
-        
-          <!-- usecase/ description -->
-          <div class="component__usecase">
-            <h3>Usecase</h3>
-      
-            <ul>
-              <li>Minimun Width of n column layout is 100px </li>
-      
-              <li>
-                Use <code>class=".row-1-col-n"</code> to make your grid
-                layout.
-              </li>
-            </ul>
-          </div>
-        </section>
-      
-      </article>
-    </div>
+						</div>
 
-    <div class="gradient"></div>
+						<!-- usecase/ description -->
+						<div class="component__usecase">
+							<h3>Usecase</h3>
 
-    <footer class="flex-column">
-      <nav>
-        <h2 class="font-24">Dheeraj Purohit &middot; Web Engineer</h2>
+							<ul>
+								<li>
+									Minimun Width of n
+									column layout is 100px
+								</li>
 
-        <ul class="flex-row">
-          <li>
-            <a href="https://www.linkedin.com/in/dheeraj-purohit-79ba4a168" target="_blank">
-              <span class="fab fa-linkedin fa-2x" aria-hidden="true"></span>
-              <span class="sr-only">LinkedIn</span></a>
-          </li>
+								<li>
+									Use
+									<code
+										>class=".row-1-col-n"</code
+									>
+									to make your grid
+									layout.
+								</li>
+							</ul>
+						</div>
+					</section>
+				</article>
+			</div>
 
-          <li>
-            <a href="https://twitter.com/the_indianyoga" target="_blank">
-              <span class="fab fa-twitter fa-2x" aria-hidden="true"></span>
-              <span class="sr-only">Twitter</span></a>
-          </li>
+			<div class="gradient"></div>
 
-          <li>
-            <a href="https://github.com/purohitdheeraj" target="_blank">
-              <span class="fab fa-github fa-2x" aria-hidden="true"></span>
-              <span class="sr-only">Github</span></a>
-          </li>
-        </ul>
+			<footer class="flex-column">
+				<nav>
+					<h2 class="font-24">
+						Dheeraj Purohit &middot; Web
+						Engineer
+					</h2>
 
-        <p class="font-24">
-          <small>
-            &copy; Inclusive UI <span class="fa fa-heart"></span>
-          </small>
-        </p>
-      </nav>
-    </footer>
-  </div>
+					<ul class="flex-row">
+						<li>
+							<a
+								href="https://www.linkedin.com/in/dheeraj-purohit-79ba4a168"
+								target="_blank"
+							>
+								<span
+									class="fab fa-linkedin fa-2x"
+									aria-hidden="true"
+								></span>
+								<span class="sr-only"
+									>LinkedIn</span
+								></a
+							>
+						</li>
 
-  <!-- Prism Js cdn -->
-  <script src="./prism/prism.min.js"
-    integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+						<li>
+							<a
+								href="https://twitter.com/the_indianyoga"
+								target="_blank"
+							>
+								<span
+									class="fab fa-twitter fa-2x"
+									aria-hidden="true"
+								></span>
+								<span class="sr-only"
+									>Twitter</span
+								></a
+							>
+						</li>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+						<li>
+							<a
+								href="https://github.com/purohitdheeraj"
+								target="_blank"
+							>
+								<span
+									class="fab fa-github fa-2x"
+									aria-hidden="true"
+								></span>
+								<span class="sr-only"
+									>Github</span
+								></a
+							>
+						</li>
+					</ul>
 
-  <script src="./index.js"></script>
-  <script src="../library/components/card/card.js"></script>
-</body>
+					<p class="font-24">
+						<small>
+							&copy; Inclusive UI
+							<span
+								class="fa fa-heart"
+							></span>
+						</small>
+					</p>
+				</nav>
+			</footer>
+		</div>
 
+		<!-- Prism Js cdn -->
+		<script
+			src="./prism/prism.min.js"
+			integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+		<script src="./index.js"></script>
+		<script src="../library/components/card/card.js"></script>
+	</body>
 </html>
