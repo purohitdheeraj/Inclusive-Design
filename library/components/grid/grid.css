@@ -1,0 +1,28 @@
+
+
+
+.row-n-col-n, .row-1-col-2, .row-1-col-3{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+
+.row-1-col-2{
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    
+}
+
+.row-1-col-3{
+    grid-template-columns: repeat(auto-fit, minmax(33.3%, 1fr));
+}
+
+
+.col-1{
+    background: var(--LIGHT-BASE);
+}
+
+.col-2{
+    background: var(--LIGHT-ACCENT);
+}
+
