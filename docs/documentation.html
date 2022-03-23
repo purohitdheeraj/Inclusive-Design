@@ -21,9 +21,13 @@
   <!-- prism -->
   <link rel="stylesheet" href="./prism/prism.min.css" />
 
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.css" />
+
+
   <!-- cdn link -->
-  <link rel="stylesheet" href="https://inclusive-ui.netlify.app/library/inclusive-ui.css">
-  <!-- <link rel="stylesheet" href="../library/inclusive-ui.css" /> -->
+  <!-- <link rel="stylesheet" href="https://inclusive-ui.netlify.app/library/inclusive-ui.css"> -->
+  <link rel="stylesheet" href="../library/inclusive-ui.css" />
   <link rel="stylesheet" href="./main.css" />
   <link rel="stylesheet" href="./docs.css" />
   
@@ -89,6 +93,7 @@
               <li><a href="#List">Lists</a></li>
               <li><a href="#Navigation">Navigation</a></li>
               <li><a href="#Rating">Rating</a></li>
+              <li><a href="#Grid">Grids</a></li>
             </ul>
           </div>
         </nav>
@@ -1387,7 +1392,7 @@
 
           <h4>Validation</h4>
           <div class="component__display--container">
-            <form class="form-field flex-column" onsubmit="return false">
+            <form class="form-field flex-column" onsubmit=`return false`>
               <h3>VALIDATION</h3>
 
               <div class="input-wrapper flex-column">
@@ -2137,6 +2142,110 @@
             </ul>
           </div>
         </section>
+
+        <div class="gradient"></div>
+
+        <!-- Grid Layout -->
+
+        <div id="Grid"></div>
+
+        <!-- Grid -->
+        <section class="component">
+          <div class="component__info">
+            <div class="component__heading">
+              <h2>Grids</h2>
+            </div>
+      
+            <p>Grid Simplified</p>
+          </div>
+      
+          <p>Two Column Layout</p>
+          <div class="component__display--container flex-row">
+      
+            <div class="row-1-col-2">
+              <div class="col-1">I am col 1</div>
+              <div class="col-2">I am col 2</div>
+            </div>
+      
+          </div>
+      
+      <div class="component__display--code">
+      <pre class="language-html">
+      <code>
+      <script type="css" class="language-markup">
+        <div class="row-1-col-2">
+          <div class="col-1">I am col 1</div>
+          <div class="col-2">I am col 2</div>
+        </div></script>
+      </code>
+      </pre>
+      </div>
+      
+      <p>Three Column Layout</p>
+      <div class="component__display--container flex-row">
+      
+            <div class="row-1-col-3">
+              <div class="col-1">I am col 1</div>
+              <div class="col-2">I am col 2</div>
+              <div class="col-1">I am col 3</div>
+            </div>
+      </div>
+          
+      <div class="component__display--code">
+      <pre class="language-html">
+      <code>
+      <script type="css" class="language-markup">
+      <div class="row-1-col-3">
+      <div class="col-1">I am col 1</div>
+      <div class="col-2">I am col 2</div>
+      <div class="col-1">I am col 3</div>
+      </div></script>
+      </code>
+      </pre>
+      </div>
+      
+      <p>Nth Column Layout</p>
+      <div class="component__display--container flex-row">
+      
+            <div class="row-n-col-n">
+              <div class="col-1">I am col 1</div>
+              <div class="col-2">I am col 2</div>
+              <div class="col-1">I am col 3</div>
+              <div class="col-2">I am col 4</div>
+              <div class="col-1">I am col 5</div>
+            </div>
+      </div>
+      
+      <div class="component__display--code">
+        <pre class="language-html">
+        <code>
+        <script type="css" class="language-markup">
+        <div class="row-n-col-n">
+            <div class="col-1">I am col 1</div>
+            <div class="col-2">I am col 2</div>
+            <div class="col-1">I am col 3</div>
+            <div class="col-2">I am col 4</div>
+            <div class="col-1">I am col 5</div>
+        </div></script>
+        </code>
+        </pre>
+        </div>
+        
+          <!-- usecase/ description -->
+          <div class="component__usecase">
+            <h3>Usecase</h3>
+      
+            <ul>
+              <li>Minimun Width of n column layout is 100px </li>
+      
+              <li>
+                Use <code>class=".row-1-col-n"</code> to make your grid
+                layout.
+              </li>
+            </ul>
+          </div>
+        </section>
+      
       </article>
     </div>
 
@@ -2179,6 +2288,10 @@
   <script src="./prism/prism.min.js"
     integrity="sha512-pSVqGtpGygQlhN8ZTHXx1kqkjQr30eM+S6OoSzhHGTjh6DKdfy7WZlo1DNO9bhtM0Imf6xNLznZ7iVC2YUMwJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
 
   <script src="./index.js"></script>
   <script src="../library/components/card/card.js"></script>

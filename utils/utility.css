@@ -15,3 +15,22 @@
     gap: 2rem;
     list-style: none;
   }
+
+pre{
+    white-space: unset;
+    padding: 1rem;
+    white-space: pre-wrap;
+}
+
+.code-toolbar{
+    position: relative;
+}
+
+.toolbar{ 
+    margin-inline-end: 2rem;
+    padding: 5px;
+}
+
+div.code-toolbar>.toolbar{
+    opacity: 1 !important;
+}
