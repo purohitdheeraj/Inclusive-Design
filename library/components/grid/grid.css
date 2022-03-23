@@ -19,10 +19,10 @@
 
 
 .col-1{
-    background: var(--LIGHT-GRAY);
+    background: var(--LIGHT-BASE);
 }
 
 .col-2{
-    background: var(--LIGHT-BASE);
+    background: var(--LIGHT-ACCENT);
 }
 
