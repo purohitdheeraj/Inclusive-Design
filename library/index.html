@@ -21,97 +21,161 @@
 
 <body>
   
-  <div id="Snackbar"></div>
+  <div id="Modal"></div>
 
-  <!-- Snackbar -->
+  <!-- Modal -->
   <section class="component">
     <div class="component__info">
       <div class="component__heading">
-        <h2>Snackbar</h2>
+        <h2>Modal</h2>
       </div>
 
     </div>
 
     <div class="component__display--container flex-row">
 
-        <button class="btn btn-primary btn__snackbar--leading">Leading</button>
-        <button class="btn btn-primary btn__snackbar--baseline">Baseline</button>
+       
+      <div class="auth-wrapper">
+				<div class="modal-wrapper">
+					<div
+						class="modal modal-login"
+						id="loginModal"
+					>
+						<!-- modal content -->
+						<div class="modal-content">
+							<div>
+                <form>
+                  Login Modal
+                </form>
+              </div>
+							<span class="close"
+								>&times;</span
+							>
+						</div>
+					</div>
 
-        <div class="snackbar__output flex-row">
+					<div
+						class="modal modal-signup"
+						id="signupModal"
+					>
+						<!-- modal content -->
+						<div class="modal-content">
+							<div>Signup Modal</div>
+							<span class="close"
+								>&times;</span
+							>
+						</div>
+					</div>
+				</div>
 
-          <div class="snackbar__baseline flex-row">
-            <div class="snackbar__baseline--text"> Can't send photo. Retry in 5 seconds.</div>
-            <div class="snackbar__baseline--actions">
-              <a href="#">Retry</a>
-              <span><button>X</button></span>
-            </div>
-  
+				<div class="auth-buttons">
+					<button
+						class="btn btn-primary-outline"
+						id="btn-login"
+					>
+						<span>
+							<i
+								class="fa fa-sign-in-alt"
+							></i>
+						</span>
+						Modal 1
+					</button>
+
+					<button
+						class="btn btn-primary-outline"
+						id="btn-signup"
+					>
+						<span>
+							<i class="fa-brands fa-google">
+							</i>
+						</span>
+						Modal 2
+					</button>
+				</div>
+			</div>
+
+    </div>
+
+<div class="component__display--code">
+<pre class="language-html">
+<code>
+<script type="css" class="language-markup">
+  <div class="auth-wrapper">
+    <div class="modal-wrapper">
+      <div
+        class="modal modal-login"
+        id="loginModal"
+      >
+        <!-- modal content -->
+        <div class="modal-content">
+          <div>
+            <form>
+              Login Modal
+            </form>
           </div>
-  
-          <div class="snackbar__leading flex-row">
-            <div class="snackbar__leading--text"> Your photo has been archived.</div>
-            <div class="snackbar__leading--actions">
-              <a href="#">Undo</a>
-              <span><button>X</button></span>
-            </div>
-  
-          </div>
-  
-        
-  
+          <span class="close"
+            >&times;</span
+          >
         </div>
-  
-      
+      </div>
 
+      <div
+        class="modal modal-signup"
+        id="signupModal"
+      >
+        <!-- modal content -->
+        <div class="modal-content">
+          <div>Signup Modal</div>
+          <span class="close"
+            >&times;</span
+          >
+        </div>
+      </div>
     </div>
 
-<div class="component__display--code">
-<pre class="language-html">
-<code>
-<script type="css" class="language-markup">
-  <div class="snackbar__baseline flex-row">
-    <div class="snackbar__baseline--text"> Can't send photo. Retry in 5 seconds.</div>
-    <div class="snackbar__baseline--actions">
-      <a href="#">Retry</a>
-      <span><button>X</button></span>
-    </div>
-  </div></script>
-</code>
-</pre>
-</div>
-    
-<div class="component__display--code">
-<pre class="language-html">
-<code>
-<script type="css" class="language-markup">
-  <div class="snackbar__leading flex-row">
-    <div class="snackbar__leading--text"> Your photo has been archived.</div>
-    <div class="snackbar__leading--actions">
-      <a href="#">Undo</a>
-      <span><button>X</button></span>
-    </div>
+    <div class="auth-buttons">
+      <button
+        class="btn btn-primary-outline"
+        id="btn-login"
+      >
+        <span>
+          <i
+            class="fa fa-sign-in-alt"
+          ></i>
+        </span>
+        Modal 1
+      </button>
 
+      <button
+        class="btn btn-primary-outline"
+        id="btn-signup"
+      >
+        <span>
+          <i class="fa-brands fa-google">
+          </i>
+        </span>
+        Modal 2
+      </button>
+    </div>
   </div>
-
 </script>
 </code>
 </pre>
 </div>
+    
     <!-- usecase/ description -->
     <div class="component__usecase">
       <h3>Usecase</h3>
 
       <ul>
-        
-
         <li>
-          Use <code>class="snackbar__X (leading, baseline)"</code> to make use snackbar in your project
+          Fill your Content inside class .modal-content
         </li>
       </ul>
     </div>
   </section>
 
-  <script src="../library/components/snackbar/snackbar.js"></script>
+  <script src="../library/components/modal/modal.js"></script>
   <script src="../docs/prism/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
   <script
