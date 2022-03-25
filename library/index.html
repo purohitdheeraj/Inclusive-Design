@@ -20,25 +20,79 @@
 </head>
 
 <body>
-  <div id="Grid"></div>
+  
+  <div id="Modal"></div>
 
-  <!-- Grid -->
+  <!-- Modal -->
   <section class="component">
     <div class="component__info">
       <div class="component__heading">
-        <h2>Grids</h2>
+        <h2>Modal</h2>
       </div>
 
-      <p>Grid Simplified</p>
     </div>
 
-    <p>Two Column Layout</p>
     <div class="component__display--container flex-row">
 
-      <div class="row-1-col-2">
-        <div class="col-1">I am col 1</div>
-        <div class="col-2">I am col 2</div>
-      </div>
+       
+      <div class="auth-wrapper">
+				<div class="modal-wrapper">
+					<div
+						class="modal modal-login"
+						id="loginModal"
+					>
+						<!-- modal content -->
+						<div class="modal-content">
+							<div>
+                <form>
+                  Login Modal
+                </form>
+              </div>
+							<span class="close"
+								>&times;</span
+							>
+						</div>
+					</div>
+
+					<div
+						class="modal modal-signup"
+						id="signupModal"
+					>
+						<!-- modal content -->
+						<div class="modal-content">
+							<div>Signup Modal</div>
+							<span class="close"
+								>&times;</span
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="auth-buttons">
+					<button
+						class="btn btn-primary-outline"
+						id="btn-login"
+					>
+						<span>
+							<i
+								class="fa fa-sign-in-alt"
+							></i>
+						</span>
+						Modal 1
+					</button>
+
+					<button
+						class="btn btn-primary-outline"
+						id="btn-signup"
+					>
+						<span>
+							<i class="fa-brands fa-google">
+							</i>
+						</span>
+						Modal 2
+					</button>
+				</div>
+			</div>
 
     </div>
 
@@ -46,80 +100,82 @@
 <pre class="language-html">
 <code>
 <script type="css" class="language-markup">
-  <div class="row-1-col-2">
-    <div class="col-1">I am col 1</div>
-    <div class="col-2">I am col 2</div>
-  </div></script>
+  <div class="auth-wrapper">
+    <div class="modal-wrapper">
+      <div
+        class="modal modal-login"
+        id="loginModal"
+      >
+        <!-- modal content -->
+        <div class="modal-content">
+          <div>
+            <form>
+              Login Modal
+            </form>
+          </div>
+          <span class="close"
+            >&times;</span
+          >
+        </div>
+      </div>
+
+      <div
+        class="modal modal-signup"
+        id="signupModal"
+      >
+        <!-- modal content -->
+        <div class="modal-content">
+          <div>Signup Modal</div>
+          <span class="close"
+            >&times;</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-buttons">
+      <button
+        class="btn btn-primary-outline"
+        id="btn-login"
+      >
+        <span>
+          <i
+            class="fa fa-sign-in-alt"
+          ></i>
+        </span>
+        Modal 1
+      </button>
+
+      <button
+        class="btn btn-primary-outline"
+        id="btn-signup"
+      >
+        <span>
+          <i class="fa-brands fa-google">
+          </i>
+        </span>
+        Modal 2
+      </button>
+    </div>
+  </div>
+</script>
 </code>
 </pre>
-</div>
-
-<p>Three Column Layout</p>
-<div class="component__display--container flex-row">
-
-      <div class="row-1-col-3">
-        <div class="col-1">I am col 1</div>
-        <div class="col-2">I am col 2</div>
-        <div class="col-1">I am col 3</div>
-      </div>
 </div>
     
-<div class="component__display--code">
-<pre class="language-html">
-<code>
-<script type="css" class="language-markup">
-<div class="row-1-col-3">
-<div class="col-1">I am col 1</div>
-<div class="col-2">I am col 2</div>
-<div class="col-1">I am col 3</div>
-</div></script>
-</code>
-</pre>
-</div>
-
-<p>Nth Column Layout</p>
-<div class="component__display--container flex-row">
-
-      <div class="row-n-col-n">
-        <div class="col-1">I am col 1</div>
-        <div class="col-2">I am col 2</div>
-        <div class="col-1">I am col 3</div>
-        <div class="col-2">I am col 4</div>
-        <div class="col-1">I am col 5</div>
-      </div>
-</div>
-
-<div class="component__display--code">
-  <pre class="language-html">
-  <code>
-  <script type="css" class="language-markup">
-  <div class="row-n-col-n">
-      <div class="col-1">I am col 1</div>
-      <div class="col-2">I am col 2</div>
-      <div class="col-1">I am col 3</div>
-      <div class="col-2">I am col 4</div>
-      <div class="col-1">I am col 5</div>
-  </div></script>
-  </code>
-  </pre>
-  </div>
-  
     <!-- usecase/ description -->
     <div class="component__usecase">
       <h3>Usecase</h3>
 
       <ul>
-        <li>Minimun Width of n column layout is 100px </li>
-
         <li>
-          Use <code>class=".row-1-col-n"</code> to make your grid
-          layout.
+          Fill your Content inside class .modal-content
         </li>
       </ul>
     </div>
   </section>
 
-
+  <script src="../library/components/modal/modal.js"></script>
   <script src="../docs/prism/prism.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
   <script

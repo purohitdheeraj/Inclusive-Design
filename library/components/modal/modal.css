@@ -1,0 +1,46 @@
+.auth-buttons {
+	margin-block-start: 4rem;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.auth-buttons .btn {
+	max-width: 60rem;
+}
+
+.modal-login {
+	display: none;
+}
+
+.modal-signup {
+	display: none;
+}
+.modal-wrapper {
+	position: relative;
+}
+
+.modal-content {
+	display: flex;
+	justify-content: space-between;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 2rem;
+	gap: 2rem;
+	width: 100%;
+}
+
+.close {
+	font-weight: bold;
+	font-size: 2.4rem;
+}
+
+.close:hover,
+.close:focus {
+	color: var(--DARKEST-GRAY);
+	text-decoration: none;
+	cursor: pointer;
+}
